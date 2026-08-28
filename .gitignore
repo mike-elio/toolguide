@@ -37,6 +37,8 @@ Desktop.ini
 
 # Logs and temporary files
 *.log
+*.pdf
+output/pdf/
 tmp/
 temp/
 
