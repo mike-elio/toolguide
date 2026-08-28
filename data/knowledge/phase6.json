@@ -1,0 +1,6184 @@
+{
+  "stages": [
+    {
+      "id": "analysis",
+      "name": {
+        "ar": "التحليل",
+        "en": "Analysis"
+      }
+    },
+    {
+      "id": "design",
+      "name": {
+        "ar": "التصميم",
+        "en": "Design"
+      }
+    },
+    {
+      "id": "implementation",
+      "name": {
+        "ar": "التنفيذ",
+        "en": "Implementation"
+      }
+    },
+    {
+      "id": "testing",
+      "name": {
+        "ar": "الاختبار",
+        "en": "Testing"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": {
+        "ar": "ChatGPT",
+        "en": "ChatGPT"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": {
+        "ar": "Claude",
+        "en": "Claude"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": {
+        "ar": "Gemini",
+        "en": "Gemini"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": {
+        "ar": "Perplexity",
+        "en": "Perplexity"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "elicit",
+      "name": {
+        "ar": "Elicit",
+        "en": "Elicit"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "consensus",
+      "name": {
+        "ar": "Consensus",
+        "en": "Consensus"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "notebooklm",
+      "name": {
+        "ar": "NotebookLM",
+        "en": "NotebookLM"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "scite",
+      "name": {
+        "ar": "Scite",
+        "en": "Scite"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "researchrabbit",
+      "name": {
+        "ar": "ResearchRabbit",
+        "en": "ResearchRabbit"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "semantic-scholar",
+      "name": {
+        "ar": "Semantic Scholar",
+        "en": "Semantic Scholar"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل analysis.",
+        "en": "AI tool considered for analysis workflows."
+      },
+      "stages": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "canva-magic-studio",
+      "name": {
+        "ar": "Canva Magic Studio",
+        "en": "Canva Magic Studio"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "adobe-firefly",
+      "name": {
+        "ar": "Adobe Firefly",
+        "en": "Adobe Firefly"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "figma-ai",
+      "name": {
+        "ar": "Figma AI",
+        "en": "Figma AI"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": {
+        "ar": "Midjourney",
+        "en": "Midjourney"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "openai-image-generation",
+      "name": {
+        "ar": "OpenAI Image Generation",
+        "en": "OpenAI Image Generation"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "stable-diffusion",
+      "name": {
+        "ar": "Stable Diffusion",
+        "en": "Stable Diffusion"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "uizard",
+      "name": {
+        "ar": "Uizard",
+        "en": "Uizard"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "framer-ai",
+      "name": {
+        "ar": "Framer AI",
+        "en": "Framer AI"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "whimsical-ai",
+      "name": {
+        "ar": "Whimsical AI",
+        "en": "Whimsical AI"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "leonardo-ai",
+      "name": {
+        "ar": "Leonardo AI",
+        "en": "Leonardo AI"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل design.",
+        "en": "AI tool considered for design workflows."
+      },
+      "stages": [
+        "design"
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": {
+        "ar": "GitHub Copilot",
+        "en": "GitHub Copilot"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation, testing.",
+        "en": "AI tool considered for implementation, testing workflows."
+      },
+      "stages": [
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": {
+        "ar": "Cursor",
+        "en": "Cursor"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation, testing.",
+        "en": "AI tool considered for implementation, testing workflows."
+      },
+      "stages": [
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "windsurf",
+      "name": {
+        "ar": "Windsurf",
+        "en": "Windsurf"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation.",
+        "en": "AI tool considered for implementation workflows."
+      },
+      "stages": [
+        "implementation"
+      ]
+    },
+    {
+      "id": "claude-code",
+      "name": {
+        "ar": "Claude Code",
+        "en": "Claude Code"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation, testing.",
+        "en": "AI tool considered for implementation, testing workflows."
+      },
+      "stages": [
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "openai-codex",
+      "name": {
+        "ar": "OpenAI Codex",
+        "en": "OpenAI Codex"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation, testing.",
+        "en": "AI tool considered for implementation, testing workflows."
+      },
+      "stages": [
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "amazon-q-developer",
+      "name": {
+        "ar": "Amazon Q Developer",
+        "en": "Amazon Q Developer"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation.",
+        "en": "AI tool considered for implementation workflows."
+      },
+      "stages": [
+        "implementation"
+      ]
+    },
+    {
+      "id": "gemini-code-assist",
+      "name": {
+        "ar": "Gemini Code Assist",
+        "en": "Gemini Code Assist"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation.",
+        "en": "AI tool considered for implementation workflows."
+      },
+      "stages": [
+        "implementation"
+      ]
+    },
+    {
+      "id": "jetbrains-ai-assistant",
+      "name": {
+        "ar": "JetBrains AI Assistant",
+        "en": "JetBrains AI Assistant"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation.",
+        "en": "AI tool considered for implementation workflows."
+      },
+      "stages": [
+        "implementation"
+      ]
+    },
+    {
+      "id": "replit-agent",
+      "name": {
+        "ar": "Replit Agent",
+        "en": "Replit Agent"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation.",
+        "en": "AI tool considered for implementation workflows."
+      },
+      "stages": [
+        "implementation"
+      ]
+    },
+    {
+      "id": "qodo",
+      "name": {
+        "ar": "Qodo",
+        "en": "Qodo"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل implementation, testing.",
+        "en": "AI tool considered for implementation, testing workflows."
+      },
+      "stages": [
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "testim",
+      "name": {
+        "ar": "Testim",
+        "en": "Testim"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل testing.",
+        "en": "AI tool considered for testing workflows."
+      },
+      "stages": [
+        "testing"
+      ]
+    },
+    {
+      "id": "mabl",
+      "name": {
+        "ar": "mabl",
+        "en": "mabl"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل testing.",
+        "en": "AI tool considered for testing workflows."
+      },
+      "stages": [
+        "testing"
+      ]
+    },
+    {
+      "id": "applitools",
+      "name": {
+        "ar": "Applitools",
+        "en": "Applitools"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل testing.",
+        "en": "AI tool considered for testing workflows."
+      },
+      "stages": [
+        "testing"
+      ]
+    },
+    {
+      "id": "snyk-deepcode",
+      "name": {
+        "ar": "Snyk DeepCode",
+        "en": "Snyk DeepCode"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل testing.",
+        "en": "AI tool considered for testing workflows."
+      },
+      "stages": [
+        "testing"
+      ]
+    },
+    {
+      "id": "diffblue-cover",
+      "name": {
+        "ar": "Diffblue Cover",
+        "en": "Diffblue Cover"
+      },
+      "description": {
+        "ar": "أداة ذكاء اصطناعي مرشحة لسير عمل testing.",
+        "en": "AI tool considered for testing workflows."
+      },
+      "stages": [
+        "testing"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "analysis-q1",
+      "stage": "analysis",
+      "prompt": {
+        "ar": "ما الهدف الأساسي للتحليل؟",
+        "en": "What is the primary analysis goal?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "speed",
+          "label": {
+            "ar": "استكشاف سريع",
+            "en": "Fast exploration"
+          },
+          "value": 0.7
+        },
+        {
+          "id": "depth",
+          "label": {
+            "ar": "أدلة معمقة",
+            "en": "Deep evidence"
+          },
+          "value": 1.0
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "analysis-q2",
+      "stage": "analysis",
+      "prompt": {
+        "ar": "ما الأدلة التي تحتاجها؟",
+        "en": "What evidence do you need?"
+      },
+      "type": "multiple_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "sources",
+          "label": {
+            "ar": "مصادر موثقة",
+            "en": "Cited sources"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "summaries",
+          "label": {
+            "ar": "ملخصات موجزة",
+            "en": "Concise summaries"
+          },
+          "value": 0.7
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "analysis-q3",
+      "stage": "analysis",
+      "prompt": {
+        "ar": "ما مستوى الخصوصية المطلوب؟",
+        "en": "What privacy posture is required?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "cloud",
+          "label": {
+            "ar": "سحابة مُدارة",
+            "en": "Managed cloud"
+          },
+          "value": 0.7
+        },
+        {
+          "id": "grounded",
+          "label": {
+            "ar": "مساحة عمل مقيدة بالمصادر",
+            "en": "Grounded workspace"
+          },
+          "value": 1.0
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "analysis-q4",
+      "stage": "analysis",
+      "prompt": {
+        "ar": "صف الحاجة البحثية.",
+        "en": "Describe the research need."
+      },
+      "type": "short_text",
+      "importance": 0.85,
+      "options": [],
+      "text_intents": [
+        {
+          "id": "evidence_synthesis",
+          "label": {
+            "ar": "توليف الأدلة",
+            "en": "Evidence synthesis"
+          },
+          "value": 1.0,
+          "aliases": {
+            "en": [
+              "synthesize evidence",
+              "compare trusted sources"
+            ],
+            "ar": [
+              "توليف الأدلة",
+              "مقارنة مصادر موثوقة"
+            ]
+          }
+        },
+        {
+          "id": "literature_discovery",
+          "label": {
+            "ar": "اكتشاف الأدبيات",
+            "en": "Literature discovery"
+          },
+          "value": 0.9,
+          "aliases": {
+            "en": [
+              "find related papers",
+              "discover literature"
+            ],
+            "ar": [
+              "اكتشاف الأدبيات",
+              "العثور على أبحاث مرتبطة"
+            ]
+          }
+        },
+        {
+          "id": "citation_validation",
+          "label": {
+            "ar": "التحقق من الاستشهادات",
+            "en": "Citation validation"
+          },
+          "value": 0.8,
+          "aliases": {
+            "en": [
+              "validate citations",
+              "check references"
+            ],
+            "ar": [
+              "التحقق من الاستشهادات",
+              "تدقيق المراجع"
+            ]
+          }
+        },
+        {
+          "id": "document_grounded_review",
+          "label": {
+            "ar": "مراجعة مقيدة بالمستندات",
+            "en": "Document-grounded review"
+          },
+          "value": 0.7,
+          "aliases": {
+            "en": [
+              "review my documents",
+              "grounded document review"
+            ],
+            "ar": [
+              "مراجعة مستنداتي",
+              "مراجعة مقيدة بالمستندات"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "analysis-q5",
+      "stage": "analysis",
+      "prompt": {
+        "ar": "هل الاستشهادات مطلوبة؟",
+        "en": "Are citations required?"
+      },
+      "type": "boolean",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "yes",
+          "label": {
+            "ar": "نعم",
+            "en": "Yes"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "no",
+          "label": {
+            "ar": "لا",
+            "en": "No"
+          },
+          "value": 0.3
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "design-q1",
+      "stage": "design",
+      "prompt": {
+        "ar": "ما مخرج التصميم المطلوب؟",
+        "en": "What design output is needed?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "visual",
+          "label": {
+            "ar": "أصل بصري",
+            "en": "Visual asset"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "interface",
+          "label": {
+            "ar": "تصور واجهة",
+            "en": "Interface concept"
+          },
+          "value": 0.8
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "design-q2",
+      "stage": "design",
+      "prompt": {
+        "ar": "ما ضوابط الأسلوب المهمة؟",
+        "en": "Which style controls matter?"
+      },
+      "type": "multiple_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "brand",
+          "label": {
+            "ar": "اتساق الهوية",
+            "en": "Brand consistency"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "iteration",
+          "label": {
+            "ar": "تكرار سريع",
+            "en": "Rapid iteration"
+          },
+          "value": 0.7
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "design-q3",
+      "stage": "design",
+      "prompt": {
+        "ar": "كيف سيتعاون الفريق؟",
+        "en": "How will the team collaborate?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "live",
+          "label": {
+            "ar": "تعاون مباشر",
+            "en": "Live collaboration"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "handoff",
+          "label": {
+            "ar": "تصدير وتسليم",
+            "en": "Export and handoff"
+          },
+          "value": 0.7
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "design-q4",
+      "stage": "design",
+      "prompt": {
+        "ar": "صف أصل التصميم المطلوب.",
+        "en": "Describe the required design asset."
+      },
+      "type": "short_text",
+      "importance": 0.85,
+      "options": [],
+      "text_intents": [
+        {
+          "id": "image_generation",
+          "label": {
+            "ar": "توليد الصور",
+            "en": "Image generation"
+          },
+          "value": 1.0,
+          "aliases": {
+            "en": [
+              "generate an image",
+              "create artwork"
+            ],
+            "ar": [
+              "توليد صورة",
+              "إنشاء عمل فني"
+            ]
+          }
+        },
+        {
+          "id": "ui_prototyping",
+          "label": {
+            "ar": "نمذجة واجهة",
+            "en": "UI prototyping"
+          },
+          "value": 0.9,
+          "aliases": {
+            "en": [
+              "prototype a ui",
+              "interface mockup"
+            ],
+            "ar": [
+              "نموذج واجهة",
+              "تصميم أولي للواجهة"
+            ]
+          }
+        },
+        {
+          "id": "brand_asset",
+          "label": {
+            "ar": "أصل للهوية",
+            "en": "Brand asset"
+          },
+          "value": 0.8,
+          "aliases": {
+            "en": [
+              "brand asset",
+              "marketing visual"
+            ],
+            "ar": [
+              "أصل للهوية",
+              "مادة بصرية تسويقية"
+            ]
+          }
+        },
+        {
+          "id": "diagramming",
+          "label": {
+            "ar": "إنشاء مخطط",
+            "en": "Diagramming"
+          },
+          "value": 0.7,
+          "aliases": {
+            "en": [
+              "draw a diagram",
+              "flow chart"
+            ],
+            "ar": [
+              "إنشاء مخطط",
+              "رسم تدفق"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "design-q5",
+      "stage": "design",
+      "prompt": {
+        "ar": "هل الاستخدام التجاري مطلوب؟",
+        "en": "Is commercial use required?"
+      },
+      "type": "boolean",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "yes",
+          "label": {
+            "ar": "نعم",
+            "en": "Yes"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "no",
+          "label": {
+            "ar": "لا",
+            "en": "No"
+          },
+          "value": 0.3
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "implementation-q1",
+      "stage": "implementation",
+      "prompt": {
+        "ar": "أين سيتم التنفيذ؟",
+        "en": "Where will implementation happen?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "ide",
+          "label": {
+            "ar": "بيئة تطوير",
+            "en": "IDE"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "terminal",
+          "label": {
+            "ar": "طرفية",
+            "en": "Terminal"
+          },
+          "value": 0.8
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "implementation-q2",
+      "stage": "implementation",
+      "prompt": {
+        "ar": "ما تغطية اللغات المطلوبة؟",
+        "en": "Which language coverage matters?"
+      },
+      "type": "multiple_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "broad",
+          "label": {
+            "ar": "دعم لغات واسع",
+            "en": "Broad language support"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "focused",
+          "label": {
+            "ar": "حزمة محددة",
+            "en": "Focused stack"
+          },
+          "value": 0.7
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "implementation-q3",
+      "stage": "implementation",
+      "prompt": {
+        "ar": "ما خصوصية المستودع المطلوبة؟",
+        "en": "What repository privacy is required?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "private",
+          "label": {
+            "ar": "مستودع خاص",
+            "en": "Private repository"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "public",
+          "label": {
+            "ar": "مستودع عام",
+            "en": "Public repository"
+          },
+          "value": 0.6
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "implementation-q4",
+      "stage": "implementation",
+      "prompt": {
+        "ar": "صف مهمة البرمجة.",
+        "en": "Describe the coding task."
+      },
+      "type": "short_text",
+      "importance": 0.85,
+      "options": [],
+      "text_intents": [
+        {
+          "id": "code_generation",
+          "label": {
+            "ar": "توليد الكود",
+            "en": "Code generation"
+          },
+          "value": 1.0,
+          "aliases": {
+            "en": [
+              "generate code",
+              "implement a feature"
+            ],
+            "ar": [
+              "توليد الكود",
+              "تنفيذ ميزة"
+            ]
+          }
+        },
+        {
+          "id": "debugging",
+          "label": {
+            "ar": "تصحيح الأخطاء",
+            "en": "Debugging"
+          },
+          "value": 0.9,
+          "aliases": {
+            "en": [
+              "debug an error",
+              "fix a bug"
+            ],
+            "ar": [
+              "تصحيح خطأ",
+              "إصلاح عطل"
+            ]
+          }
+        },
+        {
+          "id": "refactoring",
+          "label": {
+            "ar": "إعادة الهيكلة",
+            "en": "Refactoring"
+          },
+          "value": 0.8,
+          "aliases": {
+            "en": [
+              "refactor code",
+              "improve structure"
+            ],
+            "ar": [
+              "إعادة هيكلة الكود",
+              "تحسين البنية"
+            ]
+          }
+        },
+        {
+          "id": "repository_task",
+          "label": {
+            "ar": "مهمة مستودع",
+            "en": "Repository task"
+          },
+          "value": 0.7,
+          "aliases": {
+            "en": [
+              "work across repository",
+              "repository change"
+            ],
+            "ar": [
+              "مهمة ضمن المستودع",
+              "تعديل على المستودع"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "implementation-q5",
+      "stage": "implementation",
+      "prompt": {
+        "ar": "هل التكامل مع بيئة التطوير مطلوب؟",
+        "en": "Is IDE integration required?"
+      },
+      "type": "boolean",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "yes",
+          "label": {
+            "ar": "نعم",
+            "en": "Yes"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "no",
+          "label": {
+            "ar": "لا",
+            "en": "No"
+          },
+          "value": 0.4
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "testing-q1",
+      "stage": "testing",
+      "prompt": {
+        "ar": "ما نطاق الاختبار؟",
+        "en": "What is the testing scope?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "focused",
+          "label": {
+            "ar": "فحوص مركزة",
+            "en": "Focused checks"
+          },
+          "value": 0.7
+        },
+        {
+          "id": "end-to-end",
+          "label": {
+            "ar": "من طرف إلى طرف",
+            "en": "End-to-end"
+          },
+          "value": 1.0
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "testing-q2",
+      "stage": "testing",
+      "prompt": {
+        "ar": "ما أنواع الاختبارات المطلوبة؟",
+        "en": "Which test types are needed?"
+      },
+      "type": "multiple_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "functional",
+          "label": {
+            "ar": "وظيفية",
+            "en": "Functional"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "visual",
+          "label": {
+            "ar": "بصرية",
+            "en": "Visual"
+          },
+          "value": 0.8
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "testing-q3",
+      "stage": "testing",
+      "prompt": {
+        "ar": "أين يجب تشغيل الاختبارات؟",
+        "en": "Where should tests execute?"
+      },
+      "type": "single_choice",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "local",
+          "label": {
+            "ar": "محليًا",
+            "en": "Local"
+          },
+          "value": 0.7
+        },
+        {
+          "id": "cloud",
+          "label": {
+            "ar": "شبكة سحابية",
+            "en": "Cloud grid"
+          },
+          "value": 1.0
+        }
+      ],
+      "text_intents": []
+    },
+    {
+      "id": "testing-q4",
+      "stage": "testing",
+      "prompt": {
+        "ar": "صف العيب أو الخطر.",
+        "en": "Describe the defect or risk."
+      },
+      "type": "short_text",
+      "importance": 0.85,
+      "options": [],
+      "text_intents": [
+        {
+          "id": "test_generation",
+          "label": {
+            "ar": "توليد الاختبارات",
+            "en": "Test generation"
+          },
+          "value": 1.0,
+          "aliases": {
+            "en": [
+              "generate tests",
+              "write unit tests"
+            ],
+            "ar": [
+              "توليد اختبارات",
+              "كتابة اختبارات وحدات"
+            ]
+          }
+        },
+        {
+          "id": "visual_testing",
+          "label": {
+            "ar": "اختبار بصري",
+            "en": "Visual testing"
+          },
+          "value": 0.9,
+          "aliases": {
+            "en": [
+              "visual regression",
+              "compare screenshots"
+            ],
+            "ar": [
+              "اختبار بصري",
+              "مقارنة لقطات الشاشة"
+            ]
+          }
+        },
+        {
+          "id": "security_testing",
+          "label": {
+            "ar": "اختبار أمني",
+            "en": "Security testing"
+          },
+          "value": 0.8,
+          "aliases": {
+            "en": [
+              "scan vulnerabilities",
+              "security test"
+            ],
+            "ar": [
+              "فحص الثغرات",
+              "اختبار أمني"
+            ]
+          }
+        },
+        {
+          "id": "regression_automation",
+          "label": {
+            "ar": "أتمتة الانحدار",
+            "en": "Regression automation"
+          },
+          "value": 0.7,
+          "aliases": {
+            "en": [
+              "automate regression",
+              "ci regression suite"
+            ],
+            "ar": [
+              "أتمتة الانحدار",
+              "حزمة انحدار في التكامل المستمر"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "testing-q5",
+      "stage": "testing",
+      "prompt": {
+        "ar": "هل تكامل CI مطلوب؟",
+        "en": "Is CI integration required?"
+      },
+      "type": "boolean",
+      "importance": 0.8,
+      "options": [
+        {
+          "id": "yes",
+          "label": {
+            "ar": "نعم",
+            "en": "Yes"
+          },
+          "value": 1.0
+        },
+        {
+          "id": "no",
+          "label": {
+            "ar": "لا",
+            "en": "No"
+          },
+          "value": 0.3
+        }
+      ],
+      "text_intents": []
+    }
+  ],
+  "rules": [
+    {
+      "id": "analysis-q1-speed",
+      "question_id": "analysis-q1",
+      "answer_option_id": "speed",
+      "impacts": [
+        {
+          "tool_id": "gemini",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini لسير عمل استكشاف سريع.",
+            "en": "Official sources support Gemini for fast exploration workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-official",
+              "name": {
+                "ar": "توثيق Gemini الرسمي",
+                "en": "Gemini official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini",
+                "en": "Gemini"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://gemini.google.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "perplexity",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Perplexity لسير عمل استكشاف سريع.",
+            "en": "Official sources support Perplexity for fast exploration workflows."
+          },
+          "sources": [
+            {
+              "id": "perplexity-official",
+              "name": {
+                "ar": "توثيق Perplexity الرسمي",
+                "en": "Perplexity official documentation"
+              },
+              "publisher": {
+                "ar": "Perplexity",
+                "en": "Perplexity"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.perplexity.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "elicit",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Elicit لسير عمل استكشاف سريع.",
+            "en": "Official sources support Elicit for fast exploration workflows."
+          },
+          "sources": [
+            {
+              "id": "elicit-official",
+              "name": {
+                "ar": "توثيق Elicit الرسمي",
+                "en": "Elicit official documentation"
+              },
+              "publisher": {
+                "ar": "Elicit",
+                "en": "Elicit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://elicit.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q1-depth",
+      "question_id": "analysis-q1",
+      "answer_option_id": "depth",
+      "impacts": [
+        {
+          "tool_id": "perplexity",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Perplexity لسير عمل أدلة معمقة.",
+            "en": "Official sources support Perplexity for deep evidence workflows."
+          },
+          "sources": [
+            {
+              "id": "perplexity-official",
+              "name": {
+                "ar": "توثيق Perplexity الرسمي",
+                "en": "Perplexity official documentation"
+              },
+              "publisher": {
+                "ar": "Perplexity",
+                "en": "Perplexity"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.perplexity.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "elicit",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Elicit لسير عمل أدلة معمقة.",
+            "en": "Official sources support Elicit for deep evidence workflows."
+          },
+          "sources": [
+            {
+              "id": "elicit-official",
+              "name": {
+                "ar": "توثيق Elicit الرسمي",
+                "en": "Elicit official documentation"
+              },
+              "publisher": {
+                "ar": "Elicit",
+                "en": "Elicit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://elicit.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "consensus",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Consensus لسير عمل أدلة معمقة.",
+            "en": "Official sources support Consensus for deep evidence workflows."
+          },
+          "sources": [
+            {
+              "id": "consensus-official",
+              "name": {
+                "ar": "توثيق Consensus الرسمي",
+                "en": "Consensus official documentation"
+              },
+              "publisher": {
+                "ar": "Consensus",
+                "en": "Consensus"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://consensus.app/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q2-sources",
+      "question_id": "analysis-q2",
+      "answer_option_id": "sources",
+      "impacts": [
+        {
+          "tool_id": "elicit",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Elicit لسير عمل مصادر موثقة.",
+            "en": "Official sources support Elicit for cited sources workflows."
+          },
+          "sources": [
+            {
+              "id": "elicit-official",
+              "name": {
+                "ar": "توثيق Elicit الرسمي",
+                "en": "Elicit official documentation"
+              },
+              "publisher": {
+                "ar": "Elicit",
+                "en": "Elicit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://elicit.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "consensus",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Consensus لسير عمل مصادر موثقة.",
+            "en": "Official sources support Consensus for cited sources workflows."
+          },
+          "sources": [
+            {
+              "id": "consensus-official",
+              "name": {
+                "ar": "توثيق Consensus الرسمي",
+                "en": "Consensus official documentation"
+              },
+              "publisher": {
+                "ar": "Consensus",
+                "en": "Consensus"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://consensus.app/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "notebooklm",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام NotebookLM لسير عمل مصادر موثقة.",
+            "en": "Official sources support NotebookLM for cited sources workflows."
+          },
+          "sources": [
+            {
+              "id": "notebooklm-official",
+              "name": {
+                "ar": "توثيق NotebookLM الرسمي",
+                "en": "NotebookLM official documentation"
+              },
+              "publisher": {
+                "ar": "NotebookLM",
+                "en": "NotebookLM"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://notebooklm.google/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q2-summaries",
+      "question_id": "analysis-q2",
+      "answer_option_id": "summaries",
+      "impacts": [
+        {
+          "tool_id": "consensus",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Consensus لسير عمل ملخصات موجزة.",
+            "en": "Official sources support Consensus for concise summaries workflows."
+          },
+          "sources": [
+            {
+              "id": "consensus-official",
+              "name": {
+                "ar": "توثيق Consensus الرسمي",
+                "en": "Consensus official documentation"
+              },
+              "publisher": {
+                "ar": "Consensus",
+                "en": "Consensus"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://consensus.app/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "notebooklm",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام NotebookLM لسير عمل ملخصات موجزة.",
+            "en": "Official sources support NotebookLM for concise summaries workflows."
+          },
+          "sources": [
+            {
+              "id": "notebooklm-official",
+              "name": {
+                "ar": "توثيق NotebookLM الرسمي",
+                "en": "NotebookLM official documentation"
+              },
+              "publisher": {
+                "ar": "NotebookLM",
+                "en": "NotebookLM"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://notebooklm.google/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "scite",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Scite لسير عمل ملخصات موجزة.",
+            "en": "Official sources support Scite for concise summaries workflows."
+          },
+          "sources": [
+            {
+              "id": "scite-official",
+              "name": {
+                "ar": "توثيق Scite الرسمي",
+                "en": "Scite official documentation"
+              },
+              "publisher": {
+                "ar": "Scite",
+                "en": "Scite"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://scite.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q3-cloud",
+      "question_id": "analysis-q3",
+      "answer_option_id": "cloud",
+      "impacts": [
+        {
+          "tool_id": "notebooklm",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام NotebookLM لسير عمل سحابة مُدارة.",
+            "en": "Official sources support NotebookLM for managed cloud workflows."
+          },
+          "sources": [
+            {
+              "id": "notebooklm-official",
+              "name": {
+                "ar": "توثيق NotebookLM الرسمي",
+                "en": "NotebookLM official documentation"
+              },
+              "publisher": {
+                "ar": "NotebookLM",
+                "en": "NotebookLM"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://notebooklm.google/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "scite",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Scite لسير عمل سحابة مُدارة.",
+            "en": "Official sources support Scite for managed cloud workflows."
+          },
+          "sources": [
+            {
+              "id": "scite-official",
+              "name": {
+                "ar": "توثيق Scite الرسمي",
+                "en": "Scite official documentation"
+              },
+              "publisher": {
+                "ar": "Scite",
+                "en": "Scite"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://scite.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "researchrabbit",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ResearchRabbit لسير عمل سحابة مُدارة.",
+            "en": "Official sources support ResearchRabbit for managed cloud workflows."
+          },
+          "sources": [
+            {
+              "id": "researchrabbit-official",
+              "name": {
+                "ar": "توثيق ResearchRabbit الرسمي",
+                "en": "ResearchRabbit official documentation"
+              },
+              "publisher": {
+                "ar": "ResearchRabbit",
+                "en": "ResearchRabbit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.researchrabbit.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q3-grounded",
+      "question_id": "analysis-q3",
+      "answer_option_id": "grounded",
+      "impacts": [
+        {
+          "tool_id": "scite",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Scite لسير عمل مساحة عمل مقيدة بالمصادر.",
+            "en": "Official sources support Scite for grounded workspace workflows."
+          },
+          "sources": [
+            {
+              "id": "scite-official",
+              "name": {
+                "ar": "توثيق Scite الرسمي",
+                "en": "Scite official documentation"
+              },
+              "publisher": {
+                "ar": "Scite",
+                "en": "Scite"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://scite.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "researchrabbit",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ResearchRabbit لسير عمل مساحة عمل مقيدة بالمصادر.",
+            "en": "Official sources support ResearchRabbit for grounded workspace workflows."
+          },
+          "sources": [
+            {
+              "id": "researchrabbit-official",
+              "name": {
+                "ar": "توثيق ResearchRabbit الرسمي",
+                "en": "ResearchRabbit official documentation"
+              },
+              "publisher": {
+                "ar": "ResearchRabbit",
+                "en": "ResearchRabbit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.researchrabbit.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "semantic-scholar",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Semantic Scholar لسير عمل مساحة عمل مقيدة بالمصادر.",
+            "en": "Official sources support Semantic Scholar for grounded workspace workflows."
+          },
+          "sources": [
+            {
+              "id": "semantic-scholar-official",
+              "name": {
+                "ar": "توثيق Semantic Scholar الرسمي",
+                "en": "Semantic Scholar official documentation"
+              },
+              "publisher": {
+                "ar": "Semantic Scholar",
+                "en": "Semantic Scholar"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.semanticscholar.org/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q4-evidence_synthesis",
+      "question_id": "analysis-q4",
+      "answer_option_id": "evidence_synthesis",
+      "impacts": [
+        {
+          "tool_id": "researchrabbit",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ResearchRabbit لسير عمل توليف الأدلة.",
+            "en": "Official sources support ResearchRabbit for evidence synthesis workflows."
+          },
+          "sources": [
+            {
+              "id": "researchrabbit-official",
+              "name": {
+                "ar": "توثيق ResearchRabbit الرسمي",
+                "en": "ResearchRabbit official documentation"
+              },
+              "publisher": {
+                "ar": "ResearchRabbit",
+                "en": "ResearchRabbit"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.researchrabbit.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "semantic-scholar",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Semantic Scholar لسير عمل توليف الأدلة.",
+            "en": "Official sources support Semantic Scholar for evidence synthesis workflows."
+          },
+          "sources": [
+            {
+              "id": "semantic-scholar-official",
+              "name": {
+                "ar": "توثيق Semantic Scholar الرسمي",
+                "en": "Semantic Scholar official documentation"
+              },
+              "publisher": {
+                "ar": "Semantic Scholar",
+                "en": "Semantic Scholar"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.semanticscholar.org/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "chatgpt",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ChatGPT لسير عمل توليف الأدلة.",
+            "en": "Official sources support ChatGPT for evidence synthesis workflows."
+          },
+          "sources": [
+            {
+              "id": "chatgpt-official",
+              "name": {
+                "ar": "توثيق ChatGPT الرسمي",
+                "en": "ChatGPT official documentation"
+              },
+              "publisher": {
+                "ar": "ChatGPT",
+                "en": "ChatGPT"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://openai.com/chatgpt/overview/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q4-literature_discovery",
+      "question_id": "analysis-q4",
+      "answer_option_id": "literature_discovery",
+      "impacts": [
+        {
+          "tool_id": "semantic-scholar",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Semantic Scholar لسير عمل اكتشاف الأدبيات.",
+            "en": "Official sources support Semantic Scholar for literature discovery workflows."
+          },
+          "sources": [
+            {
+              "id": "semantic-scholar-official",
+              "name": {
+                "ar": "توثيق Semantic Scholar الرسمي",
+                "en": "Semantic Scholar official documentation"
+              },
+              "publisher": {
+                "ar": "Semantic Scholar",
+                "en": "Semantic Scholar"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.semanticscholar.org/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "chatgpt",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ChatGPT لسير عمل اكتشاف الأدبيات.",
+            "en": "Official sources support ChatGPT for literature discovery workflows."
+          },
+          "sources": [
+            {
+              "id": "chatgpt-official",
+              "name": {
+                "ar": "توثيق ChatGPT الرسمي",
+                "en": "ChatGPT official documentation"
+              },
+              "publisher": {
+                "ar": "ChatGPT",
+                "en": "ChatGPT"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://openai.com/chatgpt/overview/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude لسير عمل اكتشاف الأدبيات.",
+            "en": "Official sources support Claude for literature discovery workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-official",
+              "name": {
+                "ar": "توثيق Claude الرسمي",
+                "en": "Claude official documentation"
+              },
+              "publisher": {
+                "ar": "Claude",
+                "en": "Claude"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q4-citation_validation",
+      "question_id": "analysis-q4",
+      "answer_option_id": "citation_validation",
+      "impacts": [
+        {
+          "tool_id": "chatgpt",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ChatGPT لسير عمل التحقق من الاستشهادات.",
+            "en": "Official sources support ChatGPT for citation validation workflows."
+          },
+          "sources": [
+            {
+              "id": "chatgpt-official",
+              "name": {
+                "ar": "توثيق ChatGPT الرسمي",
+                "en": "ChatGPT official documentation"
+              },
+              "publisher": {
+                "ar": "ChatGPT",
+                "en": "ChatGPT"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://openai.com/chatgpt/overview/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude لسير عمل التحقق من الاستشهادات.",
+            "en": "Official sources support Claude for citation validation workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-official",
+              "name": {
+                "ar": "توثيق Claude الرسمي",
+                "en": "Claude official documentation"
+              },
+              "publisher": {
+                "ar": "Claude",
+                "en": "Claude"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini لسير عمل التحقق من الاستشهادات.",
+            "en": "Official sources support Gemini for citation validation workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-official",
+              "name": {
+                "ar": "توثيق Gemini الرسمي",
+                "en": "Gemini official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini",
+                "en": "Gemini"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://gemini.google.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q4-document_grounded_review",
+      "question_id": "analysis-q4",
+      "answer_option_id": "document_grounded_review",
+      "impacts": [
+        {
+          "tool_id": "claude",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude لسير عمل مراجعة مقيدة بالمستندات.",
+            "en": "Official sources support Claude for document-grounded review workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-official",
+              "name": {
+                "ar": "توثيق Claude الرسمي",
+                "en": "Claude official documentation"
+              },
+              "publisher": {
+                "ar": "Claude",
+                "en": "Claude"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini لسير عمل مراجعة مقيدة بالمستندات.",
+            "en": "Official sources support Gemini for document-grounded review workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-official",
+              "name": {
+                "ar": "توثيق Gemini الرسمي",
+                "en": "Gemini official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini",
+                "en": "Gemini"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://gemini.google.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "perplexity",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Perplexity لسير عمل مراجعة مقيدة بالمستندات.",
+            "en": "Official sources support Perplexity for document-grounded review workflows."
+          },
+          "sources": [
+            {
+              "id": "perplexity-official",
+              "name": {
+                "ar": "توثيق Perplexity الرسمي",
+                "en": "Perplexity official documentation"
+              },
+              "publisher": {
+                "ar": "Perplexity",
+                "en": "Perplexity"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.perplexity.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q5-yes",
+      "question_id": "analysis-q5",
+      "answer_option_id": "yes",
+      "impacts": [
+        {
+          "tool_id": "chatgpt",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام ChatGPT لسير عمل نعم.",
+            "en": "Official sources support ChatGPT for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "chatgpt-official",
+              "name": {
+                "ar": "توثيق ChatGPT الرسمي",
+                "en": "ChatGPT official documentation"
+              },
+              "publisher": {
+                "ar": "ChatGPT",
+                "en": "ChatGPT"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://openai.com/chatgpt/overview/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude لسير عمل نعم.",
+            "en": "Official sources support Claude for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-official",
+              "name": {
+                "ar": "توثيق Claude الرسمي",
+                "en": "Claude official documentation"
+              },
+              "publisher": {
+                "ar": "Claude",
+                "en": "Claude"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini لسير عمل نعم.",
+            "en": "Official sources support Gemini for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-official",
+              "name": {
+                "ar": "توثيق Gemini الرسمي",
+                "en": "Gemini official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini",
+                "en": "Gemini"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://gemini.google.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-q5-no",
+      "question_id": "analysis-q5",
+      "answer_option_id": "no",
+      "impacts": [
+        {
+          "tool_id": "claude",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude لسير عمل لا.",
+            "en": "Official sources support Claude for no workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-official",
+              "name": {
+                "ar": "توثيق Claude الرسمي",
+                "en": "Claude official documentation"
+              },
+              "publisher": {
+                "ar": "Claude",
+                "en": "Claude"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini لسير عمل لا.",
+            "en": "Official sources support Gemini for no workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-official",
+              "name": {
+                "ar": "توثيق Gemini الرسمي",
+                "en": "Gemini official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini",
+                "en": "Gemini"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://gemini.google.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "perplexity",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Perplexity لسير عمل لا.",
+            "en": "Official sources support Perplexity for no workflows."
+          },
+          "sources": [
+            {
+              "id": "perplexity-official",
+              "name": {
+                "ar": "توثيق Perplexity الرسمي",
+                "en": "Perplexity official documentation"
+              },
+              "publisher": {
+                "ar": "Perplexity",
+                "en": "Perplexity"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.perplexity.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q1-visual",
+      "question_id": "design-q1",
+      "answer_option_id": "visual",
+      "impacts": [
+        {
+          "tool_id": "figma-ai",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Figma AI لسير عمل أصل بصري.",
+            "en": "Official sources support Figma AI for visual asset workflows."
+          },
+          "sources": [
+            {
+              "id": "figma-ai-official",
+              "name": {
+                "ar": "توثيق Figma AI الرسمي",
+                "en": "Figma AI official documentation"
+              },
+              "publisher": {
+                "ar": "Figma AI",
+                "en": "Figma AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.figma.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "midjourney",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Midjourney لسير عمل أصل بصري.",
+            "en": "Official sources support Midjourney for visual asset workflows."
+          },
+          "sources": [
+            {
+              "id": "midjourney-official",
+              "name": {
+                "ar": "توثيق Midjourney الرسمي",
+                "en": "Midjourney official documentation"
+              },
+              "publisher": {
+                "ar": "Midjourney",
+                "en": "Midjourney"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.midjourney.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-image-generation",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Image Generation لسير عمل أصل بصري.",
+            "en": "Official sources support OpenAI Image Generation for visual asset workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-image-generation-official",
+              "name": {
+                "ar": "توثيق OpenAI Image Generation الرسمي",
+                "en": "OpenAI Image Generation official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Image Generation",
+                "en": "OpenAI Image Generation"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://platform.openai.com/docs/guides/image-generation",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q1-interface",
+      "question_id": "design-q1",
+      "answer_option_id": "interface",
+      "impacts": [
+        {
+          "tool_id": "midjourney",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Midjourney لسير عمل تصور واجهة.",
+            "en": "Official sources support Midjourney for interface concept workflows."
+          },
+          "sources": [
+            {
+              "id": "midjourney-official",
+              "name": {
+                "ar": "توثيق Midjourney الرسمي",
+                "en": "Midjourney official documentation"
+              },
+              "publisher": {
+                "ar": "Midjourney",
+                "en": "Midjourney"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.midjourney.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-image-generation",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Image Generation لسير عمل تصور واجهة.",
+            "en": "Official sources support OpenAI Image Generation for interface concept workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-image-generation-official",
+              "name": {
+                "ar": "توثيق OpenAI Image Generation الرسمي",
+                "en": "OpenAI Image Generation official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Image Generation",
+                "en": "OpenAI Image Generation"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://platform.openai.com/docs/guides/image-generation",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "stable-diffusion",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Stable Diffusion لسير عمل تصور واجهة.",
+            "en": "Official sources support Stable Diffusion for interface concept workflows."
+          },
+          "sources": [
+            {
+              "id": "stable-diffusion-official",
+              "name": {
+                "ar": "توثيق Stable Diffusion الرسمي",
+                "en": "Stable Diffusion official documentation"
+              },
+              "publisher": {
+                "ar": "Stable Diffusion",
+                "en": "Stable Diffusion"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://github.com/Stability-AI/stablediffusion",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q2-brand",
+      "question_id": "design-q2",
+      "answer_option_id": "brand",
+      "impacts": [
+        {
+          "tool_id": "openai-image-generation",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Image Generation لسير عمل اتساق الهوية.",
+            "en": "Official sources support OpenAI Image Generation for brand consistency workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-image-generation-official",
+              "name": {
+                "ar": "توثيق OpenAI Image Generation الرسمي",
+                "en": "OpenAI Image Generation official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Image Generation",
+                "en": "OpenAI Image Generation"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://platform.openai.com/docs/guides/image-generation",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "stable-diffusion",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Stable Diffusion لسير عمل اتساق الهوية.",
+            "en": "Official sources support Stable Diffusion for brand consistency workflows."
+          },
+          "sources": [
+            {
+              "id": "stable-diffusion-official",
+              "name": {
+                "ar": "توثيق Stable Diffusion الرسمي",
+                "en": "Stable Diffusion official documentation"
+              },
+              "publisher": {
+                "ar": "Stable Diffusion",
+                "en": "Stable Diffusion"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://github.com/Stability-AI/stablediffusion",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "uizard",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Uizard لسير عمل اتساق الهوية.",
+            "en": "Official sources support Uizard for brand consistency workflows."
+          },
+          "sources": [
+            {
+              "id": "uizard-official",
+              "name": {
+                "ar": "توثيق Uizard الرسمي",
+                "en": "Uizard official documentation"
+              },
+              "publisher": {
+                "ar": "Uizard",
+                "en": "Uizard"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://uizard.io/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q2-iteration",
+      "question_id": "design-q2",
+      "answer_option_id": "iteration",
+      "impacts": [
+        {
+          "tool_id": "stable-diffusion",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Stable Diffusion لسير عمل تكرار سريع.",
+            "en": "Official sources support Stable Diffusion for rapid iteration workflows."
+          },
+          "sources": [
+            {
+              "id": "stable-diffusion-official",
+              "name": {
+                "ar": "توثيق Stable Diffusion الرسمي",
+                "en": "Stable Diffusion official documentation"
+              },
+              "publisher": {
+                "ar": "Stable Diffusion",
+                "en": "Stable Diffusion"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://github.com/Stability-AI/stablediffusion",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "uizard",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Uizard لسير عمل تكرار سريع.",
+            "en": "Official sources support Uizard for rapid iteration workflows."
+          },
+          "sources": [
+            {
+              "id": "uizard-official",
+              "name": {
+                "ar": "توثيق Uizard الرسمي",
+                "en": "Uizard official documentation"
+              },
+              "publisher": {
+                "ar": "Uizard",
+                "en": "Uizard"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://uizard.io/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "framer-ai",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Framer AI لسير عمل تكرار سريع.",
+            "en": "Official sources support Framer AI for rapid iteration workflows."
+          },
+          "sources": [
+            {
+              "id": "framer-ai-official",
+              "name": {
+                "ar": "توثيق Framer AI الرسمي",
+                "en": "Framer AI official documentation"
+              },
+              "publisher": {
+                "ar": "Framer AI",
+                "en": "Framer AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.framer.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q3-live",
+      "question_id": "design-q3",
+      "answer_option_id": "live",
+      "impacts": [
+        {
+          "tool_id": "uizard",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Uizard لسير عمل تعاون مباشر.",
+            "en": "Official sources support Uizard for live collaboration workflows."
+          },
+          "sources": [
+            {
+              "id": "uizard-official",
+              "name": {
+                "ar": "توثيق Uizard الرسمي",
+                "en": "Uizard official documentation"
+              },
+              "publisher": {
+                "ar": "Uizard",
+                "en": "Uizard"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://uizard.io/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "framer-ai",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Framer AI لسير عمل تعاون مباشر.",
+            "en": "Official sources support Framer AI for live collaboration workflows."
+          },
+          "sources": [
+            {
+              "id": "framer-ai-official",
+              "name": {
+                "ar": "توثيق Framer AI الرسمي",
+                "en": "Framer AI official documentation"
+              },
+              "publisher": {
+                "ar": "Framer AI",
+                "en": "Framer AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.framer.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "whimsical-ai",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Whimsical AI لسير عمل تعاون مباشر.",
+            "en": "Official sources support Whimsical AI for live collaboration workflows."
+          },
+          "sources": [
+            {
+              "id": "whimsical-ai-official",
+              "name": {
+                "ar": "توثيق Whimsical AI الرسمي",
+                "en": "Whimsical AI official documentation"
+              },
+              "publisher": {
+                "ar": "Whimsical AI",
+                "en": "Whimsical AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://whimsical.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q3-handoff",
+      "question_id": "design-q3",
+      "answer_option_id": "handoff",
+      "impacts": [
+        {
+          "tool_id": "framer-ai",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Framer AI لسير عمل تصدير وتسليم.",
+            "en": "Official sources support Framer AI for export and handoff workflows."
+          },
+          "sources": [
+            {
+              "id": "framer-ai-official",
+              "name": {
+                "ar": "توثيق Framer AI الرسمي",
+                "en": "Framer AI official documentation"
+              },
+              "publisher": {
+                "ar": "Framer AI",
+                "en": "Framer AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.framer.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "whimsical-ai",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Whimsical AI لسير عمل تصدير وتسليم.",
+            "en": "Official sources support Whimsical AI for export and handoff workflows."
+          },
+          "sources": [
+            {
+              "id": "whimsical-ai-official",
+              "name": {
+                "ar": "توثيق Whimsical AI الرسمي",
+                "en": "Whimsical AI official documentation"
+              },
+              "publisher": {
+                "ar": "Whimsical AI",
+                "en": "Whimsical AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://whimsical.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "leonardo-ai",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Leonardo AI لسير عمل تصدير وتسليم.",
+            "en": "Official sources support Leonardo AI for export and handoff workflows."
+          },
+          "sources": [
+            {
+              "id": "leonardo-ai-official",
+              "name": {
+                "ar": "توثيق Leonardo AI الرسمي",
+                "en": "Leonardo AI official documentation"
+              },
+              "publisher": {
+                "ar": "Leonardo AI",
+                "en": "Leonardo AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://leonardo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q4-image_generation",
+      "question_id": "design-q4",
+      "answer_option_id": "image_generation",
+      "impacts": [
+        {
+          "tool_id": "whimsical-ai",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Whimsical AI لسير عمل توليد الصور.",
+            "en": "Official sources support Whimsical AI for image generation workflows."
+          },
+          "sources": [
+            {
+              "id": "whimsical-ai-official",
+              "name": {
+                "ar": "توثيق Whimsical AI الرسمي",
+                "en": "Whimsical AI official documentation"
+              },
+              "publisher": {
+                "ar": "Whimsical AI",
+                "en": "Whimsical AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://whimsical.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "leonardo-ai",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Leonardo AI لسير عمل توليد الصور.",
+            "en": "Official sources support Leonardo AI for image generation workflows."
+          },
+          "sources": [
+            {
+              "id": "leonardo-ai-official",
+              "name": {
+                "ar": "توثيق Leonardo AI الرسمي",
+                "en": "Leonardo AI official documentation"
+              },
+              "publisher": {
+                "ar": "Leonardo AI",
+                "en": "Leonardo AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://leonardo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "canva-magic-studio",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Canva Magic Studio لسير عمل توليد الصور.",
+            "en": "Official sources support Canva Magic Studio for image generation workflows."
+          },
+          "sources": [
+            {
+              "id": "canva-magic-studio-official",
+              "name": {
+                "ar": "توثيق Canva Magic Studio الرسمي",
+                "en": "Canva Magic Studio official documentation"
+              },
+              "publisher": {
+                "ar": "Canva Magic Studio",
+                "en": "Canva Magic Studio"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.canva.com/magic-studio/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q4-ui_prototyping",
+      "question_id": "design-q4",
+      "answer_option_id": "ui_prototyping",
+      "impacts": [
+        {
+          "tool_id": "leonardo-ai",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Leonardo AI لسير عمل نمذجة واجهة.",
+            "en": "Official sources support Leonardo AI for ui prototyping workflows."
+          },
+          "sources": [
+            {
+              "id": "leonardo-ai-official",
+              "name": {
+                "ar": "توثيق Leonardo AI الرسمي",
+                "en": "Leonardo AI official documentation"
+              },
+              "publisher": {
+                "ar": "Leonardo AI",
+                "en": "Leonardo AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://leonardo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "canva-magic-studio",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Canva Magic Studio لسير عمل نمذجة واجهة.",
+            "en": "Official sources support Canva Magic Studio for ui prototyping workflows."
+          },
+          "sources": [
+            {
+              "id": "canva-magic-studio-official",
+              "name": {
+                "ar": "توثيق Canva Magic Studio الرسمي",
+                "en": "Canva Magic Studio official documentation"
+              },
+              "publisher": {
+                "ar": "Canva Magic Studio",
+                "en": "Canva Magic Studio"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.canva.com/magic-studio/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "adobe-firefly",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Adobe Firefly لسير عمل نمذجة واجهة.",
+            "en": "Official sources support Adobe Firefly for ui prototyping workflows."
+          },
+          "sources": [
+            {
+              "id": "adobe-firefly-official",
+              "name": {
+                "ar": "توثيق Adobe Firefly الرسمي",
+                "en": "Adobe Firefly official documentation"
+              },
+              "publisher": {
+                "ar": "Adobe Firefly",
+                "en": "Adobe Firefly"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.adobe.com/products/firefly.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q4-brand_asset",
+      "question_id": "design-q4",
+      "answer_option_id": "brand_asset",
+      "impacts": [
+        {
+          "tool_id": "canva-magic-studio",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Canva Magic Studio لسير عمل أصل للهوية.",
+            "en": "Official sources support Canva Magic Studio for brand asset workflows."
+          },
+          "sources": [
+            {
+              "id": "canva-magic-studio-official",
+              "name": {
+                "ar": "توثيق Canva Magic Studio الرسمي",
+                "en": "Canva Magic Studio official documentation"
+              },
+              "publisher": {
+                "ar": "Canva Magic Studio",
+                "en": "Canva Magic Studio"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.canva.com/magic-studio/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "adobe-firefly",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Adobe Firefly لسير عمل أصل للهوية.",
+            "en": "Official sources support Adobe Firefly for brand asset workflows."
+          },
+          "sources": [
+            {
+              "id": "adobe-firefly-official",
+              "name": {
+                "ar": "توثيق Adobe Firefly الرسمي",
+                "en": "Adobe Firefly official documentation"
+              },
+              "publisher": {
+                "ar": "Adobe Firefly",
+                "en": "Adobe Firefly"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.adobe.com/products/firefly.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "figma-ai",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Figma AI لسير عمل أصل للهوية.",
+            "en": "Official sources support Figma AI for brand asset workflows."
+          },
+          "sources": [
+            {
+              "id": "figma-ai-official",
+              "name": {
+                "ar": "توثيق Figma AI الرسمي",
+                "en": "Figma AI official documentation"
+              },
+              "publisher": {
+                "ar": "Figma AI",
+                "en": "Figma AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.figma.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q4-diagramming",
+      "question_id": "design-q4",
+      "answer_option_id": "diagramming",
+      "impacts": [
+        {
+          "tool_id": "adobe-firefly",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Adobe Firefly لسير عمل إنشاء مخطط.",
+            "en": "Official sources support Adobe Firefly for diagramming workflows."
+          },
+          "sources": [
+            {
+              "id": "adobe-firefly-official",
+              "name": {
+                "ar": "توثيق Adobe Firefly الرسمي",
+                "en": "Adobe Firefly official documentation"
+              },
+              "publisher": {
+                "ar": "Adobe Firefly",
+                "en": "Adobe Firefly"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.adobe.com/products/firefly.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "figma-ai",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Figma AI لسير عمل إنشاء مخطط.",
+            "en": "Official sources support Figma AI for diagramming workflows."
+          },
+          "sources": [
+            {
+              "id": "figma-ai-official",
+              "name": {
+                "ar": "توثيق Figma AI الرسمي",
+                "en": "Figma AI official documentation"
+              },
+              "publisher": {
+                "ar": "Figma AI",
+                "en": "Figma AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.figma.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "midjourney",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Midjourney لسير عمل إنشاء مخطط.",
+            "en": "Official sources support Midjourney for diagramming workflows."
+          },
+          "sources": [
+            {
+              "id": "midjourney-official",
+              "name": {
+                "ar": "توثيق Midjourney الرسمي",
+                "en": "Midjourney official documentation"
+              },
+              "publisher": {
+                "ar": "Midjourney",
+                "en": "Midjourney"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.midjourney.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q5-yes",
+      "question_id": "design-q5",
+      "answer_option_id": "yes",
+      "impacts": [
+        {
+          "tool_id": "canva-magic-studio",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Canva Magic Studio لسير عمل نعم.",
+            "en": "Official sources support Canva Magic Studio for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "canva-magic-studio-official",
+              "name": {
+                "ar": "توثيق Canva Magic Studio الرسمي",
+                "en": "Canva Magic Studio official documentation"
+              },
+              "publisher": {
+                "ar": "Canva Magic Studio",
+                "en": "Canva Magic Studio"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.canva.com/magic-studio/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "adobe-firefly",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Adobe Firefly لسير عمل نعم.",
+            "en": "Official sources support Adobe Firefly for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "adobe-firefly-official",
+              "name": {
+                "ar": "توثيق Adobe Firefly الرسمي",
+                "en": "Adobe Firefly official documentation"
+              },
+              "publisher": {
+                "ar": "Adobe Firefly",
+                "en": "Adobe Firefly"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.adobe.com/products/firefly.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "figma-ai",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Figma AI لسير عمل نعم.",
+            "en": "Official sources support Figma AI for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "figma-ai-official",
+              "name": {
+                "ar": "توثيق Figma AI الرسمي",
+                "en": "Figma AI official documentation"
+              },
+              "publisher": {
+                "ar": "Figma AI",
+                "en": "Figma AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.figma.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-q5-no",
+      "question_id": "design-q5",
+      "answer_option_id": "no",
+      "impacts": [
+        {
+          "tool_id": "adobe-firefly",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Adobe Firefly لسير عمل لا.",
+            "en": "Official sources support Adobe Firefly for no workflows."
+          },
+          "sources": [
+            {
+              "id": "adobe-firefly-official",
+              "name": {
+                "ar": "توثيق Adobe Firefly الرسمي",
+                "en": "Adobe Firefly official documentation"
+              },
+              "publisher": {
+                "ar": "Adobe Firefly",
+                "en": "Adobe Firefly"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.adobe.com/products/firefly.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "figma-ai",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Figma AI لسير عمل لا.",
+            "en": "Official sources support Figma AI for no workflows."
+          },
+          "sources": [
+            {
+              "id": "figma-ai-official",
+              "name": {
+                "ar": "توثيق Figma AI الرسمي",
+                "en": "Figma AI official documentation"
+              },
+              "publisher": {
+                "ar": "Figma AI",
+                "en": "Figma AI"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.figma.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "midjourney",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Midjourney لسير عمل لا.",
+            "en": "Official sources support Midjourney for no workflows."
+          },
+          "sources": [
+            {
+              "id": "midjourney-official",
+              "name": {
+                "ar": "توثيق Midjourney الرسمي",
+                "en": "Midjourney official documentation"
+              },
+              "publisher": {
+                "ar": "Midjourney",
+                "en": "Midjourney"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.midjourney.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q1-ide",
+      "question_id": "implementation-q1",
+      "answer_option_id": "ide",
+      "impacts": [
+        {
+          "tool_id": "windsurf",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Windsurf لسير عمل بيئة تطوير.",
+            "en": "Official sources support Windsurf for ide workflows."
+          },
+          "sources": [
+            {
+              "id": "windsurf-official",
+              "name": {
+                "ar": "توثيق Windsurf الرسمي",
+                "en": "Windsurf official documentation"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.windsurf.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "windsurf-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Windsurf",
+                "en": "Windsurf secondary official source"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "official_repository",
+              "url": "https://windsurf.com/editor",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل بيئة تطوير.",
+            "en": "Official sources support Claude Code for ide workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-codex",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل بيئة تطوير.",
+            "en": "Official sources support OpenAI Codex for ide workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q1-terminal",
+      "question_id": "implementation-q1",
+      "answer_option_id": "terminal",
+      "impacts": [
+        {
+          "tool_id": "claude-code",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل طرفية.",
+            "en": "Official sources support Claude Code for terminal workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-codex",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل طرفية.",
+            "en": "Official sources support OpenAI Codex for terminal workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "amazon-q-developer",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Amazon Q Developer لسير عمل طرفية.",
+            "en": "Official sources support Amazon Q Developer for terminal workflows."
+          },
+          "sources": [
+            {
+              "id": "amazon-q-developer-official",
+              "name": {
+                "ar": "توثيق Amazon Q Developer الرسمي",
+                "en": "Amazon Q Developer official documentation"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "amazon-q-developer-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Amazon Q Developer",
+                "en": "Amazon Q Developer secondary official source"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "official_repository",
+              "url": "https://aws.amazon.com/q/developer/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q2-broad",
+      "question_id": "implementation-q2",
+      "answer_option_id": "broad",
+      "impacts": [
+        {
+          "tool_id": "openai-codex",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل دعم لغات واسع.",
+            "en": "Official sources support OpenAI Codex for broad language support workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "amazon-q-developer",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Amazon Q Developer لسير عمل دعم لغات واسع.",
+            "en": "Official sources support Amazon Q Developer for broad language support workflows."
+          },
+          "sources": [
+            {
+              "id": "amazon-q-developer-official",
+              "name": {
+                "ar": "توثيق Amazon Q Developer الرسمي",
+                "en": "Amazon Q Developer official documentation"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "amazon-q-developer-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Amazon Q Developer",
+                "en": "Amazon Q Developer secondary official source"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "official_repository",
+              "url": "https://aws.amazon.com/q/developer/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini-code-assist",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini Code Assist لسير عمل دعم لغات واسع.",
+            "en": "Official sources support Gemini Code Assist for broad language support workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-code-assist-official",
+              "name": {
+                "ar": "توثيق Gemini Code Assist الرسمي",
+                "en": "Gemini Code Assist official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.google.com/gemini-code-assist/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "gemini-code-assist-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Gemini Code Assist",
+                "en": "Gemini Code Assist secondary official source"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "official_repository",
+              "url": "https://cloud.google.com/products/gemini/code-assist",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q2-focused",
+      "question_id": "implementation-q2",
+      "answer_option_id": "focused",
+      "impacts": [
+        {
+          "tool_id": "amazon-q-developer",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Amazon Q Developer لسير عمل حزمة محددة.",
+            "en": "Official sources support Amazon Q Developer for focused stack workflows."
+          },
+          "sources": [
+            {
+              "id": "amazon-q-developer-official",
+              "name": {
+                "ar": "توثيق Amazon Q Developer الرسمي",
+                "en": "Amazon Q Developer official documentation"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "amazon-q-developer-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Amazon Q Developer",
+                "en": "Amazon Q Developer secondary official source"
+              },
+              "publisher": {
+                "ar": "Amazon Q Developer",
+                "en": "Amazon Q Developer"
+              },
+              "kind": "official_repository",
+              "url": "https://aws.amazon.com/q/developer/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "gemini-code-assist",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini Code Assist لسير عمل حزمة محددة.",
+            "en": "Official sources support Gemini Code Assist for focused stack workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-code-assist-official",
+              "name": {
+                "ar": "توثيق Gemini Code Assist الرسمي",
+                "en": "Gemini Code Assist official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.google.com/gemini-code-assist/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "gemini-code-assist-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Gemini Code Assist",
+                "en": "Gemini Code Assist secondary official source"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "official_repository",
+              "url": "https://cloud.google.com/products/gemini/code-assist",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "jetbrains-ai-assistant",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام JetBrains AI Assistant لسير عمل حزمة محددة.",
+            "en": "Official sources support JetBrains AI Assistant for focused stack workflows."
+          },
+          "sources": [
+            {
+              "id": "jetbrains-ai-assistant-official",
+              "name": {
+                "ar": "توثيق JetBrains AI Assistant الرسمي",
+                "en": "JetBrains AI Assistant official documentation"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.jetbrains.com/help/ai-assistant/about-ai-assistant.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "jetbrains-ai-assistant-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant secondary official source"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "official_repository",
+              "url": "https://www.jetbrains.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q3-private",
+      "question_id": "implementation-q3",
+      "answer_option_id": "private",
+      "impacts": [
+        {
+          "tool_id": "gemini-code-assist",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Gemini Code Assist لسير عمل مستودع خاص.",
+            "en": "Official sources support Gemini Code Assist for private repository workflows."
+          },
+          "sources": [
+            {
+              "id": "gemini-code-assist-official",
+              "name": {
+                "ar": "توثيق Gemini Code Assist الرسمي",
+                "en": "Gemini Code Assist official documentation"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.google.com/gemini-code-assist/docs/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "gemini-code-assist-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Gemini Code Assist",
+                "en": "Gemini Code Assist secondary official source"
+              },
+              "publisher": {
+                "ar": "Gemini Code Assist",
+                "en": "Gemini Code Assist"
+              },
+              "kind": "official_repository",
+              "url": "https://cloud.google.com/products/gemini/code-assist",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "jetbrains-ai-assistant",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام JetBrains AI Assistant لسير عمل مستودع خاص.",
+            "en": "Official sources support JetBrains AI Assistant for private repository workflows."
+          },
+          "sources": [
+            {
+              "id": "jetbrains-ai-assistant-official",
+              "name": {
+                "ar": "توثيق JetBrains AI Assistant الرسمي",
+                "en": "JetBrains AI Assistant official documentation"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.jetbrains.com/help/ai-assistant/about-ai-assistant.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "jetbrains-ai-assistant-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant secondary official source"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "official_repository",
+              "url": "https://www.jetbrains.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "replit-agent",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Replit Agent لسير عمل مستودع خاص.",
+            "en": "Official sources support Replit Agent for private repository workflows."
+          },
+          "sources": [
+            {
+              "id": "replit-agent-official",
+              "name": {
+                "ar": "توثيق Replit Agent الرسمي",
+                "en": "Replit Agent official documentation"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.replit.com/replitai/agent",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "replit-agent-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Replit Agent",
+                "en": "Replit Agent secondary official source"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "official_repository",
+              "url": "https://replit.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q3-public",
+      "question_id": "implementation-q3",
+      "answer_option_id": "public",
+      "impacts": [
+        {
+          "tool_id": "jetbrains-ai-assistant",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام JetBrains AI Assistant لسير عمل مستودع عام.",
+            "en": "Official sources support JetBrains AI Assistant for public repository workflows."
+          },
+          "sources": [
+            {
+              "id": "jetbrains-ai-assistant-official",
+              "name": {
+                "ar": "توثيق JetBrains AI Assistant الرسمي",
+                "en": "JetBrains AI Assistant official documentation"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://www.jetbrains.com/help/ai-assistant/about-ai-assistant.html",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "jetbrains-ai-assistant-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant secondary official source"
+              },
+              "publisher": {
+                "ar": "JetBrains AI Assistant",
+                "en": "JetBrains AI Assistant"
+              },
+              "kind": "official_repository",
+              "url": "https://www.jetbrains.com/ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "replit-agent",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Replit Agent لسير عمل مستودع عام.",
+            "en": "Official sources support Replit Agent for public repository workflows."
+          },
+          "sources": [
+            {
+              "id": "replit-agent-official",
+              "name": {
+                "ar": "توثيق Replit Agent الرسمي",
+                "en": "Replit Agent official documentation"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.replit.com/replitai/agent",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "replit-agent-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Replit Agent",
+                "en": "Replit Agent secondary official source"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "official_repository",
+              "url": "https://replit.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "qodo",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل مستودع عام.",
+            "en": "Official sources support Qodo for public repository workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q4-code_generation",
+      "question_id": "implementation-q4",
+      "answer_option_id": "code_generation",
+      "impacts": [
+        {
+          "tool_id": "replit-agent",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Replit Agent لسير عمل توليد الكود.",
+            "en": "Official sources support Replit Agent for code generation workflows."
+          },
+          "sources": [
+            {
+              "id": "replit-agent-official",
+              "name": {
+                "ar": "توثيق Replit Agent الرسمي",
+                "en": "Replit Agent official documentation"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.replit.com/replitai/agent",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "replit-agent-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Replit Agent",
+                "en": "Replit Agent secondary official source"
+              },
+              "publisher": {
+                "ar": "Replit Agent",
+                "en": "Replit Agent"
+              },
+              "kind": "official_repository",
+              "url": "https://replit.com/ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "qodo",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل توليد الكود.",
+            "en": "Official sources support Qodo for code generation workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "github-copilot",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل توليد الكود.",
+            "en": "Official sources support GitHub Copilot for code generation workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q4-debugging",
+      "question_id": "implementation-q4",
+      "answer_option_id": "debugging",
+      "impacts": [
+        {
+          "tool_id": "qodo",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل تصحيح الأخطاء.",
+            "en": "Official sources support Qodo for debugging workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "github-copilot",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل تصحيح الأخطاء.",
+            "en": "Official sources support GitHub Copilot for debugging workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل تصحيح الأخطاء.",
+            "en": "Official sources support Cursor for debugging workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q4-refactoring",
+      "question_id": "implementation-q4",
+      "answer_option_id": "refactoring",
+      "impacts": [
+        {
+          "tool_id": "github-copilot",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل إعادة الهيكلة.",
+            "en": "Official sources support GitHub Copilot for refactoring workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل إعادة الهيكلة.",
+            "en": "Official sources support Cursor for refactoring workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "windsurf",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Windsurf لسير عمل إعادة الهيكلة.",
+            "en": "Official sources support Windsurf for refactoring workflows."
+          },
+          "sources": [
+            {
+              "id": "windsurf-official",
+              "name": {
+                "ar": "توثيق Windsurf الرسمي",
+                "en": "Windsurf official documentation"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.windsurf.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "windsurf-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Windsurf",
+                "en": "Windsurf secondary official source"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "official_repository",
+              "url": "https://windsurf.com/editor",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q4-repository_task",
+      "question_id": "implementation-q4",
+      "answer_option_id": "repository_task",
+      "impacts": [
+        {
+          "tool_id": "cursor",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل مهمة مستودع.",
+            "en": "Official sources support Cursor for repository task workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "windsurf",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Windsurf لسير عمل مهمة مستودع.",
+            "en": "Official sources support Windsurf for repository task workflows."
+          },
+          "sources": [
+            {
+              "id": "windsurf-official",
+              "name": {
+                "ar": "توثيق Windsurf الرسمي",
+                "en": "Windsurf official documentation"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.windsurf.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "windsurf-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Windsurf",
+                "en": "Windsurf secondary official source"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "official_repository",
+              "url": "https://windsurf.com/editor",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل مهمة مستودع.",
+            "en": "Official sources support Claude Code for repository task workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q5-yes",
+      "question_id": "implementation-q5",
+      "answer_option_id": "yes",
+      "impacts": [
+        {
+          "tool_id": "github-copilot",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل نعم.",
+            "en": "Official sources support GitHub Copilot for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل نعم.",
+            "en": "Official sources support Cursor for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "windsurf",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Windsurf لسير عمل نعم.",
+            "en": "Official sources support Windsurf for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "windsurf-official",
+              "name": {
+                "ar": "توثيق Windsurf الرسمي",
+                "en": "Windsurf official documentation"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.windsurf.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "windsurf-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Windsurf",
+                "en": "Windsurf secondary official source"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "official_repository",
+              "url": "https://windsurf.com/editor",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "implementation-q5-no",
+      "question_id": "implementation-q5",
+      "answer_option_id": "no",
+      "impacts": [
+        {
+          "tool_id": "cursor",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل لا.",
+            "en": "Official sources support Cursor for no workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "windsurf",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Windsurf لسير عمل لا.",
+            "en": "Official sources support Windsurf for no workflows."
+          },
+          "sources": [
+            {
+              "id": "windsurf-official",
+              "name": {
+                "ar": "توثيق Windsurf الرسمي",
+                "en": "Windsurf official documentation"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.windsurf.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "windsurf-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Windsurf",
+                "en": "Windsurf secondary official source"
+              },
+              "publisher": {
+                "ar": "Windsurf",
+                "en": "Windsurf"
+              },
+              "kind": "official_repository",
+              "url": "https://windsurf.com/editor",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل لا.",
+            "en": "Official sources support Claude Code for no workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q1-focused",
+      "question_id": "testing-q1",
+      "answer_option_id": "focused",
+      "impacts": [
+        {
+          "tool_id": "claude-code",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل فحوص مركزة.",
+            "en": "Official sources support Claude Code for focused checks workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-codex",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل فحوص مركزة.",
+            "en": "Official sources support OpenAI Codex for focused checks workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "qodo",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل فحوص مركزة.",
+            "en": "Official sources support Qodo for focused checks workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q1-end-to-end",
+      "question_id": "testing-q1",
+      "answer_option_id": "end-to-end",
+      "impacts": [
+        {
+          "tool_id": "openai-codex",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل من طرف إلى طرف.",
+            "en": "Official sources support OpenAI Codex for end-to-end workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "qodo",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل من طرف إلى طرف.",
+            "en": "Official sources support Qodo for end-to-end workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "testim",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Testim لسير عمل من طرف إلى طرف.",
+            "en": "Official sources support Testim for end-to-end workflows."
+          },
+          "sources": [
+            {
+              "id": "testim-official",
+              "name": {
+                "ar": "توثيق Testim الرسمي",
+                "en": "Testim official documentation"
+              },
+              "publisher": {
+                "ar": "Testim",
+                "en": "Testim"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.testim.io/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q2-functional",
+      "question_id": "testing-q2",
+      "answer_option_id": "functional",
+      "impacts": [
+        {
+          "tool_id": "qodo",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Qodo لسير عمل وظيفية.",
+            "en": "Official sources support Qodo for functional workflows."
+          },
+          "sources": [
+            {
+              "id": "qodo-official",
+              "name": {
+                "ar": "توثيق Qodo الرسمي",
+                "en": "Qodo official documentation"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.qodo.ai/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "qodo-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Qodo",
+                "en": "Qodo secondary official source"
+              },
+              "publisher": {
+                "ar": "Qodo",
+                "en": "Qodo"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/qodo-ai",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "testim",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Testim لسير عمل وظيفية.",
+            "en": "Official sources support Testim for functional workflows."
+          },
+          "sources": [
+            {
+              "id": "testim-official",
+              "name": {
+                "ar": "توثيق Testim الرسمي",
+                "en": "Testim official documentation"
+              },
+              "publisher": {
+                "ar": "Testim",
+                "en": "Testim"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.testim.io/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "mabl",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام mabl لسير عمل وظيفية.",
+            "en": "Official sources support mabl for functional workflows."
+          },
+          "sources": [
+            {
+              "id": "mabl-official",
+              "name": {
+                "ar": "توثيق mabl الرسمي",
+                "en": "mabl official documentation"
+              },
+              "publisher": {
+                "ar": "mabl",
+                "en": "mabl"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.mabl.com/hc/en-us",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q2-visual",
+      "question_id": "testing-q2",
+      "answer_option_id": "visual",
+      "impacts": [
+        {
+          "tool_id": "testim",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Testim لسير عمل بصرية.",
+            "en": "Official sources support Testim for visual workflows."
+          },
+          "sources": [
+            {
+              "id": "testim-official",
+              "name": {
+                "ar": "توثيق Testim الرسمي",
+                "en": "Testim official documentation"
+              },
+              "publisher": {
+                "ar": "Testim",
+                "en": "Testim"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.testim.io/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "mabl",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام mabl لسير عمل بصرية.",
+            "en": "Official sources support mabl for visual workflows."
+          },
+          "sources": [
+            {
+              "id": "mabl-official",
+              "name": {
+                "ar": "توثيق mabl الرسمي",
+                "en": "mabl official documentation"
+              },
+              "publisher": {
+                "ar": "mabl",
+                "en": "mabl"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.mabl.com/hc/en-us",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "applitools",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Applitools لسير عمل بصرية.",
+            "en": "Official sources support Applitools for visual workflows."
+          },
+          "sources": [
+            {
+              "id": "applitools-official",
+              "name": {
+                "ar": "توثيق Applitools الرسمي",
+                "en": "Applitools official documentation"
+              },
+              "publisher": {
+                "ar": "Applitools",
+                "en": "Applitools"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://applitools.com/docs/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q3-local",
+      "question_id": "testing-q3",
+      "answer_option_id": "local",
+      "impacts": [
+        {
+          "tool_id": "mabl",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام mabl لسير عمل محليًا.",
+            "en": "Official sources support mabl for local workflows."
+          },
+          "sources": [
+            {
+              "id": "mabl-official",
+              "name": {
+                "ar": "توثيق mabl الرسمي",
+                "en": "mabl official documentation"
+              },
+              "publisher": {
+                "ar": "mabl",
+                "en": "mabl"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://help.mabl.com/hc/en-us",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "applitools",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Applitools لسير عمل محليًا.",
+            "en": "Official sources support Applitools for local workflows."
+          },
+          "sources": [
+            {
+              "id": "applitools-official",
+              "name": {
+                "ar": "توثيق Applitools الرسمي",
+                "en": "Applitools official documentation"
+              },
+              "publisher": {
+                "ar": "Applitools",
+                "en": "Applitools"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://applitools.com/docs/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "snyk-deepcode",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Snyk DeepCode لسير عمل محليًا.",
+            "en": "Official sources support Snyk DeepCode for local workflows."
+          },
+          "sources": [
+            {
+              "id": "snyk-deepcode-official",
+              "name": {
+                "ar": "توثيق Snyk DeepCode الرسمي",
+                "en": "Snyk DeepCode official documentation"
+              },
+              "publisher": {
+                "ar": "Snyk DeepCode",
+                "en": "Snyk DeepCode"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.snyk.io/scan-with-snyk/snyk-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q3-cloud",
+      "question_id": "testing-q3",
+      "answer_option_id": "cloud",
+      "impacts": [
+        {
+          "tool_id": "applitools",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Applitools لسير عمل شبكة سحابية.",
+            "en": "Official sources support Applitools for cloud grid workflows."
+          },
+          "sources": [
+            {
+              "id": "applitools-official",
+              "name": {
+                "ar": "توثيق Applitools الرسمي",
+                "en": "Applitools official documentation"
+              },
+              "publisher": {
+                "ar": "Applitools",
+                "en": "Applitools"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://applitools.com/docs/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "snyk-deepcode",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Snyk DeepCode لسير عمل شبكة سحابية.",
+            "en": "Official sources support Snyk DeepCode for cloud grid workflows."
+          },
+          "sources": [
+            {
+              "id": "snyk-deepcode-official",
+              "name": {
+                "ar": "توثيق Snyk DeepCode الرسمي",
+                "en": "Snyk DeepCode official documentation"
+              },
+              "publisher": {
+                "ar": "Snyk DeepCode",
+                "en": "Snyk DeepCode"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.snyk.io/scan-with-snyk/snyk-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "diffblue-cover",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Diffblue Cover لسير عمل شبكة سحابية.",
+            "en": "Official sources support Diffblue Cover for cloud grid workflows."
+          },
+          "sources": [
+            {
+              "id": "diffblue-cover-official",
+              "name": {
+                "ar": "توثيق Diffblue Cover الرسمي",
+                "en": "Diffblue Cover official documentation"
+              },
+              "publisher": {
+                "ar": "Diffblue Cover",
+                "en": "Diffblue Cover"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.diffblue.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q4-test_generation",
+      "question_id": "testing-q4",
+      "answer_option_id": "test_generation",
+      "impacts": [
+        {
+          "tool_id": "snyk-deepcode",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Snyk DeepCode لسير عمل توليد الاختبارات.",
+            "en": "Official sources support Snyk DeepCode for test generation workflows."
+          },
+          "sources": [
+            {
+              "id": "snyk-deepcode-official",
+              "name": {
+                "ar": "توثيق Snyk DeepCode الرسمي",
+                "en": "Snyk DeepCode official documentation"
+              },
+              "publisher": {
+                "ar": "Snyk DeepCode",
+                "en": "Snyk DeepCode"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.snyk.io/scan-with-snyk/snyk-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "diffblue-cover",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Diffblue Cover لسير عمل توليد الاختبارات.",
+            "en": "Official sources support Diffblue Cover for test generation workflows."
+          },
+          "sources": [
+            {
+              "id": "diffblue-cover-official",
+              "name": {
+                "ar": "توثيق Diffblue Cover الرسمي",
+                "en": "Diffblue Cover official documentation"
+              },
+              "publisher": {
+                "ar": "Diffblue Cover",
+                "en": "Diffblue Cover"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.diffblue.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "github-copilot",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل توليد الاختبارات.",
+            "en": "Official sources support GitHub Copilot for test generation workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q4-visual_testing",
+      "question_id": "testing-q4",
+      "answer_option_id": "visual_testing",
+      "impacts": [
+        {
+          "tool_id": "diffblue-cover",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Diffblue Cover لسير عمل اختبار بصري.",
+            "en": "Official sources support Diffblue Cover for visual testing workflows."
+          },
+          "sources": [
+            {
+              "id": "diffblue-cover-official",
+              "name": {
+                "ar": "توثيق Diffblue Cover الرسمي",
+                "en": "Diffblue Cover official documentation"
+              },
+              "publisher": {
+                "ar": "Diffblue Cover",
+                "en": "Diffblue Cover"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.diffblue.com/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "github-copilot",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل اختبار بصري.",
+            "en": "Official sources support GitHub Copilot for visual testing workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل اختبار بصري.",
+            "en": "Official sources support Cursor for visual testing workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q4-security_testing",
+      "question_id": "testing-q4",
+      "answer_option_id": "security_testing",
+      "impacts": [
+        {
+          "tool_id": "github-copilot",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل اختبار أمني.",
+            "en": "Official sources support GitHub Copilot for security testing workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل اختبار أمني.",
+            "en": "Official sources support Cursor for security testing workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل اختبار أمني.",
+            "en": "Official sources support Claude Code for security testing workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q4-regression_automation",
+      "question_id": "testing-q4",
+      "answer_option_id": "regression_automation",
+      "impacts": [
+        {
+          "tool_id": "cursor",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل أتمتة الانحدار.",
+            "en": "Official sources support Cursor for regression automation workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل أتمتة الانحدار.",
+            "en": "Official sources support Claude Code for regression automation workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-codex",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل أتمتة الانحدار.",
+            "en": "Official sources support OpenAI Codex for regression automation workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q5-yes",
+      "question_id": "testing-q5",
+      "answer_option_id": "yes",
+      "impacts": [
+        {
+          "tool_id": "github-copilot",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام GitHub Copilot لسير عمل نعم.",
+            "en": "Official sources support GitHub Copilot for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "github-copilot-official",
+              "name": {
+                "ar": "توثيق GitHub Copilot الرسمي",
+                "en": "GitHub Copilot official documentation"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.github.com/en/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "github-copilot-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ GitHub Copilot",
+                "en": "GitHub Copilot secondary official source"
+              },
+              "publisher": {
+                "ar": "GitHub Copilot",
+                "en": "GitHub Copilot"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/features/copilot",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "cursor",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل نعم.",
+            "en": "Official sources support Cursor for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل نعم.",
+            "en": "Official sources support Claude Code for yes workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-q5-no",
+      "question_id": "testing-q5",
+      "answer_option_id": "no",
+      "impacts": [
+        {
+          "tool_id": "cursor",
+          "weight": 1.0,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Cursor لسير عمل لا.",
+            "en": "Official sources support Cursor for no workflows."
+          },
+          "sources": [
+            {
+              "id": "cursor-official",
+              "name": {
+                "ar": "توثيق Cursor الرسمي",
+                "en": "Cursor official documentation"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://cursor.com/docs",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "cursor-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Cursor",
+                "en": "Cursor secondary official source"
+              },
+              "publisher": {
+                "ar": "Cursor",
+                "en": "Cursor"
+              },
+              "kind": "official_repository",
+              "url": "https://cursor.com/security",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "claude-code",
+          "weight": 0.85,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام Claude Code لسير عمل لا.",
+            "en": "Official sources support Claude Code for no workflows."
+          },
+          "sources": [
+            {
+              "id": "claude-code-official",
+              "name": {
+                "ar": "توثيق Claude Code الرسمي",
+                "en": "Claude Code official documentation"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "claude-code-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ Claude Code",
+                "en": "Claude Code secondary official source"
+              },
+              "publisher": {
+                "ar": "Claude Code",
+                "en": "Claude Code"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/anthropics/claude-code",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        },
+        {
+          "tool_id": "openai-codex",
+          "weight": 0.7,
+          "rationale": {
+            "ar": "تدعم المصادر الرسمية استخدام OpenAI Codex لسير عمل لا.",
+            "en": "Official sources support OpenAI Codex for no workflows."
+          },
+          "sources": [
+            {
+              "id": "openai-codex-official",
+              "name": {
+                "ar": "توثيق OpenAI Codex الرسمي",
+                "en": "OpenAI Codex official documentation"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "vendor_documentation",
+              "url": "https://developers.openai.com/codex/",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            },
+            {
+              "id": "openai-codex-independent-official",
+              "name": {
+                "ar": "مصدر رسمي ثانٍ لـ OpenAI Codex",
+                "en": "OpenAI Codex secondary official source"
+              },
+              "publisher": {
+                "ar": "OpenAI Codex",
+                "en": "OpenAI Codex"
+              },
+              "kind": "official_repository",
+              "url": "https://github.com/openai/codex",
+              "published_at": null,
+              "collected_at": "2026-08-27"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "model-evaluation-sources",
+      "tool_id": "chatgpt",
+      "metric": "independent-evaluation-source-count",
+      "value": 3.0,
+      "unit": "sources",
+      "sources": [
+        {
+          "id": "mmlu-paper",
+          "name": {
+            "ar": "بحث MMLU",
+            "en": "MMLU paper"
+          },
+          "publisher": {
+            "ar": "جامعة كاليفورنيا وشركاء",
+            "en": "UC Berkeley and collaborators"
+          },
+          "kind": "primary_research",
+          "url": "https://arxiv.org/abs/2009.03300",
+          "published_at": "2020-09-07",
+          "collected_at": "2026-08-27"
+        },
+        {
+          "id": "helm-paper",
+          "name": {
+            "ar": "بحث HELM",
+            "en": "HELM paper"
+          },
+          "publisher": {
+            "ar": "مركز ستانفورد CRFM",
+            "en": "Stanford CRFM"
+          },
+          "kind": "primary_research",
+          "url": "https://arxiv.org/abs/2211.09110",
+          "published_at": "2022-11-16",
+          "collected_at": "2026-08-27"
+        },
+        {
+          "id": "arena-paper",
+          "name": {
+            "ar": "بحث Chatbot Arena",
+            "en": "Chatbot Arena paper"
+          },
+          "publisher": {
+            "ar": "منظمة LMSYS",
+            "en": "LMSYS Org"
+          },
+          "kind": "primary_research",
+          "url": "https://arxiv.org/abs/2403.04132",
+          "published_at": "2024-03-06",
+          "collected_at": "2026-08-27"
+        }
+      ]
+    }
+  ]
+}
