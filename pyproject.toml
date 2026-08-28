@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-expert-system-backend"
+version = "0.1.0"
+description = "Backend for the AI tool selection expert system"
+requires-python = ">=3.12"
+dependencies = [
+    "clipspy>=1.0,<2.0",
+    "fastapi>=0.115,<1.0",
+    "pydantic>=2.0,<3.0",
+    "uvicorn[standard]>=0.30,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "arabic-reshaper>=3.0,<4.0",
+    "httpx>=0.27,<1.0",
+    "pypdf>=6.0,<7.0",
+    "pytest>=9.0.3,<10.0",
+    "python-bidi>=0.6,<1.0",
+    "reportlab>=4.4,<5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]

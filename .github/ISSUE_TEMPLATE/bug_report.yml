@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible problem in the application or recommendation flow.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Adaptive AI Tool Guide. Do not include secrets or security vulnerabilities here; follow SECURITY.md for private reporting.
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+      placeholder: Describe the observed and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the stage, domain, answers, and smallest sequence that reproduces the problem.
+      placeholder: |
+        1. Select ...
+        2. Answer ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Questionnaire flow
+        - Recommendations
+        - Short-text resolution or Ollama
+        - Arabic interface
+        - English interface
+        - API
+        - Installation or documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include operating system, Python version, browser, and Ollama model when relevant.
+      placeholder: Windows 11, Python 3.12, Chrome, gemma3:1b
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove credentials and personal information before pasting logs.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for a duplicate.
+          required: true
+        - label: This report does not contain a security vulnerability or sensitive data.
+          required: true

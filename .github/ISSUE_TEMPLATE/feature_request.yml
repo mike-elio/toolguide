@@ -1,0 +1,63 @@
+name: Feature request
+description: Propose a focused improvement to the tool guide.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What user problem would this solve?
+      placeholder: Explain the decision or workflow that is currently difficult.
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Project stage
+      options:
+        - Analysis
+        - Design
+        - Implementation
+        - Testing
+        - Cross-stage
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Technical domain
+      options:
+        - Software
+        - Artificial Intelligence
+        - Cybersecurity
+        - Cross-domain
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the smallest useful change and how a user would experience it.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Link official or reputable technical sources when proposing tools, questions, or recommendation claims.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches or workarounds did you consider?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+        - label: The request is focused and does not require runtime-generated questions or model training.
+          required: true

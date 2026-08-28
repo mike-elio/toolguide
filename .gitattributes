@@ -1,0 +1,16 @@
+* text=auto
+
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Generated from scripts/build_adaptive_knowledge.py and required at runtime.
+data/knowledge/adaptive.json linguist-generated=true
