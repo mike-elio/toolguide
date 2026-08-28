@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111111" />
+    <title>دليل الأدوات الذكية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/frontend/styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="brand-link">
+          <span class="logo-mark" aria-hidden="true">✦</span>
+          <span class="brand-name">Tool<span class="accent-text">Guide</span></span>
+        </a>
+        <div class="header-actions">
+          <span id="connection" class="connection-status hidden" aria-live="polite"></span>
+          <button id="language-button" class="language-button" type="button" aria-label="Switch language">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="hero-copy">
+        <p id="eyebrow" class="hero-eyebrow"></p>
+        <h1 id="page-title" class="page-title"></h1>
+        <p id="page-description" class="page-description"></p>
+      </section>
+
+      <section class="progress-shell" aria-label="Progress">
+        <div class="progress-meta">
+          <span id="progress-text"></span>
+          <span id="progress-value" class="accent-text"></span>
+        </div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        <div class="progress-labels">
+          <span id="step-stage"></span><span id="step-questions"></span><span id="step-results"></span>
+        </div>
+      </section>
+
+      <div id="notice" class="notice hidden" role="alert"></div>
+
+      <section id="stages-screen" class="screen" aria-labelledby="stages-heading">
+        <div class="section-heading"><div><p id="stages-kicker" class="kicker"></p><h2 id="stages-heading" class="section-title"></h2></div></div>
+        <div id="stages-grid" class="stage-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="domains-screen" class="screen hidden" aria-labelledby="domains-heading">
+        <div class="section-heading"><div><p id="domains-kicker" class="kicker"></p><h2 id="domains-heading" class="section-title"></h2></div></div>
+        <div id="domains-grid" class="stage-grid" aria-live="polite"></div>
+        <button id="domains-back-button" class="button button-secondary top-gap" type="button"></button>
+      </section>
+
+      <section id="questions-screen" class="screen hidden" aria-labelledby="questions-heading">
+        <div class="section-heading"><div><p id="questions-kicker" class="kicker"></p><h2 id="questions-heading" class="section-title"></h2></div><span id="question-count" class="count-badge"></span></div>
+        <form id="questions-form" novalidate>
+          <div id="questions-list" class="stack"></div>
+          <div class="form-actions">
+            <button id="back-button" class="button button-secondary" type="button"></button>
+            <button id="recommend-button" class="button button-primary" type="submit"></button>
+          </div>
+        </form>
+      </section>
+
+      <section id="results-screen" class="screen hidden" aria-labelledby="results-heading">
+        <div class="section-heading"><div><p id="results-kicker" class="kicker"></p><h2 id="results-heading" class="section-title"></h2></div></div>
+        <div id="results-list" class="stack" aria-live="polite"></div>
+        <button id="restart-button" class="button button-secondary top-gap" type="button"></button>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span id="footer-text"></span></footer>
+    <script src="/frontend/api-error.js"></script>
+    <script src="/frontend/questionnaire-state.js"></script>
+    <script src="/frontend/app.js"></script>
+  </body>
+</html>
