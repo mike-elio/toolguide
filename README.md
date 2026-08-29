@@ -88,7 +88,7 @@ Do not commit `.env`; it is intentionally ignored by Git.
 ```bash
 python -m pytest -q
 node --test tests/*.test.cjs
-python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json
+python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json.gz
 python -m compileall -q app scripts
 ```
 
@@ -104,7 +104,7 @@ Regenerate the adaptive knowledge catalog:
 python scripts/build_adaptive_knowledge.py
 ```
 
-The generated `data/knowledge/adaptive.json` file is committed because it is required at runtime.
+The generated `data/knowledge/adaptive.json.gz` catalog is committed because it is required at runtime. It contains ordinary UTF-8 JSON compressed with Gzip; the application loads it transparently without an additional dependency.
 
 ## Architecture
 
@@ -137,4 +137,3 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for setup, tests, and pull-request expe
 ## License
 
 Licensed under the [MIT License](LICENSE).
-

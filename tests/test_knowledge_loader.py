@@ -1,3 +1,4 @@
+import gzip
 import json
 from datetime import date
 from pathlib import Path
@@ -157,6 +158,20 @@ def test_load_knowledge_reads_a_valid_utf8_snapshot(tmp_path: Path) -> None:
     assert loaded == audit_snapshot()
 
 
+def test_load_knowledge_reads_a_valid_gzip_snapshot(tmp_path: Path) -> None:
+    path = tmp_path / "knowledge.json.gz"
+    with gzip.open(path, mode="wt", encoding="utf-8") as compressed:
+        json.dump(
+            audit_snapshot().model_dump(mode="json"),
+            compressed,
+            ensure_ascii=False,
+        )
+
+    loaded = load_knowledge(path)
+
+    assert loaded == audit_snapshot()
+
+
 @pytest.mark.parametrize(
     ("contents", "message"),
     [
@@ -197,8 +212,8 @@ def test_default_knowledge_path_is_independent_of_working_directory(
 
     path = default_knowledge_path()
 
-    assert path.name == "adaptive.json"
-    assert path.parts[-3:] == ("data", "knowledge", "adaptive.json")
+    assert path.name == "adaptive.json.gz"
+    assert path.parts[-3:] == ("data", "knowledge", "adaptive.json.gz")
 
 
 def test_audit_knowledge_reports_exact_phase_six_counts() -> None:

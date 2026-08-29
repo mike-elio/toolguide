@@ -275,9 +275,9 @@ def render_markdown(report: SimulationReport) -> str:
     lines = [
         "# Adaptive Questionnaire - 250 Session Simulation",
         "",
-        "**Run type:** real FastAPI boundary with deterministic stateless sessions  ",
-        f"**Requested sessions:** {report.session_count}  ",
-        f"**Completed sessions:** {report.completed_sessions}  ",
+        "**Run type:** real FastAPI boundary with deterministic stateless sessions",
+        f"**Requested sessions:** {report.session_count}",
+        f"**Completed sessions:** {report.completed_sessions}",
         f"**Failed sessions:** {report.failed_sessions}",
         "",
         "## Acceptance metrics",

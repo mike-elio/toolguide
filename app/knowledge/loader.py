@@ -1,3 +1,4 @@
+import gzip
 import json
 from collections import Counter
 from pathlib import Path
@@ -28,13 +29,22 @@ class KnowledgeAudit(BaseModel):
 
 
 def default_knowledge_path() -> Path:
-    return Path(__file__).resolve().parents[2] / "data" / "knowledge" / "adaptive.json"
+    return (
+        Path(__file__).resolve().parents[2]
+        / "data"
+        / "knowledge"
+        / "adaptive.json.gz"
+    )
 
 
 def load_knowledge(path: Path) -> KnowledgeSnapshot:
     path = Path(path)
     try:
-        contents = path.read_text(encoding="utf-8")
+        if path.suffix == ".gz":
+            with gzip.open(path, mode="rt", encoding="utf-8") as compressed:
+                contents = compressed.read()
+        else:
+            contents = path.read_text(encoding="utf-8")
     except OSError as error:
         raise KnowledgeLoadError(f"cannot read knowledge file: {path}") from error
 

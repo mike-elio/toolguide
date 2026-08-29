@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import gzip
 import json
 from dataclasses import dataclass
 from datetime import date
@@ -25,7 +26,7 @@ from app.knowledge import KnowledgeSnapshot
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_OUTPUT = ROOT / "data" / "knowledge" / "adaptive.json"
+DEFAULT_OUTPUT = ROOT / "data" / "knowledge" / "adaptive.json.gz"
 REVIEWED_AT = date(2026, 8, 28)
 
 
@@ -425,9 +426,13 @@ def build_snapshot() -> KnowledgeSnapshot:
 def main(output: Path = DEFAULT_OUTPUT) -> int:
     snapshot = build_snapshot()
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(
-        json.dumps(snapshot.model_dump(mode="json"), ensure_ascii=False, indent=2),
-        encoding="utf-8",
+    serialized = json.dumps(
+        snapshot.model_dump(mode="json"), ensure_ascii=False, indent=2
+    ).encode("utf-8")
+    output.write_bytes(
+        gzip.compress(serialized, compresslevel=9, mtime=0)
+        if output.suffix == ".gz"
+        else serialized
     )
     print(
         json.dumps(

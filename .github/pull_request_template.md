@@ -6,7 +6,7 @@ Describe the user-visible change and why it is needed.
 
 - [ ] `python -m pytest -q`
 - [ ] `node --test tests/*.test.cjs`
-- [ ] `python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json`
+- [ ] `python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json.gz`
 - [ ] `python -m compileall -q app scripts`
 - [ ] Manual browser verification completed when the interface changed
 

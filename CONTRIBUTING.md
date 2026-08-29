@@ -18,7 +18,7 @@ Run every project check:
 ```bash
 python -m pytest -q
 node --test tests/*.test.cjs
-python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json
+python scripts/audit_phase6.py --knowledge data/knowledge/adaptive.json.gz
 python -m compileall -q app scripts
 git diff --check
 ```
@@ -32,7 +32,7 @@ If the questionnaire behavior or catalog changes, also run the 250-session simul
 - Keep questions, product claims, limitations, and recommendation evidence source-backed.
 - Do not add runtime-generated questions or require model training.
 - Do not commit `.env`, credentials, model binaries, virtual environments, caches, or build output.
-- Regenerate `data/knowledge/adaptive.json` through `scripts/build_adaptive_knowledge.py`; do not hand-edit the generated catalog.
+- Regenerate `data/knowledge/adaptive.json.gz` through `scripts/build_adaptive_knowledge.py`; do not hand-edit the generated catalog.
 - Preserve Arabic and English coverage for user-visible content.
 
 ## Pull requests

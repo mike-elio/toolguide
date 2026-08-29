@@ -43,7 +43,7 @@ def main() -> int:
         "--knowledge",
         type=Path,
         default=default_knowledge_path(),
-        help="Path to the canonical Phase 6 knowledge JSON",
+        help="Path to the canonical knowledge JSON or .json.gz catalog",
     )
     args = parser.parse_args()
     payload, exit_code = run_audit(args.knowledge)

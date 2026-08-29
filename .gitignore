@@ -38,6 +38,7 @@ Desktop.ini
 # Logs and temporary files
 *.log
 *.pdf
+data/knowledge/adaptive.json
 output/pdf/
 tmp/
 temp/

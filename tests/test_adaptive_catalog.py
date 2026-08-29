@@ -1,7 +1,21 @@
 from collections import Counter
+from pathlib import Path
 
 from app.domain.models import DomainId, StageId
 from app.knowledge import default_knowledge_path, load_knowledge
+from scripts.build_adaptive_knowledge import main as build_adaptive_knowledge
+
+
+def test_builder_writes_a_loadable_gzip_catalog(tmp_path: Path) -> None:
+    output = tmp_path / "adaptive.json.gz"
+
+    exit_code = build_adaptive_knowledge(output)
+
+    snapshot = load_knowledge(output)
+    assert exit_code == 0
+    assert output.read_bytes().startswith(b"\x1f\x8b")
+    assert len(snapshot.tools) == 48
+    assert len(snapshot.questions) == 168
 
 
 def test_catalog_has_the_exact_stage_domain_matrix() -> None:
