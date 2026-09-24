@@ -1,0 +1,4783 @@
+[
+  {
+    "tool_id": "chatgpt-deep-research",
+    "profile": {
+      "offline": {
+        "value": false,
+        "source_url": "https://openai.com/index/introducing-deep-research/",
+        "reviewed_at": "2026-09-05"
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://openai.com/index/introducing-deep-research/",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted research in ChatGPT.",
+        "ar": "بحث مستضاف داخل شات جي بي تي."
+      },
+      "pricing_summary": {
+        "en": "Limited free research access; higher allowances depend on plan.",
+        "ar": "وصول مجاني محدود للبحث؛ الحصص الأعلى تعتمد على الخطة."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "MCP and connected apps",
+          "ar": "بروتوكول MCP والتطبيقات المتصلة"
+        }
+      ],
+      "sources": [
+        "https://openai.com/index/introducing-deep-research/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "ChatGPT account and a scoped research question.",
+            "ar": "حساب شات جي بي تي وسؤال بحث محدد."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Select deep research and describe your software decision.",
+              "ar": "اختر البحث المعمق وصف قرارك البرمجي."
+            },
+            "source_url": "https://openai.com/index/introducing-deep-research/"
+          },
+          {
+            "instruction": {
+              "en": "Attach requirements and specify trusted source domains.",
+              "ar": "أرفق المتطلبات وحدد نطاقات المصادر الموثوقة."
+            },
+            "source_url": "https://openai.com/index/introducing-deep-research/"
+          },
+          {
+            "instruction": {
+              "en": "Check the report citations against the original requirements.",
+              "ar": "راجع استشهادات التقرير مقابل المتطلبات الأصلية."
+            },
+            "source_url": "https://openai.com/index/introducing-deep-research/"
+          }
+        ],
+        "example": {
+          "en": "Compare two API authentication approaches for a small team.",
+          "ar": "قارن طريقتين لمصادقة الواجهات البرمجية لفريق صغير."
+        },
+        "expected_outcome": {
+          "en": "A cited comparison with unresolved questions marked.",
+          "ar": "مقارنة موثقة مع تحديد الأسئلة غير المحسومة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "claude-research",
+    "profile": {
+      "offline": {
+        "value": false,
+        "source_url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+        "reviewed_at": "2026-09-05"
+      },
+      "free_plan": {
+        "value": false,
+        "source_url": "https://support.claude.com/en/articles/11088861-use-research-on-claude",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Claude web, desktop, or mobile; web search required.",
+        "ar": "كلود على الويب أو الحاسوب أو الهاتف مع بحث الويب."
+      },
+      "pricing_summary": {
+        "en": "Research requires a paid Claude plan; usage limits apply.",
+        "ar": "البحث يتطلب خطة كلود مدفوعة؛ تطبق حدود الاستخدام."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Google Workspace when connected",
+          "ar": "غوغل ووركسبيس عند ربطه"
+        }
+      ],
+      "sources": [
+        "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Paid Claude plan; web search enabled.",
+            "ar": "خطة كلود مدفوعة مع تفعيل البحث في الويب."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Enable Research from the chat tools menu.",
+              "ar": "فعّل البحث من قائمة أدوات المحادثة."
+            },
+            "source_url": "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+          },
+          {
+            "instruction": {
+              "en": "Ask a scoped question and name connected internal sources.",
+              "ar": "اطرح سؤالاً محدداً وسمّ المصادر الداخلية المتصلة."
+            },
+            "source_url": "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+          },
+          {
+            "instruction": {
+              "en": "Review citations and separate internal evidence from web findings.",
+              "ar": "راجع الاستشهادات وافصل الدليل الداخلي عن نتائج الويب."
+            },
+            "source_url": "https://support.claude.com/en/articles/11088861-use-research-on-claude"
+          }
+        ],
+        "example": {
+          "en": "Compare project requirements with current integration documentation.",
+          "ar": "قارن متطلبات المشروع مع توثيق التكامل الحالي."
+        },
+        "expected_outcome": {
+          "en": "A research answer grounded in selected context.",
+          "ar": "إجابة بحث تستند إلى السياق المحدد."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "gemini-deep-research",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted Gemini Apps research.",
+        "ar": "بحث مستضاف في تطبيقات جيمناي."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Google Drive and Gmail when connected",
+          "ar": "غوغل درايف وجيميل عند ربطهما"
+        }
+      ],
+      "sources": [
+        "https://support.google.com/gemini/answer/15719111"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Google account with access to Deep Research.",
+            "ar": "حساب غوغل يتيح الوصول للبحث المعمق."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Select Deep Research and enter the software planning question.",
+              "ar": "اختر البحث المعمق وأدخل سؤال التخطيط البرمجي."
+            },
+            "source_url": "https://support.google.com/gemini/answer/15719111"
+          },
+          {
+            "instruction": {
+              "en": "Choose sources and edit the proposed research plan.",
+              "ar": "اختر المصادر وعدّل خطة البحث المقترحة."
+            },
+            "source_url": "https://support.google.com/gemini/answer/15719111"
+          },
+          {
+            "instruction": {
+              "en": "Start research, inspect evidence, then export to Docs if useful.",
+              "ar": "ابدأ البحث وافحص الأدلة ثم صدّر للمستندات عند الحاجة."
+            },
+            "source_url": "https://support.google.com/gemini/answer/15719111"
+          }
+        ],
+        "example": {
+          "en": "Investigate deployment options for a student web project.",
+          "ar": "ابحث خيارات نشر مشروع ويب طلابي."
+        },
+        "expected_outcome": {
+          "en": "An editable research report and its supporting sources.",
+          "ar": "تقرير بحث قابل للتحرير مع مصادره الداعمة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "perplexity-research",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://www.perplexity.ai/help-center/en/articles/10738684-what-is-research-mode",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted Perplexity research service.",
+        "ar": "خدمة بحث بيربلكسيتي مستضافة."
+      },
+      "pricing_summary": {
+        "en": "Free users have limited Research access; subscribers receive extended access.",
+        "ar": "للمستخدم المجاني وصول محدود للبحث؛ يحصل المشتركون على وصول أوسع."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Not documented in the reviewed source.",
+          "ar": "غير موثّق في المصدر المراجع."
+        }
+      ],
+      "sources": [
+        "https://www.perplexity.ai/help-center/en/articles/13600190-what-s-new-in-advanced-deep-research",
+        "https://www.perplexity.ai/help-center/en/articles/10738684-what-is-research-mode"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Perplexity account with Research access; check current allowance.",
+            "ar": "حساب بيربلكسيتي يتيح البحث مع مراجعة الحصة الحالية."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open Research and state a narrow comparison question.",
+              "ar": "افتح البحث وحدد سؤال مقارنة ضيق النطاق."
+            },
+            "source_url": "https://www.perplexity.ai/help-center/en/articles/13600190-what-s-new-in-advanced-deep-research"
+          },
+          {
+            "instruction": {
+              "en": "Add context and request evidence for each alternative.",
+              "ar": "أضف السياق واطلب دليلاً لكل بديل."
+            },
+            "source_url": "https://www.perplexity.ai/help-center/en/articles/13600190-what-s-new-in-advanced-deep-research"
+          },
+          {
+            "instruction": {
+              "en": "Open cited pages and record gaps before choosing.",
+              "ar": "افتح الصفحات المستشهد بها وسجّل النواقص قبل الاختيار."
+            },
+            "source_url": "https://www.perplexity.ai/help-center/en/articles/13600190-what-s-new-in-advanced-deep-research"
+          }
+        ],
+        "example": {
+          "en": "Research database options for a read-heavy application.",
+          "ar": "ابحث خيارات قواعد البيانات لتطبيق كثيف القراءة."
+        },
+        "expected_outcome": {
+          "en": "A source-linked brief for an architecture discussion.",
+          "ar": "موجز مرتبط بالمصادر لمناقشة الهندسة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "elicit",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://elicit.com/pricing",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted paper search and research workspace.",
+        "ar": "مساحة مستضافة للبحث في الأوراق العلمية."
+      },
+      "pricing_summary": {
+        "en": "Basic is free with paper search and limited Research Agent/report usage.",
+        "ar": "بيسيك مجاني مع بحث الأوراق واستخدام محدود لوكيل البحث والتقارير."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Elicit API",
+          "ar": "واجهة إليسيت البرمجية"
+        }
+      ],
+      "sources": [
+        "https://elicit.com/",
+        "https://elicit.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Elicit account and an AI research question.",
+            "ar": "حساب إليسيت وسؤال بحث في الذكاء الاصطناعي."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Search papers using a focused research question.",
+              "ar": "ابحث عن الأوراق بسؤال بحث محدد."
+            },
+            "source_url": "https://elicit.com/"
+          },
+          {
+            "instruction": {
+              "en": "Inspect relevant papers and compare their methods.",
+              "ar": "افحص الأوراق الملائمة وقارن مناهجها."
+            },
+            "source_url": "https://elicit.com/"
+          },
+          {
+            "instruction": {
+              "en": "Save an evidence summary and check the original studies.",
+              "ar": "احفظ ملخص الأدلة وراجع الدراسات الأصلية."
+            },
+            "source_url": "https://elicit.com/"
+          }
+        ],
+        "example": {
+          "en": "Compare retrieval evaluation methods for question answering.",
+          "ar": "قارن طرق تقييم الاسترجاع للإجابة عن الأسئلة."
+        },
+        "expected_outcome": {
+          "en": "A shortlist of studies with method differences.",
+          "ar": "قائمة دراسات مختصرة مع اختلافات المناهج."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "consensus",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://help.consensus.app/en/articles/10087865-subscription-plans",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted academic research agent.",
+        "ar": "وكيل بحث أكاديمي مستضاف."
+      },
+      "pricing_summary": {
+        "en": "Free search and limited advanced research are available; paid plans increase allowances.",
+        "ar": "يتاح بحث مجاني وبحث متقدم محدود؛ الخطط المدفوعة تزيد الحصص."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "DOI and author lookup",
+          "ar": "البحث بمعرف DOI واسم المؤلف"
+        }
+      ],
+      "sources": [
+        "https://help.consensus.app/en/articles/12641232-research-agent",
+        "https://help.consensus.app/en/articles/10087865-subscription-plans"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Consensus account and explicit study selection criteria.",
+            "ar": "حساب كونسنسس ومعايير واضحة لاختيار الدراسات."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Enter a research question with study filters in plain language.",
+              "ar": "أدخل سؤال البحث ومرشحات الدراسات بلغة طبيعية."
+            },
+            "source_url": "https://help.consensus.app/en/articles/12641232-research-agent"
+          },
+          {
+            "instruction": {
+              "en": "Ask Research Agent to build a comparison table.",
+              "ar": "اطلب من وكيل البحث بناء جدول مقارنة."
+            },
+            "source_url": "https://help.consensus.app/en/articles/12641232-research-agent"
+          },
+          {
+            "instruction": {
+              "en": "Read the cited studies and flag weak evidence.",
+              "ar": "اقرأ الدراسات المستشهد بها وحدد الأدلة الضعيفة."
+            },
+            "source_url": "https://help.consensus.app/en/articles/12641232-research-agent"
+          }
+        ],
+        "example": {
+          "en": "Compare recent studies of LLM answer factuality.",
+          "ar": "قارن دراسات حديثة لدقة إجابات النماذج."
+        },
+        "expected_outcome": {
+          "en": "A citation-backed table of study findings.",
+          "ar": "جدول نتائج دراسات مدعوم بالاستشهادات."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "notebooklm",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://support.google.com/notebooklm/answer/16215270",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted notebook service; catalog retains the NotebookLM identifier.",
+        "ar": "خدمة دفاتر مستضافة مع إبقاء معرف نوتبوك إل إم في الكتالوج."
+      },
+      "pricing_summary": {
+        "en": "Free users have source limits; premium limits differ.",
+        "ar": "تطبق حدود مصادر على المستخدم المجاني؛ تختلف حدود الخطط الأعلى."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Google Drive sources",
+          "ar": "مصادر غوغل درايف"
+        }
+      ],
+      "sources": [
+        "https://support.google.com/notebooklm/answer/16215270"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Google account and documents you can use; support now calls it Gemini Notebook.",
+            "ar": "حساب غوغل ووثائق يحق لك استخدامها؛ يسميه الدعم الآن جيمناي نوتبوك."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a notebook and add selected research documents.",
+              "ar": "أنشئ دفتر ملاحظات وأضف وثائق البحث المختارة."
+            },
+            "source_url": "https://support.google.com/notebooklm/answer/16215270"
+          },
+          {
+            "instruction": {
+              "en": "Select sources and ask about a specific methodological difference.",
+              "ar": "حدد المصادر واسأل عن فرق منهجي محدد."
+            },
+            "source_url": "https://support.google.com/notebooklm/answer/16215270"
+          },
+          {
+            "instruction": {
+              "en": "Check source passages and save your synthesis.",
+              "ar": "راجع مقاطع المصادر واحفظ خلاصتك."
+            },
+            "source_url": "https://support.google.com/notebooklm/answer/16215270"
+          }
+        ],
+        "example": {
+          "en": "Compare two model cards using only uploaded documents.",
+          "ar": "قارن بطاقتي نموذج باستخدام الوثائق المرفوعة فقط."
+        },
+        "expected_outcome": {
+          "en": "A source-grounded synthesis of your document collection.",
+          "ar": "خلاصة موثقة لمجموعة وثائقك."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "scite",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted citation analysis and assistant.",
+        "ar": "تحليل استشهادات ومساعد مستضافان."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Zotero and MCP",
+          "ar": "زوتيرو وبروتوكول MCP"
+        }
+      ],
+      "sources": [
+        "https://scite.ai/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Scite access and a paper, DOI, or research claim.",
+            "ar": "وصول إلى سايت وورقة أو معرف DOI أو ادعاء بحثي."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Find the target paper or ask Assistant a focused question.",
+              "ar": "ابحث عن الورقة المستهدفة أو اسأل المساعد سؤالاً محدداً."
+            },
+            "source_url": "https://scite.ai/"
+          },
+          {
+            "instruction": {
+              "en": "Inspect supporting, contrasting, and mentioning citation contexts.",
+              "ar": "افحص سياقات الاستشهاد الداعمة والمعارضة والتي تذكر الدراسة دون دعمها أو معارضتها."
+            },
+            "source_url": "https://scite.ai/"
+          },
+          {
+            "instruction": {
+              "en": "Read the original passages before judging the claim.",
+              "ar": "اقرأ المقاطع الأصلية قبل تقييم الادعاء."
+            },
+            "source_url": "https://scite.ai/"
+          }
+        ],
+        "example": {
+          "en": "Check whether a model benchmark claim is contested.",
+          "ar": "تحقق مما إذا كان ادعاء معيار نموذج محل خلاف."
+        },
+        "expected_outcome": {
+          "en": "An evidence note describing agreement and uncertainty.",
+          "ar": "مذكرة أدلة تصف الاتفاق وعدم اليقين."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "microsoft-security-copilot",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted portal and embedded Microsoft security experiences.",
+        "ar": "بوابة مستضافة وتجارب مدمجة في منتجات أمن مايكروسوفت."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Defender XDR and Sentinel",
+          "ar": "ديفندر إكس دي آر وسنتينل"
+        }
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Authorized tenant access and relevant security data plugins.",
+            "ar": "وصول مصرح للمؤسسة وإضافات بيانات أمنية ملائمة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open Security Copilot with the relevant data sources enabled.",
+              "ar": "افتح كوبايلوت الأمن مع تفعيل مصادر البيانات الملائمة."
+            },
+            "source_url": "https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot"
+          },
+          {
+            "instruction": {
+              "en": "Ask for a summary of one known incident.",
+              "ar": "اطلب ملخص حادثة معروفة واحدة."
+            },
+            "source_url": "https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot"
+          },
+          {
+            "instruction": {
+              "en": "Validate the response against the underlying alerts.",
+              "ar": "تحقق من الإجابة مقابل التنبيهات الأصلية."
+            },
+            "source_url": "https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot"
+          }
+        ],
+        "example": {
+          "en": "Summarize an incident timeline and unresolved evidence gaps.",
+          "ar": "لخّص تسلسل حادثة وثغرات الأدلة غير المحسومة."
+        },
+        "expected_outcome": {
+          "en": "A reviewable incident brief for an analyst.",
+          "ar": "موجز حادثة قابل للمراجعة من المحلل."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "google-threat-intelligence",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Google Cloud threat intelligence service.",
+        "ar": "خدمة استخبارات تهديدات غوغل كلاود."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Mandiant intelligence",
+          "ar": "استخبارات مانديانت"
+        }
+      ],
+      "sources": [
+        "https://cloud.google.com/security/products/threat-intelligence"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Authorized Google Threat Intelligence access and an investigation topic.",
+            "ar": "وصول مصرح لاستخبارات تهديدات غوغل وموضوع تحقيق."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Choose an actor or indicator relevant to your environment.",
+              "ar": "اختر جهة تهديد أو مؤشراً مناسباً لبيئتك."
+            },
+            "source_url": "https://cloud.google.com/security/products/threat-intelligence"
+          },
+          {
+            "instruction": {
+              "en": "Use Gemini assistance to summarize available intelligence.",
+              "ar": "استخدم مساعدة جيمناي لتلخيص الاستخبارات المتاحة."
+            },
+            "source_url": "https://cloud.google.com/security/products/threat-intelligence"
+          },
+          {
+            "instruction": {
+              "en": "Verify the source intelligence and record relevance to your assets.",
+              "ar": "تحقق من مصادر الاستخبارات وسجّل صلتها بأصولك."
+            },
+            "source_url": "https://cloud.google.com/security/products/threat-intelligence"
+          }
+        ],
+        "example": {
+          "en": "Explain an actor's reported techniques to a SOC team.",
+          "ar": "اشرح تقنيات جهة تهديد المبلغ عنها لفريق العمليات."
+        },
+        "expected_outcome": {
+          "en": "A threat brief linked to intelligence evidence.",
+          "ar": "موجز تهديد مرتبط بأدلة استخباراتية."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "crowdstrike-charlotte-ai",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Native to the Falcon platform.",
+        "ar": "مدمج في منصة فالكون."
+      },
+      "pricing_summary": {
+        "en": "Recurring credits are offered to qualifying Falcon customers; not a standalone free plan.",
+        "ar": "أرصدة دورية لعملاء فالكون المؤهلين؛ ليست خطة مجانية مستقلة."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Falcon Fusion workflows",
+          "ar": "مسارات فالكون فيوجن"
+        }
+      ],
+      "sources": [
+        "https://www.crowdstrike.com/en-us/platform/charlotte-ai/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Falcon tenant, Charlotte AI access, and analyst permissions.",
+            "ar": "مؤسسة فالكون ووصول لشارلوت وصلاحيات محلل."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open Charlotte AI in the Falcon environment.",
+              "ar": "افتح شارلوت داخل بيئة فالكون."
+            },
+            "source_url": "https://www.crowdstrike.com/en-us/platform/charlotte-ai/"
+          },
+          {
+            "instruction": {
+              "en": "Ask for an explanation of one existing detection.",
+              "ar": "اطلب تفسير كشف موجود واحد."
+            },
+            "source_url": "https://www.crowdstrike.com/en-us/platform/charlotte-ai/"
+          },
+          {
+            "instruction": {
+              "en": "Review the verdict and evidence before selecting follow-up work.",
+              "ar": "راجع الحكم والأدلة قبل اختيار العمل اللاحق."
+            },
+            "source_url": "https://www.crowdstrike.com/en-us/platform/charlotte-ai/"
+          }
+        ],
+        "example": {
+          "en": "Explain why a detection needs analyst escalation.",
+          "ar": "اشرح سبب حاجة كشف إلى تصعيد للمحلل."
+        },
+        "expected_outcome": {
+          "en": "A documented triage decision for human review.",
+          "ar": "قرار فرز موثق للمراجعة البشرية."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "sentinelone-purple-ai",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "SentinelOne security platform experience.",
+        "ar": "تجربة ضمن منصة أمن سينتينل ون."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Singularity platform",
+          "ar": "منصة سينغيولاريتي"
+        }
+      ],
+      "sources": [
+        "https://www.sentinelone.com/platform/purple/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Authorized SentinelOne environment and security telemetry.",
+            "ar": "بيئة سينتينل ون مصرح بها وقياسات أمنية."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open Purple AI for your permitted investigation scope.",
+              "ar": "افتح بيربل ضمن نطاق التحقيق المسموح."
+            },
+            "source_url": "https://www.sentinelone.com/platform/purple/"
+          },
+          {
+            "instruction": {
+              "en": "Ask about suspicious activity in that scope.",
+              "ar": "اسأل عن النشاط المشبوه ضمن ذلك النطاق."
+            },
+            "source_url": "https://www.sentinelone.com/platform/purple/"
+          },
+          {
+            "instruction": {
+              "en": "Compare the answer with underlying events before escalating.",
+              "ar": "قارن الإجابة بالأحداث الأصلية قبل التصعيد."
+            },
+            "source_url": "https://www.sentinelone.com/platform/purple/"
+          }
+        ],
+        "example": {
+          "en": "Investigate a known endpoint alert and related events.",
+          "ar": "حقق في تنبيه نقطة نهاية معروف والأحداث المرتبطة."
+        },
+        "expected_outcome": {
+          "en": "A scoped investigation note with evidence to verify.",
+          "ar": "مذكرة تحقيق محددة مع أدلة للتحقق."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "figma-make",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://www.figma.com/pricing/",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted Figma Make canvas.",
+        "ar": "لوحة فيغما ميك مستضافة."
+      },
+      "pricing_summary": {
+        "en": "Starter provides limited product access and AI credits; full access depends on seats and plan.",
+        "ar": "ستارتر يتيح وصولاً محدوداً للمنتجات وأرصدة ذكاء اصطناعي؛ الوصول الكامل يعتمد على المقعد والخطة."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Figma design attachments",
+          "ar": "مرفقات تصميم فيغما"
+        }
+      ],
+      "sources": [
+        "https://www.figma.com/make/",
+        "https://www.figma.com/pricing/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Figma access and a short interface brief.",
+            "ar": "وصول إلى فيغما وموجز واجهة قصير."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Start a Make with design context and a focused prompt.",
+              "ar": "ابدأ ميك بسياق تصميم وموجّه محدد."
+            },
+            "source_url": "https://www.figma.com/make/"
+          },
+          {
+            "instruction": {
+              "en": "Refine generated elements on the canvas.",
+              "ar": "حسّن العناصر المولدة على لوحة التصميم."
+            },
+            "source_url": "https://www.figma.com/make/"
+          },
+          {
+            "instruction": {
+              "en": "Preview the interaction and collect comments.",
+              "ar": "عاين التفاعل واجمع التعليقات."
+            },
+            "source_url": "https://www.figma.com/make/"
+          }
+        ],
+        "example": {
+          "en": "Prototype a three-screen onboarding flow.",
+          "ar": "صمّم نموذجاً لتدفق تهيئة من ثلاث شاشات."
+        },
+        "expected_outcome": {
+          "en": "An interactive prototype ready for feedback.",
+          "ar": "نموذج تفاعلي جاهز للتعليقات."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "uizard",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://uizard.io/pricing/",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted visual UI design workspace.",
+        "ar": "مساحة تصميم واجهات مرئية مستضافة."
+      },
+      "pricing_summary": {
+        "en": "Free includes limited monthly AI generations and projects; paid plans raise limits.",
+        "ar": "المجاني يتضمن توليدات ذكاء اصطناعي ومشاريع محدودة شهرياً؛ المدفوع يرفع الحدود."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Not documented in the reviewed source.",
+          "ar": "غير موثّق في المصدر المراجع."
+        }
+      ],
+      "sources": [
+        "https://uizard.io/product/",
+        "https://uizard.io/pricing/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Uizard account and a sketch or screen description.",
+            "ar": "حساب يويزارد ورسم أو وصف شاشة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create an interface concept from your description or sketch.",
+              "ar": "أنشئ مفهوم واجهة من وصفك أو رسمك."
+            },
+            "source_url": "https://uizard.io/product/"
+          },
+          {
+            "instruction": {
+              "en": "Edit the generated screens and arrange the user flow.",
+              "ar": "حرّر الشاشات المولدة ورتّب تدفق المستخدم."
+            },
+            "source_url": "https://uizard.io/product/"
+          },
+          {
+            "instruction": {
+              "en": "Preview the prototype and note missing interactions.",
+              "ar": "عاين النموذج وسجّل التفاعلات الناقصة."
+            },
+            "source_url": "https://uizard.io/product/"
+          }
+        ],
+        "example": {
+          "en": "Sketch a booking form and its confirmation screen.",
+          "ar": "ارسم نموذج حجز وشاشة تأكيده."
+        },
+        "expected_outcome": {
+          "en": "An editable UI concept for early discussion.",
+          "ar": "مفهوم واجهة قابل للتحرير للنقاش المبكر."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "framer-ai",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Visual website editor with managed hosting.",
+        "ar": "محرر مواقع مرئي مع استضافة مدارة."
+      },
+      "pricing_summary": {
+        "en": "Free hosting/design includes AI credits to try; ongoing free AI generation is not established.",
+        "ar": "التصميم والاستضافة المجانيان يتضمنان أرصدة ذكاء اصطناعي للتجربة؛ استمرار التوليد المجاني غير مثبت."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Framer CMS",
+          "ar": "نظام إدارة محتوى فريمر"
+        }
+      ],
+      "sources": [
+        "https://www.framer.com/ai/",
+        "https://www.framer.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Framer account and website copy or a site brief.",
+            "ar": "حساب فريمر ونص الموقع أو موجزه."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Describe the page structure to the AI canvas agent.",
+              "ar": "صف بنية الصفحة لوكيل لوحة الذكاء الاصطناعي."
+            },
+            "source_url": "https://www.framer.com/ai/"
+          },
+          {
+            "instruction": {
+              "en": "Edit layers, typography, and responsive layouts.",
+              "ar": "حرّر الطبقات والخطوط والتخطيطات المتجاوبة."
+            },
+            "source_url": "https://www.framer.com/ai/"
+          },
+          {
+            "instruction": {
+              "en": "Preview breakpoints and publish when the design is approved.",
+              "ar": "عاين أحجام العرض وانشر بعد اعتماد التصميم."
+            },
+            "source_url": "https://www.framer.com/ai/"
+          }
+        ],
+        "example": {
+          "en": "Build a one-page portfolio with a project section.",
+          "ar": "أنشئ معرض أعمال من صفحة واحدة وقسم للمشاريع."
+        },
+        "expected_outcome": {
+          "en": "A responsive website draft ready to publish.",
+          "ar": "مسودة موقع متجاوب جاهزة للنشر."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "whimsical-ai",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://whimsical.com/pricing",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted boards for diagrams and wireframes.",
+        "ar": "لوحات مستضافة للمخططات والهياكل الأولية."
+      },
+      "pricing_summary": {
+        "en": "Free includes a small AI-credit allowance; additional credits are purchased separately.",
+        "ar": "المجاني يتضمن حصة صغيرة من أرصدة الذكاء الاصطناعي؛ تشترى الأرصدة الإضافية منفصلة."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Whimsical Boards",
+          "ar": "لوحات ويمزيكل"
+        }
+      ],
+      "sources": [
+        "https://whimsical.com/ai",
+        "https://whimsical.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Whimsical account and a process description.",
+            "ar": "حساب ويمزيكل ووصف عملية."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Choose AI flowcharts and describe the process.",
+              "ar": "اختر مخططات التدفق بالذكاء الاصطناعي وصف العملية."
+            },
+            "source_url": "https://whimsical.com/ai"
+          },
+          {
+            "instruction": {
+              "en": "Edit branches and decision labels on the board.",
+              "ar": "حرّر التفرعات وتسميات القرارات على اللوحة."
+            },
+            "source_url": "https://whimsical.com/ai"
+          },
+          {
+            "instruction": {
+              "en": "Walk through the diagram with a teammate.",
+              "ar": "راجع مسار المخطط مع زميل."
+            },
+            "source_url": "https://whimsical.com/ai"
+          }
+        ],
+        "example": {
+          "en": "Map account recovery with success and failure paths.",
+          "ar": "ارسم استعادة الحساب بمساري النجاح والفشل."
+        },
+        "expected_outcome": {
+          "en": "An editable flowchart for requirements discussion.",
+          "ar": "مخطط تدفق قابل للتحرير لمناقشة المتطلبات."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "adobe-firefly",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://www.adobe.com/products/firefly/plans.html",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Firefly and integrated Adobe creative applications.",
+        "ar": "فايرفلاي وتطبيقات أدوبي الإبداعية المدمجة."
+      },
+      "pricing_summary": {
+        "en": "A free plan includes limited daily generations; continued usage beyond limits requires a subscription.",
+        "ar": "خطة مجانية بتوليدات يومية محدودة؛ الاستخدام فوق الحدود يتطلب اشتراكاً."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Photoshop and Illustrator",
+          "ar": "فوتوشوب وإليستريتور"
+        }
+      ],
+      "sources": [
+        "https://business.adobe.com/products/firefly-business/firefly-ai-approach.html",
+        "https://www.adobe.com/products/firefly/plans.html"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Firefly access and a visual brief with permitted reference assets.",
+            "ar": "وصول لفايرفلاي وموجز بصري مع مراجع مسموحة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Describe an image concept using Firefly's generation tools.",
+              "ar": "صف مفهوم صورة باستخدام أدوات توليد فايرفلاي."
+            },
+            "source_url": "https://business.adobe.com/products/firefly-business/firefly-ai-approach.html"
+          },
+          {
+            "instruction": {
+              "en": "Refine style and composition using available controls.",
+              "ar": "حسّن الأسلوب والتكوين باستخدام الضوابط المتاحة."
+            },
+            "source_url": "https://business.adobe.com/products/firefly-business/firefly-ai-approach.html"
+          },
+          {
+            "instruction": {
+              "en": "Review the asset and its content credentials before reuse.",
+              "ar": "راجع الأصل وبيانات منشئه قبل إعادة استخدامه."
+            },
+            "source_url": "https://business.adobe.com/products/firefly-business/firefly-ai-approach.html"
+          }
+        ],
+        "example": {
+          "en": "Create a neutral hero image for a prototype.",
+          "ar": "أنشئ صورة رئيسية محايدة لنموذج أولي."
+        },
+        "expected_outcome": {
+          "en": "A reviewed creative asset for a design draft.",
+          "ar": "أصل إبداعي مراجع لمسودة تصميم."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "canva-magic-studio",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted Canva design editor.",
+        "ar": "محرر تصميم كانفا مستضاف."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Canva media library",
+          "ar": "مكتبة وسائط كانفا"
+        }
+      ],
+      "sources": [
+        "https://www.canva.com/help/use-magic-design/",
+        "https://www.canva.com/magic-studio/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Canva account and content for a short visual design.",
+            "ar": "حساب كانفا ومحتوى لتصميم بصري قصير."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Use Magic Design with a brief or uploaded media.",
+              "ar": "استخدم ماجيك ديزاين مع موجز أو وسائط مرفوعة."
+            },
+            "source_url": "https://www.canva.com/help/use-magic-design/"
+          },
+          {
+            "instruction": {
+              "en": "Select a generated layout and edit text and visuals.",
+              "ar": "اختر تخطيطاً مولداً وحرّر النص والعناصر البصرية."
+            },
+            "source_url": "https://www.canva.com/help/use-magic-design/"
+          },
+          {
+            "instruction": {
+              "en": "Check asset access and download the finished design.",
+              "ar": "تحقق من إتاحة الأصول ونزّل التصميم المكتمل."
+            },
+            "source_url": "https://www.canva.com/help/use-magic-design/"
+          }
+        ],
+        "example": {
+          "en": "Create a three-slide introduction to an AI project.",
+          "ar": "أنشئ مقدمة من ثلاث شرائح لمشروع ذكاء اصطناعي."
+        },
+        "expected_outcome": {
+          "en": "An editable presentation draft with reviewed content.",
+          "ar": "مسودة عرض قابلة للتحرير بمحتوى مراجع."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "midjourney",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted image creation on the web.",
+        "ar": "إنشاء صور مستضاف عبر الويب."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Discord",
+          "ar": "ديسكورد"
+        }
+      ],
+      "sources": [
+        "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide",
+        "https://docs.midjourney.com/docs/terms-of-service"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Midjourney account with image generation access.",
+            "ar": "حساب ميدجورني يتيح توليد الصور."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open Create and describe your scene in the Imagine bar.",
+              "ar": "افتح الإنشاء وصف مشهدك في شريط التخيّل."
+            },
+            "source_url": "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide"
+          },
+          {
+            "instruction": {
+              "en": "Inspect generated images and explore variations.",
+              "ar": "افحص الصور المولدة واستكشف التنويعات."
+            },
+            "source_url": "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide"
+          },
+          {
+            "instruction": {
+              "en": "Select an image and save it with its prompt.",
+              "ar": "اختر صورة واحفظها مع موجّهها."
+            },
+            "source_url": "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide"
+          }
+        ],
+        "example": {
+          "en": "Explore a calm futuristic library interior.",
+          "ar": "استكشف تصميماً داخلياً هادئاً لمكتبة مستقبلية."
+        },
+        "expected_outcome": {
+          "en": "A concept image with a repeatable prompt record.",
+          "ar": "صورة مفاهيمية مع سجل الموجّه لإعادة التجربة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "openai-image-generation",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted image generation API.",
+        "ar": "واجهة توليد صور مستضافة."
+      },
+      "pricing_summary": {
+        "en": "API usage is billed separately; verify current rates before use.",
+        "ar": "استخدام الواجهة يحاسب منفصلاً؛ راجع الأسعار الحالية قبل الاستخدام."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: approachable; clear prompts and source or visual review still take practice.",
+        "ar": "تقدير تحريري: سهل البدء؛ صياغة الطلب ومراجعة المصادر أو التصميم تحتاجان تدريباً."
+      },
+      "integrations": [
+        {
+          "en": "Application API clients",
+          "ar": "عملاء الواجهة البرمجية للتطبيقات"
+        }
+      ],
+      "sources": [
+        "https://openai.com/index/image-generation-api/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "API access, configured billing, and an image brief.",
+            "ar": "وصول للواجهة البرمجية وفوترة مهيأة وموجز صورة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Read the image API guide and configure a server-side client.",
+              "ar": "اقرأ دليل واجهة الصور وهيّئ عميلاً على الخادم."
+            },
+            "source_url": "https://openai.com/index/image-generation-api/"
+          },
+          {
+            "instruction": {
+              "en": "Send a small image-generation request with a clear prompt.",
+              "ar": "أرسل طلب توليد صورة صغيراً بموجّه واضح."
+            },
+            "source_url": "https://openai.com/index/image-generation-api/"
+          },
+          {
+            "instruction": {
+              "en": "Inspect the output and refine the request before integration.",
+              "ar": "افحص الناتج وحسّن الطلب قبل دمجه."
+            },
+            "source_url": "https://openai.com/index/image-generation-api/"
+          }
+        ],
+        "example": {
+          "en": "Generate an illustration for an app's empty state.",
+          "ar": "ولّد رسماً لحالة فارغة في تطبيق."
+        },
+        "expected_outcome": {
+          "en": "A generated asset validated for product use.",
+          "ar": "أصل مولد تم التحقق من ملاءمته للمنتج."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "iriusrisk",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Managed threat-modeling platform; hosting options need confirmation.",
+        "ar": "منصة نمذجة تهديدات مدارة؛ خيارات الاستضافة تحتاج تأكيداً."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Developer workflow integrations",
+          "ar": "تكاملات سير عمل المطور"
+        }
+      ],
+      "sources": [
+        "https://www.iriusrisk.com/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "IriusRisk access and an application architecture description.",
+            "ar": "وصول إلى إيريوس ريسك ووصف هندسة تطبيق."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a threat model for one application boundary.",
+              "ar": "أنشئ نموذج تهديد لنطاق تطبيق واحد."
+            },
+            "source_url": "https://www.iriusrisk.com/"
+          },
+          {
+            "instruction": {
+              "en": "Review the generated threats and proposed controls.",
+              "ar": "راجع التهديدات المولدة والضوابط المقترحة."
+            },
+            "source_url": "https://www.iriusrisk.com/"
+          },
+          {
+            "instruction": {
+              "en": "Assign actionable controls to the development workflow.",
+              "ar": "اربط الضوابط القابلة للتنفيذ بسير التطوير."
+            },
+            "source_url": "https://www.iriusrisk.com/"
+          }
+        ],
+        "example": {
+          "en": "Model a web application with an external identity provider.",
+          "ar": "نمذج تطبيق ويب مع مزود هوية خارجي."
+        },
+        "expected_outcome": {
+          "en": "A threat model with prioritized control work.",
+          "ar": "نموذج تهديد مع أعمال ضبط مرتبة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "threatmodeler",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Threat-modeling platform; hosting options need confirmation.",
+        "ar": "منصة نمذجة تهديدات؛ خيارات الاستضافة تحتاج تأكيداً."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Not documented in the reviewed source.",
+          "ar": "غير موثّق في المصدر المراجع."
+        }
+      ],
+      "sources": [
+        "https://www.threatmodeler.ai/why-threatmodeler/ai-ml-threat-modeling"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "ThreatModeler access and an AI system architecture inventory.",
+            "ar": "وصول إلى ثريت مودلر وجرد لهندسة نظام ذكاء اصطناعي."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Represent model, data, and serving components in a threat model.",
+              "ar": "مثّل مكونات النموذج والبيانات والتقديم في نموذج تهديد."
+            },
+            "source_url": "https://www.threatmodeler.ai/why-threatmodeler/ai-ml-threat-modeling"
+          },
+          {
+            "instruction": {
+              "en": "Examine data poisoning and model extraction threat scenarios.",
+              "ar": "افحص سيناريوهات تسميم البيانات واستخراج النموذج."
+            },
+            "source_url": "https://www.threatmodeler.ai/why-threatmodeler/ai-ml-threat-modeling"
+          },
+          {
+            "instruction": {
+              "en": "Record selected mitigations and remaining design questions.",
+              "ar": "سجّل المعالجات المختارة وأسئلة التصميم المتبقية."
+            },
+            "source_url": "https://www.threatmodeler.ai/why-threatmodeler/ai-ml-threat-modeling"
+          }
+        ],
+        "example": {
+          "en": "Model an inference API and its training-data boundary.",
+          "ar": "نمذج واجهة استدلال وحدود بيانات تدريبها."
+        },
+        "expected_outcome": {
+          "en": "A design-level AI threat and mitigation inventory.",
+          "ar": "جرد تهديدات ومعالجات للذكاء الاصطناعي على مستوى التصميم."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "sd-elements",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Security requirements management platform.",
+        "ar": "منصة إدارة متطلبات أمنية."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Jira and GitHub",
+          "ar": "جيرا وغيت هب"
+        }
+      ],
+      "sources": [
+        "https://www.securitycompass.com/platform/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "SD Elements access and project security requirements.",
+            "ar": "وصول إلى إس دي إليمنتس ومتطلبات أمن المشروع."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Describe the application and its compliance context.",
+              "ar": "صف التطبيق وسياق الامتثال الخاص به."
+            },
+            "source_url": "https://www.securitycompass.com/platform/"
+          },
+          {
+            "instruction": {
+              "en": "Review the generated security requirements for relevance.",
+              "ar": "راجع ملاءمة المتطلبات الأمنية المولدة."
+            },
+            "source_url": "https://www.securitycompass.com/platform/"
+          },
+          {
+            "instruction": {
+              "en": "Send selected requirements into the development backlog.",
+              "ar": "أرسل المتطلبات المختارة إلى قائمة عمل التطوير."
+            },
+            "source_url": "https://www.securitycompass.com/platform/"
+          }
+        ],
+        "example": {
+          "en": "Identify security requirements for a customer portal.",
+          "ar": "حدد متطلبات أمن بوابة عملاء."
+        },
+        "expected_outcome": {
+          "en": "A traceable set of security implementation tasks.",
+          "ar": "مجموعة مهام تنفيذ أمني قابلة للتتبع."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "owasp-threat-dragon",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/owasp/threat-dragon",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Desktop with local files, or a configured web application.",
+        "ar": "سطح مكتب بملفات محلية أو تطبيق ويب مهيأ."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Git repositories in the web variant",
+          "ar": "مستودعات غيت في نسخة الويب"
+        }
+      ],
+      "sources": [
+        "https://www.threatdragon.com/docs/usage/getting-started.html",
+        "https://github.com/owasp/threat-dragon"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Installed desktop application or configured web application.",
+            "ar": "تطبيق سطح مكتب مثبت أو تطبيق ويب مهيأ."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a new model and save its model file.",
+              "ar": "أنشئ نموذجاً جديداً واحفظ ملفه."
+            },
+            "source_url": "https://www.threatdragon.com/docs/usage/getting-started.html"
+          },
+          {
+            "instruction": {
+              "en": "Draw processes, data stores, flows, and trust boundaries.",
+              "ar": "ارسم العمليات ومخازن البيانات والتدفقات وحدود الثقة."
+            },
+            "source_url": "https://www.threatdragon.com/docs/usage/getting-started.html"
+          },
+          {
+            "instruction": {
+              "en": "Add threats and mitigations, then save the reviewed model.",
+              "ar": "أضف التهديدات والمعالجات ثم احفظ النموذج المراجع."
+            },
+            "source_url": "https://www.threatdragon.com/docs/usage/getting-started.html"
+          }
+        ],
+        "example": {
+          "en": "Model browser, API, and database trust boundaries.",
+          "ar": "نمذج حدود الثقة بين المتصفح والواجهة وقاعدة البيانات."
+        },
+        "expected_outcome": {
+          "en": "A saved threat-model diagram and threat list.",
+          "ar": "مخطط نموذج تهديد محفوظ وقائمة تهديدات."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "github-copilot",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Editor, command-line, GitHub, and desktop experiences.",
+        "ar": "تجارب في المحرر والطرفية وغيت هب وسطح المكتب."
+      },
+      "pricing_summary": {
+        "en": "Copilot Free covers core features; paid plans expand access.",
+        "ar": "كوبايلوت المجاني يغطي ميزات أساسية؛ الخطط المدفوعة توسّع الوصول."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "GitHub and supported IDEs",
+          "ar": "غيت هب وبيئات التطوير المدعومة"
+        }
+      ],
+      "sources": [
+        "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "GitHub account and a supported editor with Copilot access.",
+            "ar": "حساب غيت هب ومحرر مدعوم يتيح كوبايلوت."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Set up Copilot in your editor and open a small project.",
+              "ar": "هيّئ كوبايلوت في محررك وافتح مشروعاً صغيراً."
+            },
+            "source_url": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
+          },
+          {
+            "instruction": {
+              "en": "Ask chat to explain a function before requesting a change.",
+              "ar": "اطلب من المحادثة شرح دالة قبل طلب تعديلها."
+            },
+            "source_url": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
+          },
+          {
+            "instruction": {
+              "en": "Review the diff and run the relevant tests.",
+              "ar": "راجع الفرق وشغّل الاختبارات المناسبة."
+            },
+            "source_url": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
+          }
+        ],
+        "example": {
+          "en": "Add input validation to one existing function.",
+          "ar": "أضف التحقق من المدخلات إلى دالة موجودة."
+        },
+        "expected_outcome": {
+          "en": "A reviewed code change with test results.",
+          "ar": "تعديل برمجي مراجع مع نتائج اختباره."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "cursor",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://cursor.com/pricing",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Coding editor and agent with cloud options.",
+        "ar": "محرر ووكيل برمجي مع خيارات سحابية."
+      },
+      "pricing_summary": {
+        "en": "Hobby is a free plan with limited Agent requests; paid plans expand access.",
+        "ar": "هوبي خطة مجانية بطلبات وكيل محدودة؛ الخطط المدفوعة توسّع الوصول."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "GitHub, GitLab, and MCP",
+          "ar": "غيت هب وغيت لاب وبروتوكول MCP"
+        }
+      ],
+      "sources": [
+        "https://cursor.com/docs",
+        "https://cursor.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Cursor installed and a repository with runnable checks.",
+            "ar": "كيرسر مثبت ومستودع ذو فحوص قابلة للتشغيل."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open the repository and ask Agent to explain its structure.",
+              "ar": "افتح المستودع واطلب من الوكيل شرح بنيته."
+            },
+            "source_url": "https://cursor.com/docs"
+          },
+          {
+            "instruction": {
+              "en": "Request a bounded fix with an explicit acceptance condition.",
+              "ar": "اطلب إصلاحاً محدوداً بشرط قبول واضح."
+            },
+            "source_url": "https://cursor.com/docs"
+          },
+          {
+            "instruction": {
+              "en": "Inspect the changes and run the project's checks.",
+              "ar": "افحص التغييرات وشغّل فحوص المشروع."
+            },
+            "source_url": "https://cursor.com/docs"
+          }
+        ],
+        "example": {
+          "en": "Fix a reproduced form validation bug.",
+          "ar": "أصلح خللاً معاد إنتاجه في التحقق من نموذج."
+        },
+        "expected_outcome": {
+          "en": "A verified patch with an understandable diff.",
+          "ar": "رقعة متحقق منها مع فرق واضح."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "windsurf",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Desktop coding environment; vendor documentation has changed branding.",
+        "ar": "بيئة برمجة لسطح المكتب؛ تغيرت علامة توثيق المورد."
+      },
+      "pricing_summary": {
+        "en": "Pricing redirects to Devin, whose Free plan has limited agent use; legacy Windsurf entitlement is unverified.",
+        "ar": "التسعير يحوّل إلى ديفن بخطة مجانية واستخدام وكيل محدود؛ إتاحة ويندسيرف القديم غير متحقق منها."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Not documented for the retained Windsurf scope.",
+          "ar": "غير موثّق لنطاق ويندسيرف المحفوظ."
+        }
+      ],
+      "sources": [
+        "https://docs.windsurf.com/",
+        "https://windsurf.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Desktop editor access; official Windsurf docs now redirect to Devin Desktop.",
+            "ar": "وصول لمحرر سطح المكتب؛ توثيق ويندسيرف يحوّل الآن إلى ديفن ديسكتوب."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Follow the current desktop installation and sign-in guide.",
+              "ar": "اتبع دليل التثبيت وتسجيل الدخول الحالي لسطح المكتب."
+            },
+            "source_url": "https://docs.windsurf.com/"
+          },
+          {
+            "instruction": {
+              "en": "Open a repository and give the coding agent one small task.",
+              "ar": "افتح مستودعاً وأعط الوكيل البرمجي مهمة صغيرة واحدة."
+            },
+            "source_url": "https://docs.windsurf.com/"
+          },
+          {
+            "instruction": {
+              "en": "Review generated edits and verify the application behavior.",
+              "ar": "راجع التعديلات المولدة وتحقق من سلوك التطبيق."
+            },
+            "source_url": "https://docs.windsurf.com/"
+          }
+        ],
+        "example": {
+          "en": "Add a missing error message to an existing form.",
+          "ar": "أضف رسالة خطأ ناقصة إلى نموذج موجود."
+        },
+        "expected_outcome": {
+          "en": "A reviewed editor change; verify product entitlement first.",
+          "ar": "تعديل محرر مراجع مع التحقق أولاً من إتاحة المنتج."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "claude-code",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Coding agent with terminal and other supported interfaces.",
+        "ar": "وكيل برمجي بالطرفية وواجهات أخرى مدعومة."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Repository files and command-line tools",
+          "ar": "ملفات المستودع وأدوات الطرفية"
+        }
+      ],
+      "sources": [
+        "https://code.claude.com/docs/en/how-claude-code-works"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Claude Code access and a repository you can test.",
+            "ar": "وصول إلى كلود كود ومستودع يمكنك اختباره."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Start Claude Code in the project directory.",
+              "ar": "ابدأ كلود كود في مجلد المشروع."
+            },
+            "source_url": "https://code.claude.com/docs/en/how-claude-code-works"
+          },
+          {
+            "instruction": {
+              "en": "Ask it to inspect a failing behavior and propose a fix.",
+              "ar": "اطلب منه فحص سلوك فاشل واقتراح إصلاح."
+            },
+            "source_url": "https://code.claude.com/docs/en/how-claude-code-works"
+          },
+          {
+            "instruction": {
+              "en": "Review tool actions, inspect the diff, and rerun tests.",
+              "ar": "راجع إجراءات الأدوات وافحص الفرق وأعد الاختبارات."
+            },
+            "source_url": "https://code.claude.com/docs/en/how-claude-code-works"
+          }
+        ],
+        "example": {
+          "en": "Diagnose and repair one failing unit test.",
+          "ar": "شخّص وأصلح اختبار وحدة فاشلاً واحداً."
+        },
+        "expected_outcome": {
+          "en": "A checked repository change with an explanation.",
+          "ar": "تغيير مستودع مفحوص مع تفسير."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "hugging-face",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted Hub; execution depends on the chosen model and library.",
+        "ar": "هب مستضاف؛ التنفيذ يعتمد على النموذج والمكتبة المختارين."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Git repositories and library integrations",
+          "ar": "مستودعات غيت وتكاملات المكتبات"
+        }
+      ],
+      "sources": [
+        "https://huggingface.co/docs/hub/index",
+        "https://huggingface.co/docs/transformers/installation",
+        "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+        "https://github.com/huggingface/transformers/blob/main/LICENSE"
+      ],
+      "reviewed_at": "2026-09-06",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Hub account and a model task with known input data.",
+            "ar": "حساب هب ومهمة نموذج ذات بيانات مدخلات معروفة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Find a model for your task and read its model card.",
+              "ar": "ابحث عن نموذج لمهمتك واقرأ بطاقته."
+            },
+            "source_url": "https://huggingface.co/docs/hub/index"
+          },
+          {
+            "instruction": {
+              "en": "Inspect its license and the recommended library usage.",
+              "ar": "افحص رخصته واستخدام المكتبة الموصى به."
+            },
+            "source_url": "https://huggingface.co/docs/hub/index"
+          },
+          {
+            "instruction": {
+              "en": "Run a small sample and record quality and resource needs.",
+              "ar": "شغّل عينة صغيرة وسجّل الجودة واحتياجات الموارد."
+            },
+            "source_url": "https://huggingface.co/docs/hub/index"
+          }
+        ],
+        "example": {
+          "en": "Try a text-classification model on ten labeled examples.",
+          "ar": "جرّب نموذج تصنيف نصوص على عشرة أمثلة معنونة."
+        },
+        "expected_outcome": {
+          "en": "A documented model trial with license and quality notes.",
+          "ar": "تجربة نموذج موثقة مع ملاحظات الرخصة والجودة."
+        },
+        "reviewed_at": "2026-09-05"
+      },
+      "operation_setups": [
+        {
+          "id": "transformers-distilbert-sst2-local",
+          "name": {
+            "en": "Transformers + DistilBERT English sentiment",
+            "ar": "Transformers وDistilBERT للمشاعر الإنجليزية"
+          },
+          "task": {
+            "en": "Classify short English text as positive or negative locally.",
+            "ar": "تصنيف نص إنجليزي قصير محلياً إلى إيجابي أو سلبي."
+          },
+          "stage": "implementation",
+          "domain": "artificial_intelligence",
+          "platform": {
+            "en": "Local Python with PyTorch; CPU-compatible inference",
+            "ar": "بايثون محلي مع PyTorch؛ استدلال متوافق مع المعالج المركزي"
+          },
+          "version": null,
+          "local_components": [
+            {
+              "en": "Transformers, PyTorch and tokenizer dependencies",
+              "ar": "Transformers وPyTorch وتبعيات التجزئة"
+            }
+          ],
+          "model": {
+            "en": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+            "ar": "distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+          },
+          "preparation_network": "required",
+          "runtime_network": "not_required",
+          "offline_features": [
+            {
+              "en": "English binary sentiment inference on supplied text",
+              "ar": "استدلال مشاعر إنجليزية ثنائية على النص المقدم"
+            }
+          ],
+          "online_only_features": [
+            {
+              "en": "Hub discovery, fresh downloads and hosted inference",
+              "ar": "اكتشاف هب والتنزيلات الجديدة والاستدلال المستضاف"
+            }
+          ],
+          "hardware_requirements": {
+            "en": "Confirm resources for your chosen deployment; no measured minimum established here.",
+            "ar": "تحقق من الموارد اللازمة للنشر المختار؛ لم يحدد هنا حد أدنى مقاس."
+          },
+          "download_requirements": {
+            "en": "Pinned model weights, tokenizer/configuration and Python dependencies.",
+            "ar": "أوزان نموذج بمراجعة محددة وملفات التجزئة والإعداد وتبعيات بايثون."
+          },
+          "offline": {
+            "value": true,
+            "source_url": "https://huggingface.co/docs/transformers/installation",
+            "reviewed_at": "2026-09-06"
+          },
+          "free_plan": {
+            "value": true,
+            "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+            "reviewed_at": "2026-09-06"
+          },
+          "open_source": {
+            "value": true,
+            "source_url": "https://github.com/huggingface/transformers/blob/main/LICENSE",
+            "reviewed_at": "2026-09-06"
+          },
+          "evidence_status": "official_documentation",
+          "evidence": [
+            {
+              "property": "offline",
+              "status": "official_documentation",
+              "source_url": "https://huggingface.co/docs/transformers/installation",
+              "summary": {
+                "en": "Cached files and offline loading support local inference without Hub HTTP calls.",
+                "ar": "تدعم الملفات المخزنة والتحميل دون شبكة الاستدلال المحلي دون طلبات HTTP إلى هب."
+              },
+              "version_scope": "Transformers local loading; pinned DistilBERT SST-2 model",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Preparation requires downloading dependencies and model/tokenizer files; no independent test yet.",
+                "ar": "يتطلب التجهيز تنزيل التبعيات وملفات النموذج والمجزئ؛ لا يوجد اختبار مستقل بعد."
+              }
+            },
+            {
+              "property": "open_source",
+              "status": "official_documentation",
+              "source_url": "https://github.com/huggingface/transformers/blob/main/LICENSE",
+              "summary": {
+                "en": "Transformers code is Apache-2.0.",
+                "ar": "شيفرة Transformers بترخيص Apache-2.0."
+              },
+              "version_scope": "Transformers code license",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Applies to library code, not every model on the Hub.",
+                "ar": "ينطبق على شيفرة المكتبة لا كل نماذج هب."
+              }
+            },
+            {
+              "property": "model_license",
+              "status": "official_documentation",
+              "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+              "summary": {
+                "en": "The specified DistilBERT SST-2 model card declares Apache-2.0.",
+                "ar": "تعلن بطاقة نموذج DistilBERT SST-2 المحدد ترخيص Apache-2.0."
+              },
+              "version_scope": "distilbert SST-2 English checkpoint",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "English binary sentiment only; bias and domain limitations apply.",
+                "ar": "للمشاعر الإنجليزية الثنائية فقط؛ تنطبق قيود التحيز والمجال."
+              }
+            },
+            {
+              "property": "free_plan",
+              "status": "official_documentation",
+              "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+              "summary": {
+                "en": "The public Apache-2.0 checkpoint supports local use without a hosted inference subscription.",
+                "ar": "تتيح نقطة النموذج العامة وفق Apache-2.0 الاستخدام المحلي دون اشتراك استدلال مستضاف."
+              },
+              "version_scope": "Local model use only",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Hardware, electricity and downloads cost resources; hosted API plans are excluded.",
+                "ar": "للعتاد والكهرباء والتنزيل موارد وتكاليف؛ خطط API المستضافة مستبعدة."
+              }
+            }
+          ],
+          "starter_guide": {
+            "prerequisites": [
+              {
+                "en": "Python with Transformers/PyTorch, cached model/tokenizer files and English test sentences.",
+                "ar": "بايثون مع Transformers وPyTorch وملفات النموذج والمجزئ مخزنة وجمل اختبار إنجليزية."
+              }
+            ],
+            "steps": [
+              {
+                "instruction": {
+                  "en": "Install transformers[torch] in an isolated environment while online.",
+                  "ar": "ثبت transformers[torch] في بيئة معزولة أثناء الاتصال."
+                },
+                "source_url": "https://huggingface.co/docs/transformers/installation"
+              },
+              {
+                "instruction": {
+                  "en": "Download the specified DistilBERT model and tokenizer, saving the exact revision locally.",
+                  "ar": "نزّل نموذج DistilBERT المحدد ومجزئه واحفظ المراجعة الدقيقة محلياً."
+                },
+                "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+              },
+              {
+                "instruction": {
+                  "en": "Disconnect, set HF_HUB_OFFLINE=1, and load both from the local folder with local_files_only=True.",
+                  "ar": "اقطع الاتصال واضبط HF_HUB_OFFLINE=1 وحمّل النموذج والمجزئ من المجلد المحلي باستخدام local_files_only=True."
+                },
+                "source_url": "https://huggingface.co/docs/transformers/installation"
+              },
+              {
+                "instruction": {
+                  "en": "Run a text-classification pipeline on short English sentences and inspect labels and scores.",
+                  "ar": "شغّل مسار text-classification على جمل إنجليزية قصيرة وافحص التصنيفات والدرجات."
+                },
+                "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+              },
+              {
+                "instruction": {
+                  "en": "Check biased or ambiguous examples; do not treat scores as calibrated probabilities or use this as an Arabic model.",
+                  "ar": "افحص أمثلة متحيزة أو ملتبسة؛ لا تعتبر الدرجات احتمالات معايرة ولا تستخدمه كنموذج للعربية."
+                },
+                "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+              }
+            ],
+            "example": {
+              "en": "Classify: I enjoyed this movie. Compare with: I disliked this movie.",
+              "ar": "صنّف الجملة الإنجليزية: I enjoyed this movie. وقارنها بـ: I disliked this movie."
+            },
+            "expected_outcome": {
+              "en": "Positive/negative English sentiment labels and scores; no promised accuracy or factual judgment.",
+              "ar": "تصنيفات مشاعر إنجليزية إيجابية أو سلبية ودرجات؛ دون ضمان الدقة أو الحكم على الحقائق."
+            },
+            "reviewed_at": "2026-09-06"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tool_id": "langgraph",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/langchain-ai/langgraph",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Application library; hosting and model calls are configured separately.",
+        "ar": "مكتبة تطبيق؛ الاستضافة واستدعاءات النموذج تهيأ منفصلة."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "LangChain ecosystem",
+          "ar": "منظومة لانغ تشين"
+        }
+      ],
+      "sources": [
+        "https://github.com/langchain-ai/langgraph"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment and a clearly bounded agent workflow.",
+            "ar": "بيئة بايثون وسير وكيل محدد النطاق."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install LangGraph and define the workflow state.",
+              "ar": "ثبّت لانغ غراف وعرّف حالة سير العمل."
+            },
+            "source_url": "https://github.com/langchain-ai/langgraph"
+          },
+          {
+            "instruction": {
+              "en": "Add nodes and transitions for one short process.",
+              "ar": "أضف العقد والانتقالات لعملية قصيرة واحدة."
+            },
+            "source_url": "https://github.com/langchain-ai/langgraph"
+          },
+          {
+            "instruction": {
+              "en": "Run sample inputs and inspect state transitions.",
+              "ar": "شغّل مدخلات نموذجية وافحص انتقالات الحالة."
+            },
+            "source_url": "https://github.com/langchain-ai/langgraph"
+          }
+        ],
+        "example": {
+          "en": "Route a question to retrieval or a direct answer.",
+          "ar": "وجّه سؤالاً إلى الاسترجاع أو إجابة مباشرة."
+        },
+        "expected_outcome": {
+          "en": "A small executable graph with observable state.",
+          "ar": "رسم تنفيذي صغير بحالة قابلة للملاحظة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "llamaindex",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/run-llama/llama_index",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Python application framework; model deployment varies.",
+        "ar": "إطار تطبيق بايثون؛ نشر النموذج يختلف."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Pydantic output schemas",
+          "ar": "مخططات ناتج بايدانتيك"
+        }
+      ],
+      "sources": [
+        "https://docs.llamaindex.ai/en/latest/understanding/agent/structured_output/",
+        "https://github.com/run-llama/llama_index"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment, model access, and a desired output schema.",
+            "ar": "بيئة بايثون ووصول لنموذج ومخطط ناتج مطلوب."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Define a structured output schema for your agent.",
+              "ar": "عرّف مخطط ناتج منظم لوكيلك."
+            },
+            "source_url": "https://docs.llamaindex.ai/en/latest/understanding/agent/structured_output/"
+          },
+          {
+            "instruction": {
+              "en": "Configure the agent's output class using the documented example.",
+              "ar": "هيّئ صنف ناتج الوكيل وفق المثال الموثق."
+            },
+            "source_url": "https://docs.llamaindex.ai/en/latest/understanding/agent/structured_output/"
+          },
+          {
+            "instruction": {
+              "en": "Run a sample document question and validate the returned fields.",
+              "ar": "شغّل سؤال وثيقة تجريبياً وتحقق من الحقول المعادة."
+            },
+            "source_url": "https://docs.llamaindex.ai/en/latest/understanding/agent/structured_output/"
+          }
+        ],
+        "example": {
+          "en": "Extract a title and summary into a typed result.",
+          "ar": "استخرج عنواناً وملخصاً إلى نتيجة ذات أنواع محددة."
+        },
+        "expected_outcome": {
+          "en": "A structured agent response that your application can validate.",
+          "ar": "إجابة وكيل منظمة يمكن لتطبيقك التحقق منها."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "crewai",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/crewaiinc/crewai",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Python framework; providers and hosting configured separately.",
+        "ar": "إطار بايثون؛ المزودون والاستضافة يهيأون منفصلين."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Agent tools and knowledge files",
+          "ar": "أدوات الوكلاء وملفات المعرفة"
+        }
+      ],
+      "sources": [
+        "https://github.com/crewaiinc/crewai"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python tooling, CrewAI installed, and model credentials as needed.",
+            "ar": "أدوات بايثون وكرو إيه آي مثبتة وبيانات اعتماد النموذج عند الحاجة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a crew project using the documented scaffold command.",
+              "ar": "أنشئ مشروع فريق باستخدام أمر التهيئة الموثق."
+            },
+            "source_url": "https://github.com/crewaiinc/crewai"
+          },
+          {
+            "instruction": {
+              "en": "Define agent roles, tasks, and the expected result.",
+              "ar": "عرّف أدوار الوكلاء والمهام والنتيجة المتوقعة."
+            },
+            "source_url": "https://github.com/crewaiinc/crewai"
+          },
+          {
+            "instruction": {
+              "en": "Run the crew on a small example and review its output.",
+              "ar": "شغّل الفريق على مثال صغير وراجع ناتجه."
+            },
+            "source_url": "https://github.com/crewaiinc/crewai"
+          }
+        ],
+        "example": {
+          "en": "Have a researcher and editor draft a short technical brief.",
+          "ar": "اجعل باحثاً ومحرراً يعدّان موجزاً تقنياً قصيراً."
+        },
+        "expected_outcome": {
+          "en": "A reproducible crew configuration and reviewed draft.",
+          "ar": "تهيئة فريق قابلة لإعادة التشغيل ومسودة مراجعة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "snyk-code",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://snyk.io/plans/",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "CLI, IDE, and hosted repository scanning workflows.",
+        "ar": "مسارات مسح بالطرفية والمحرر والمستودعات المستضافة."
+      },
+      "pricing_summary": {
+        "en": "Free includes limited Snyk Code scans; this does not verify free access to every AI fix feature.",
+        "ar": "المجاني يتضمن مسوحات سنيك كود محدودة؛ لا يثبت ذلك مجانية كل ميزة إصلاح بالذكاء الاصطناعي."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Git repositories and IDE integrations",
+          "ar": "مستودعات غيت وتكاملات المحررات"
+        }
+      ],
+      "sources": [
+        "https://docs.snyk.io/developer-tools/snyk-cli/getting-started-with-the-snyk-cli",
+        "https://docs.snyk.io/scan-with-snyk/snyk-code",
+        "https://snyk.io/plans/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Snyk account, enabled Snyk Code, and a permitted repository.",
+            "ar": "حساب سنيك وتفعيل سنيك كود ومستودع مصرح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install and authenticate the Snyk CLI for the project.",
+              "ar": "ثبّت طرفية سنيك وصادقها للمشروع."
+            },
+            "source_url": "https://docs.snyk.io/developer-tools/snyk-cli/getting-started-with-the-snyk-cli"
+          },
+          {
+            "instruction": {
+              "en": "Run snyk code test and inspect the reported code paths.",
+              "ar": "شغّل snyk code test وافحص مسارات الشيفرة المبلغ عنها."
+            },
+            "source_url": "https://docs.snyk.io/developer-tools/snyk-cli/getting-started-with-the-snyk-cli"
+          },
+          {
+            "instruction": {
+              "en": "Review a proposed remediation and rerun the scan and tests.",
+              "ar": "راجع معالجة مقترحة وأعد المسح والاختبارات."
+            },
+            "source_url": "https://docs.snyk.io/developer-tools/snyk-cli/getting-started-with-the-snyk-cli"
+          }
+        ],
+        "example": {
+          "en": "Inspect one injection finding in a small web service.",
+          "ar": "افحص نتيجة حقن واحدة في خدمة ويب صغيرة."
+        },
+        "expected_outcome": {
+          "en": "A reviewed finding and evidence from a follow-up scan.",
+          "ar": "نتيجة مراجعة ودليل من مسح لاحق."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "semgrep-assistant",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "AI assistance in the Semgrep platform; distinct from the open scanner.",
+        "ar": "مساعدة ذكاء اصطناعي بمنصة سيمغريب؛ تختلف عن الماسح المفتوح."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Pull-request and merge-request comments",
+          "ar": "تعليقات طلبات الدمج"
+        }
+      ],
+      "sources": [
+        "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Semgrep platform access with Assistant and scan findings.",
+            "ar": "وصول لمنصة سيمغريب مع المساعد ونتائج مسح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open an Assistant finding in a pull-request workflow.",
+              "ar": "افتح نتيجة للمساعد في سير طلب دمج."
+            },
+            "source_url": "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/"
+          },
+          {
+            "instruction": {
+              "en": "Read triage reasoning and the suggested remediation steps.",
+              "ar": "اقرأ تفسير الفرز وخطوات المعالجة المقترحة."
+            },
+            "source_url": "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/"
+          },
+          {
+            "instruction": {
+              "en": "Review the proposed code fix and verify it with tests.",
+              "ar": "راجع إصلاح الشيفرة المقترح وتحقق منه بالاختبارات."
+            },
+            "source_url": "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/"
+          }
+        ],
+        "example": {
+          "en": "Review a suggested fix for a tainted input path.",
+          "ar": "راجع إصلاحاً مقترحاً لمسار مدخلات ملوّث."
+        },
+        "expected_outcome": {
+          "en": "A validated remediation decision recorded with the finding.",
+          "ar": "قرار معالجة متحقق منه مسجل مع النتيجة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "aikido-autofix",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Hosted remediation workflow with repository integration.",
+        "ar": "سير معالجة مستضاف مع تكامل المستودع."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "GitHub, GitLab, and Bitbucket",
+          "ar": "غيت هب وغيت لاب وبت باكت"
+        }
+      ],
+      "sources": [
+        "https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-sast-and-iac-issues",
+        "https://help.aikido.dev/aikido-autofix"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Aikido access, repository connection, and an eligible finding.",
+            "ar": "وصول إلى أيكيدو وربط مستودع ونتيجة مؤهلة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open a supported SAST or IaC issue in AutoFix.",
+              "ar": "افتح مشكلة تحليل ساكن أو بنية كشيفرة مدعومة في أوتوفيكس."
+            },
+            "source_url": "https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-sast-and-iac-issues"
+          },
+          {
+            "instruction": {
+              "en": "Generate and inspect the proposed patch.",
+              "ar": "ولّد الرقعة المقترحة وافحصها."
+            },
+            "source_url": "https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-sast-and-iac-issues"
+          },
+          {
+            "instruction": {
+              "en": "Create a reviewable pull request and run project checks.",
+              "ar": "أنشئ طلب دمج قابل للمراجعة وشغّل فحوص المشروع."
+            },
+            "source_url": "https://help.aikido.dev/autofix-and-remediation/scope/ai-autofix-for-sast-and-iac-issues"
+          }
+        ],
+        "example": {
+          "en": "Prepare a fix for one small SAST finding.",
+          "ar": "جهّز إصلاحاً لنتيجة تحليل ساكن صغيرة واحدة."
+        },
+        "expected_outcome": {
+          "en": "A proposed security patch ready for human review.",
+          "ar": "رقعة أمنية مقترحة جاهزة للمراجعة البشرية."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "gitlab-duo-vulnerability",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": false,
+        "source_url": "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "GitLab-integrated security assistance.",
+        "ar": "مساعدة أمنية مدمجة في غيت لاب."
+      },
+      "pricing_summary": {
+        "en": "The reviewed workflow requires the GitLab Duo Enterprise add-on.",
+        "ar": "سير العمل المراجع يتطلب إضافة غيت لاب ديو إنتربرايز."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "GitLab project and security workflows",
+          "ar": "مشروع غيت لاب ومسارات الأمن"
+        }
+      ],
+      "sources": [
+        "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "GitLab project access and the required Duo entitlement.",
+            "ar": "وصول لمشروع غيت لاب وإتاحة ديو المطلوبة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open a security vulnerability in the project context.",
+              "ar": "افتح ثغرة أمنية ضمن سياق المشروع."
+            },
+            "source_url": "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/"
+          },
+          {
+            "instruction": {
+              "en": "Ask Duo to explain the vulnerability and remediation priorities.",
+              "ar": "اطلب من ديو شرح الثغرة وأولويات معالجتها."
+            },
+            "source_url": "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/"
+          },
+          {
+            "instruction": {
+              "en": "Validate the advice against code and project tests.",
+              "ar": "تحقق من النصيحة مقابل الشيفرة واختبارات المشروع."
+            },
+            "source_url": "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/"
+          }
+        ],
+        "example": {
+          "en": "Explain an existing vulnerability to plan a focused fix.",
+          "ar": "اشرح ثغرة موجودة للتخطيط لإصلاح محدد."
+        },
+        "expected_outcome": {
+          "en": "A contextual vulnerability explanation and verified next steps.",
+          "ar": "شرح ثغرة في سياقها وخطوات لاحقة متحقق منها."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "qodo",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "IDE and repository test-generation workflows.",
+        "ar": "مسارات توليد اختبارات في المحرر والمستودع."
+      },
+      "pricing_summary": {
+        "en": "Current review plans have no permanent general free tier; legacy test-generation entitlement needs confirmation.",
+        "ar": "خطط المراجعة الحالية بلا فئة مجانية عامة دائمة؛ إتاحة توليد الاختبارات القديم تحتاج تأكيداً."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Existing test frameworks and CI",
+          "ar": "أطر الاختبار الحالية والتكامل المستمر"
+        }
+      ],
+      "sources": [
+        "https://www.qodo.ai/solutions/testing/",
+        "https://www.qodo.ai/pricing/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Qodo access, a supported IDE, and an existing test framework.",
+            "ar": "وصول إلى كودو ومحرر مدعوم وإطار اختبارات موجود."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open the target function and select test preferences.",
+              "ar": "افتح الدالة المستهدفة وحدد تفضيلات الاختبار."
+            },
+            "source_url": "https://www.qodo.ai/solutions/testing/"
+          },
+          {
+            "instruction": {
+              "en": "Generate tests using existing project test conventions.",
+              "ar": "ولّد اختبارات وفق أعراف اختبار المشروع الحالية."
+            },
+            "source_url": "https://www.qodo.ai/solutions/testing/"
+          },
+          {
+            "instruction": {
+              "en": "Run tests and inspect assertions for meaningful behavior.",
+              "ar": "شغّل الاختبارات وافحص التأكيدات لضمان سلوك ذي معنى."
+            },
+            "source_url": "https://www.qodo.ai/solutions/testing/"
+          }
+        ],
+        "example": {
+          "en": "Test success and invalid-input paths of a parser.",
+          "ar": "اختبر مساري النجاح والمدخلات غير الصحيحة لمحلل."
+        },
+        "expected_outcome": {
+          "en": "A reviewed set of executable behavior tests.",
+          "ar": "مجموعة اختبارات سلوك تنفيذية مراجعة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "diffblue-cover",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Local plugin or CLI; network and licensing requirements apply.",
+        "ar": "إضافة أو طرفية محلية؛ تطبق متطلبات الشبكة والترخيص."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Java build tooling and CI pipelines",
+          "ar": "أدوات بناء جافا وخطوط التكامل المستمر"
+        }
+      ],
+      "sources": [
+        "https://cover-docs.diffblue.com/get-started/get-started/get-started-cover-plugin",
+        "https://cover-docs.diffblue.com/get-started/what-is-diffblue-cover"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Supported Java or Kotlin project, build tooling, and Cover license.",
+            "ar": "مشروع جافا أو كوتلن مدعوم وأدوات بناء ورخصة كوفر."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install the Cover plugin or CLI and verify project requirements.",
+              "ar": "ثبّت إضافة كوفر أو طرفيته وتحقق من متطلبات المشروع."
+            },
+            "source_url": "https://cover-docs.diffblue.com/get-started/get-started/get-started-cover-plugin"
+          },
+          {
+            "instruction": {
+              "en": "Generate unit tests for a small target class.",
+              "ar": "ولّد اختبارات وحدة لصنف مستهدف صغير."
+            },
+            "source_url": "https://cover-docs.diffblue.com/get-started/get-started/get-started-cover-plugin"
+          },
+          {
+            "instruction": {
+              "en": "Run the tests and inspect generated assertions and coverage.",
+              "ar": "شغّل الاختبارات وافحص التأكيدات المولدة والتغطية."
+            },
+            "source_url": "https://cover-docs.diffblue.com/get-started/get-started/get-started-cover-plugin"
+          }
+        ],
+        "example": {
+          "en": "Generate regression tests for a Java price calculator.",
+          "ar": "ولّد اختبارات انحدار لحاسبة أسعار بجافا."
+        },
+        "expected_outcome": {
+          "en": "Executable generated unit tests for the selected class.",
+          "ar": "اختبارات وحدة مولدة قابلة للتشغيل للصنف المختار."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "testim",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Managed web and mobile test automation.",
+        "ar": "أتمتة مدارة لاختبارات الويب والهاتف."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Not documented in the reviewed source.",
+          "ar": "غير موثّق في المصدر المراجع."
+        }
+      ],
+      "sources": [
+        "https://help.testim.io/docs/testim-automate"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Testim access and a test web application.",
+            "ar": "وصول إلى تستيم وتطبيق ويب للاختبار."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a browser test for one user journey.",
+              "ar": "أنشئ اختبار متصفح لرحلة مستخدم واحدة."
+            },
+            "source_url": "https://help.testim.io/docs/testim-automate"
+          },
+          {
+            "instruction": {
+              "en": "Record interactions and add a visible outcome assertion.",
+              "ar": "سجّل التفاعلات وأضف تأكيداً لنتيجة مرئية."
+            },
+            "source_url": "https://help.testim.io/docs/testim-automate"
+          },
+          {
+            "instruction": {
+              "en": "Run the test and inspect failures before scheduling it.",
+              "ar": "شغّل الاختبار وافحص الإخفاقات قبل جدولته."
+            },
+            "source_url": "https://help.testim.io/docs/testim-automate"
+          }
+        ],
+        "example": {
+          "en": "Test a login form with a valid test account.",
+          "ar": "اختبر نموذج دخول بحساب اختبار صالح."
+        },
+        "expected_outcome": {
+          "en": "A repeatable UI test with an explicit assertion.",
+          "ar": "اختبار واجهة قابل للتكرار بتأكيد صريح."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "mabl",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Managed agentic test-authoring platform.",
+        "ar": "منصة مدارة لتأليف الاختبارات بواسطة الوكلاء."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Application testing workflows",
+          "ar": "مسارات اختبار التطبيقات"
+        }
+      ],
+      "sources": [
+        "https://help.mabl.com/hc/en-us/articles/31649455424660-Create-tests-with-generative-AI"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "mabl access and an application test environment.",
+            "ar": "وصول إلى ميبل وبيئة اختبار للتطبيق."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Describe one test journey to the authoring agent.",
+              "ar": "صف رحلة اختبار واحدة لوكيل التأليف."
+            },
+            "source_url": "https://help.mabl.com/hc/en-us/articles/31649455424660-Create-tests-with-generative-AI"
+          },
+          {
+            "instruction": {
+              "en": "Review generated steps and specify the required assertions.",
+              "ar": "راجع الخطوات المولدة وحدد التأكيدات المطلوبة."
+            },
+            "source_url": "https://help.mabl.com/hc/en-us/articles/31649455424660-Create-tests-with-generative-AI"
+          },
+          {
+            "instruction": {
+              "en": "Run the test and refine instructions around any mismatch.",
+              "ar": "شغّل الاختبار وحسّن التعليمات حول أي اختلاف."
+            },
+            "source_url": "https://help.mabl.com/hc/en-us/articles/31649455424660-Create-tests-with-generative-AI"
+          }
+        ],
+        "example": {
+          "en": "Verify adding an item to a shopping basket.",
+          "ar": "تحقق من إضافة عنصر إلى سلة التسوق."
+        },
+        "expected_outcome": {
+          "en": "An executable journey test with reviewed assertions.",
+          "ar": "اختبار رحلة تنفيذي بتأكيدات مراجعة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "langsmith",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": true,
+        "source_url": "https://www.langchain.com/pricing",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Cloud, hybrid, or self-hosted platform options.",
+        "ar": "خيارات منصة سحابية أو هجينة أو ذاتية الاستضافة."
+      },
+      "pricing_summary": {
+        "en": "Developer includes a free seat and limited traces; extra usage and model calls may cost more.",
+        "ar": "ديفلوبر يتضمن مقعداً مجانياً وآثاراً محدودة؛ الاستخدام الإضافي واستدعاءات النموذج قد تكلف أكثر."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "LangSmith SDK and application traces",
+          "ar": "حزمة لانغ سميث وآثار التطبيق"
+        }
+      ],
+      "sources": [
+        "https://docs.langchain.com/langsmith/evaluation",
+        "https://www.langchain.com/pricing"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "LangSmith account, API key, and a runnable AI application.",
+            "ar": "حساب لانغ سميث ومفتاح واجهة وتطبيق ذكاء اصطناعي قابل للتشغيل."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Create a small dataset with inputs and reference outputs.",
+              "ar": "أنشئ مجموعة صغيرة من المدخلات والنواتج المرجعية."
+            },
+            "source_url": "https://docs.langchain.com/langsmith/evaluation"
+          },
+          {
+            "instruction": {
+              "en": "Define evaluators and run an experiment against the dataset.",
+              "ar": "عرّف المقيمين وشغّل تجربة على مجموعة البيانات."
+            },
+            "source_url": "https://docs.langchain.com/langsmith/evaluation"
+          },
+          {
+            "instruction": {
+              "en": "Compare results and inspect failed examples.",
+              "ar": "قارن النتائج وافحص الأمثلة الفاشلة."
+            },
+            "source_url": "https://docs.langchain.com/langsmith/evaluation"
+          }
+        ],
+        "example": {
+          "en": "Evaluate ten support questions before changing a prompt.",
+          "ar": "قيّم عشرة أسئلة دعم قبل تغيير الموجّه."
+        },
+        "expected_outcome": {
+          "en": "An experiment baseline for later regression comparisons.",
+          "ar": "خط أساس تجريبي لمقارنات الانحدار اللاحقة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "arize-phoenix",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Local server or other supported hosting; ELv2 source-available license.",
+        "ar": "خادم محلي أو استضافة مدعومة أخرى؛ رخصة ELv2 تتيح المصدر."
+      },
+      "pricing_summary": {
+        "en": "ELv2 license terms apply; hosted service pricing not verified.",
+        "ar": "تطبق شروط رخصة ELv2؛ أسعار الخدمة المستضافة غير متحقق منها."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "OpenTelemetry instrumentation",
+          "ar": "أدوات تتبع أوبن تليمتري"
+        }
+      ],
+      "sources": [
+        "https://github.com/arize-ai/phoenix"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment and a small instrumented AI application.",
+            "ar": "بيئة بايثون وتطبيق ذكاء اصطناعي صغير مجهز للتتبع."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install arize-phoenix and start the local server.",
+              "ar": "ثبّت arize-phoenix وابدأ الخادم المحلي."
+            },
+            "source_url": "https://github.com/arize-ai/phoenix"
+          },
+          {
+            "instruction": {
+              "en": "Send sample application traces to Phoenix.",
+              "ar": "أرسل آثار التطبيق التجريبية إلى فينيكس."
+            },
+            "source_url": "https://github.com/arize-ai/phoenix"
+          },
+          {
+            "instruction": {
+              "en": "Inspect spans and select a failure for evaluation.",
+              "ar": "افحص مقاطع التتبع واختر إخفاقاً للتقييم."
+            },
+            "source_url": "https://github.com/arize-ai/phoenix"
+          }
+        ],
+        "example": {
+          "en": "Trace a retrieval request with an irrelevant answer.",
+          "ar": "تتبّع طلب استرجاع ذي إجابة غير ملائمة."
+        },
+        "expected_outcome": {
+          "en": "A trace-backed diagnosis of one AI application run.",
+          "ar": "تشخيص تشغيل تطبيق ذكاء اصطناعي مدعوم بالتتبع."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "deepeval",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/confident-ai/deepeval",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Python evaluation library; model services configured separately.",
+        "ar": "مكتبة تقييم بايثون؛ خدمات النموذج تهيأ منفصلة."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Pytest",
+          "ar": "باي تست"
+        }
+      ],
+      "sources": [
+        "https://github.com/confident-ai/deepeval"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment and configured evaluation model when required.",
+            "ar": "بيئة بايثون ونموذج تقييم مهيأ عند الحاجة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install DeepEval and create a test case with actual output.",
+              "ar": "ثبّت ديب إيفال وأنشئ حالة اختبار بناتج فعلي."
+            },
+            "source_url": "https://github.com/confident-ai/deepeval"
+          },
+          {
+            "instruction": {
+              "en": "Choose a metric and provide its required reference context.",
+              "ar": "اختر مقياساً وقدّم السياق المرجعي الذي يحتاجه."
+            },
+            "source_url": "https://github.com/confident-ai/deepeval"
+          },
+          {
+            "instruction": {
+              "en": "Run evaluation and inspect both score and explanation.",
+              "ar": "شغّل التقييم وافحص الدرجة والتفسير معاً."
+            },
+            "source_url": "https://github.com/confident-ai/deepeval"
+          }
+        ],
+        "example": {
+          "en": "Measure answer relevance for a support response.",
+          "ar": "قِس صلة إجابة رد دعم بالسؤال."
+        },
+        "expected_outcome": {
+          "en": "A scored test result with an interpretable explanation.",
+          "ar": "نتيجة اختبار ذات درجة وتفسير مفهوم."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "giskard",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": true,
+        "source_url": "https://github.com/Giskard-AI/giskard-oss",
+        "reviewed_at": "2026-09-05"
+      },
+      "deployment": {
+        "en": "Python evaluation and scanning libraries.",
+        "ar": "مكتبات تقييم ومسح ببايثون."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Configured LLM providers",
+          "ar": "مزودو النماذج المهيأون"
+        }
+      ],
+      "sources": [
+        "https://github.com/Giskard-AI/giskard-oss"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment and an agent you are authorized to test.",
+            "ar": "بيئة بايثون ووكيل مصرح لك باختباره."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install Giskard Checks or Scan for the intended evaluation.",
+              "ar": "ثبّت فحوص غيسكارد أو ماسحه للتقييم المقصود."
+            },
+            "source_url": "https://github.com/Giskard-AI/giskard-oss"
+          },
+          {
+            "instruction": {
+              "en": "Define the agent target and test criteria.",
+              "ar": "عرّف هدف الوكيل ومعايير الاختبار."
+            },
+            "source_url": "https://github.com/Giskard-AI/giskard-oss"
+          },
+          {
+            "instruction": {
+              "en": "Run a small suite and review individual failures.",
+              "ar": "شغّل مجموعة صغيرة وراجع الإخفاقات الفردية."
+            },
+            "source_url": "https://github.com/Giskard-AI/giskard-oss"
+          }
+        ],
+        "example": {
+          "en": "Evaluate groundedness of a document-answering agent.",
+          "ar": "قيّم استناد وكيل إجابة الوثائق إلى المصادر."
+        },
+        "expected_outcome": {
+          "en": "A focused evaluation report with reproducible failures.",
+          "ar": "تقرير تقييم محدد بإخفاقات قابلة لإعادة الإنتاج."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "burp-suite",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": false,
+        "source_url": "https://portswigger.net/burp/documentation/desktop/burp-ai",
+        "reviewed_at": "2026-09-05"
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Professional desktop suite with optional credit-based AI features.",
+        "ar": "حزمة سطح مكتب احترافية بميزات ذكاء اصطناعي اختيارية بالأرصدة."
+      },
+      "pricing_summary": {
+        "en": "Professional access and AI credits are required for Burp AI.",
+        "ar": "الوصول الاحترافي وأرصدة الذكاء الاصطناعي مطلوبان لبيرب إيه آي."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Burp HTTP testing tools",
+          "ar": "أدوات اختبار HTTP في بيرب"
+        }
+      ],
+      "sources": [
+        "https://portswigger.net/burp/documentation/desktop/burp-ai"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Burp Suite Professional, AI credits, and an authorized test target.",
+            "ar": "بيرب سويت الاحترافية وأرصدة ذكاء اصطناعي وهدف اختبار مصرح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open an authorized web-testing project in Burp.",
+              "ar": "افتح مشروع اختبار ويب مصرحاً في بيرب."
+            },
+            "source_url": "https://portswigger.net/burp/documentation/desktop/burp-ai"
+          },
+          {
+            "instruction": {
+              "en": "Explicitly activate an AI feature for a selected task.",
+              "ar": "فعّل ميزة ذكاء اصطناعي صراحة لمهمة مختارة."
+            },
+            "source_url": "https://portswigger.net/burp/documentation/desktop/burp-ai"
+          },
+          {
+            "instruction": {
+              "en": "Verify the explanation against captured requests and responses.",
+              "ar": "تحقق من التفسير مقابل الطلبات والردود الملتقطة."
+            },
+            "source_url": "https://portswigger.net/burp/documentation/desktop/burp-ai"
+          }
+        ],
+        "example": {
+          "en": "Explain unfamiliar application behavior during a manual review.",
+          "ar": "فسّر سلوك تطبيق غير مألوف أثناء مراجعة يدوية."
+        },
+        "expected_outcome": {
+          "en": "An analyst-verified observation supported by HTTP evidence.",
+          "ar": "ملاحظة تحقق منها محلل ومدعومة بدليل HTTP."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "invicti",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Application security platform; confirm deployment with vendor.",
+        "ar": "منصة أمن تطبيقات؛ أكّد طريقة النشر مع المورد."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "Security workflow integrations",
+          "ar": "تكاملات مسارات العمل الأمنية"
+        }
+      ],
+      "sources": [
+        "https://www.invicti.com/platform-overview"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Invicti access, authorized targets, and scan scope.",
+            "ar": "وصول إلى إنفكتي وأهداف مصرح بها ونطاق مسح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Define an application target and the permitted scan scope.",
+              "ar": "عرّف هدف التطبيق ونطاق المسح المسموح."
+            },
+            "source_url": "https://www.invicti.com/platform-overview"
+          },
+          {
+            "instruction": {
+              "en": "Run a scoped DAST assessment and inspect findings.",
+              "ar": "شغّل تقييماً ديناميكياً محدداً وافحص النتائج."
+            },
+            "source_url": "https://www.invicti.com/platform-overview"
+          },
+          {
+            "instruction": {
+              "en": "Validate priority findings and assign remediation work.",
+              "ar": "تحقق من النتائج ذات الأولوية وعيّن أعمال المعالجة."
+            },
+            "source_url": "https://www.invicti.com/platform-overview"
+          }
+        ],
+        "example": {
+          "en": "Assess a staging web portal for common vulnerabilities.",
+          "ar": "قيّم بوابة ويب تجريبية للثغرات الشائعة."
+        },
+        "expected_outcome": {
+          "en": "A triaged DAST report with remediation owners.",
+          "ar": "تقرير اختبار ديناميكي مفرز مع مسؤولي المعالجة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "stackhawk",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "CLI and cloud scan deployment options.",
+        "ar": "خيارات نشر مسح بالطرفية والسحابة."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "GitHub Actions, GitLab CI, and Jira",
+          "ar": "غيت هب أكشنز وغيت لاب سي آي وجيرا"
+        }
+      ],
+      "sources": [
+        "https://docs.stackhawk.com/getting-started/"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "StackHawk account and an authorized running application.",
+            "ar": "حساب ستاك هوك وتطبيق عامل مصرح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Configure the application and scan settings using the getting-started guide.",
+              "ar": "هيّئ التطبيق وإعدادات المسح وفق دليل البداية."
+            },
+            "source_url": "https://docs.stackhawk.com/getting-started/"
+          },
+          {
+            "instruction": {
+              "en": "Run a small scan through the supported CLI or cloud path.",
+              "ar": "شغّل مسحاً صغيراً عبر الطرفية أو المسار السحابي المدعوم."
+            },
+            "source_url": "https://docs.stackhawk.com/getting-started/"
+          },
+          {
+            "instruction": {
+              "en": "Triage results before adding the scan to CI.",
+              "ar": "افرز النتائج قبل إضافة المسح إلى التكامل المستمر."
+            },
+            "source_url": "https://docs.stackhawk.com/getting-started/"
+          }
+        ],
+        "example": {
+          "en": "Scan a staging API before a release.",
+          "ar": "امسح واجهة برمجية تجريبية قبل إصدار."
+        },
+        "expected_outcome": {
+          "en": "A repeatable API scan and reviewed findings.",
+          "ar": "مسح واجهة قابل للتكرار ونتائج مراجعة."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "bright-security",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Dynamic application and API testing platform.",
+        "ar": "منصة اختبار ديناميكي للتطبيقات والواجهات البرمجية."
+      },
+      "pricing_summary": {
+        "en": "Plan and feature entitlement not verified in the reviewed source; check the vendor before purchase.",
+        "ar": "الخطة وإتاحة الميزة غير متحقق منهما في المصدر المراجع؛ راجع المورد قبل الشراء."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: moderate; setup and result validation need domain knowledge.",
+        "ar": "تقدير تحريري: متوسط؛ الإعداد والتحقق من النتائج يحتاجان معرفة بالمجال."
+      },
+      "integrations": [
+        {
+          "en": "REST, SOAP, and GraphQL targets",
+          "ar": "أهداف REST وSOAP وغراف كيو إل"
+        }
+      ],
+      "sources": [
+        "https://docs.brightsec.com/docs/introducing-to-bright"
+      ],
+      "reviewed_at": "2026-09-05",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Bright access and an authorized application or API target.",
+            "ar": "وصول إلى برايت وهدف تطبيق أو واجهة مصرح."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Configure a small scan target with its application context.",
+              "ar": "هيّئ هدف مسح صغيراً مع سياق التطبيق."
+            },
+            "source_url": "https://docs.brightsec.com/docs/introducing-to-bright"
+          },
+          {
+            "instruction": {
+              "en": "Run the DAST scan through the supported workflow.",
+              "ar": "شغّل المسح الديناميكي عبر سير العمل المدعوم."
+            },
+            "source_url": "https://docs.brightsec.com/docs/introducing-to-bright"
+          },
+          {
+            "instruction": {
+              "en": "Review finding details and retest a selected remediation.",
+              "ar": "راجع تفاصيل النتائج وأعد اختبار معالجة مختارة."
+            },
+            "source_url": "https://docs.brightsec.com/docs/introducing-to-bright"
+          }
+        ],
+        "example": {
+          "en": "Assess an authorized REST API in staging.",
+          "ar": "قيّم واجهة REST مصرحاً بها في بيئة تجريبية."
+        },
+        "expected_outcome": {
+          "en": "A findings report with a verified remediation follow-up.",
+          "ar": "تقرير نتائج مع متابعة معالجة متحقق منها."
+        },
+        "reviewed_at": "2026-09-05"
+      }
+    }
+  },
+  {
+    "tool_id": "docling",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Local document conversion; optional remote services are separate.",
+        "ar": "تحويل مستندات محلي؛ الخدمات البعيدة الاختيارية منفصلة."
+      },
+      "pricing_summary": {
+        "en": "Code is MIT; full pipeline model licensing and costs remain unverified.",
+        "ar": "الشيفرة بترخيص MIT؛ تراخيص نماذج المسار الكامل وتكاليفه غير متحقق منها."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: technical setup and review required.",
+        "ar": "تقدير تحريري: يتطلب إعداداً تقنياً ومراجعة."
+      },
+      "integrations": [],
+      "sources": [
+        "https://docling-project.github.io/docling/usage/advanced_options/",
+        "https://docling-project.github.io/docling/getting_started/quickstart/",
+        "https://github.com/docling-project/docling"
+      ],
+      "reviewed_at": "2026-09-06",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Python environment, a local PDF and prepared model artifacts.",
+            "ar": "بيئة بايثون وملف PDF محلي وملفات نماذج مجهزة."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Install Docling and prefetch models with docling-tools models download while online.",
+              "ar": "ثبت Docling وجهز النماذج بالأمر docling-tools models download أثناء الاتصال."
+            },
+            "source_url": "https://docling-project.github.io/docling/usage/advanced_options/"
+          },
+          {
+            "instruction": {
+              "en": "Point artifacts_path to the downloaded models; leave remote services disabled.",
+              "ar": "وجّه artifacts_path إلى النماذج المنزلة واترك الخدمات البعيدة معطلة."
+            },
+            "source_url": "https://docling-project.github.io/docling/usage/advanced_options/"
+          },
+          {
+            "instruction": {
+              "en": "Disconnect and convert a local PDF with DocumentConverter; export Markdown.",
+              "ar": "اقطع الاتصال وحوّل ملف PDF محلياً باستخدام DocumentConverter ثم صدّر Markdown."
+            },
+            "source_url": "https://docling-project.github.io/docling/getting_started/quickstart/"
+          },
+          {
+            "instruction": {
+              "en": "Compare the text, reading order and tables with the original before reuse.",
+              "ar": "قارن النص وترتيب القراءة والجداول بالأصل قبل إعادة الاستخدام."
+            },
+            "source_url": "https://docling-project.github.io/docling/getting_started/quickstart/"
+          }
+        ],
+        "example": {
+          "en": "Convert a one-page local report containing a table.",
+          "ar": "حوّل تقريراً محلياً من صفحة واحدة يتضمن جدولاً."
+        },
+        "expected_outcome": {
+          "en": "Reviewable extracted content; accuracy needs inspection.",
+          "ar": "محتوى مستخرج قابل للمراجعة؛ تحتاج الدقة إلى فحص."
+        },
+        "reviewed_at": "2026-09-06"
+      },
+      "operation_setups": [
+        {
+          "id": "docling-local-pdf",
+          "name": {
+            "en": "Local PDF conversion",
+            "ar": "تحويل PDF محلياً"
+          },
+          "task": {
+            "en": "Convert a local PDF into structured text with prefetched models.",
+            "ar": "تحويل PDF محلي إلى نص منظم بنماذج مجهزة مسبقاً."
+          },
+          "stage": "analysis",
+          "domain": "software",
+          "platform": {
+            "en": "Local Python environment",
+            "ar": "بيئة بايثون محلية"
+          },
+          "version": null,
+          "local_components": [
+            {
+              "en": "Docling and installed dependencies",
+              "ar": "Docling والتبعيات المثبتة"
+            }
+          ],
+          "model": {
+            "en": "Prefetched Docling PDF pipeline models",
+            "ar": "نماذج معالجة PDF الخاصة بـDocling والمجهزة مسبقاً"
+          },
+          "preparation_network": "required",
+          "runtime_network": "not_required",
+          "offline_features": [
+            {
+              "en": "Conversion of supplied local PDFs",
+              "ar": "تحويل ملفات PDF المحلية المقدمة"
+            }
+          ],
+          "online_only_features": [
+            {
+              "en": "Remote OCR or hosted model services",
+              "ar": "التعرف البصري البعيد أو خدمات النماذج المستضافة"
+            }
+          ],
+          "hardware_requirements": {
+            "en": "Confirm resources for your chosen deployment; no measured minimum established here.",
+            "ar": "تحقق من الموارد اللازمة للنشر المختار؛ لم يحدد هنا حد أدنى مقاس."
+          },
+          "download_requirements": {
+            "en": "Package dependencies and every model used by the selected pipeline.",
+            "ar": "تبعيات الحزمة وكل نموذج يستخدمه المسار المختار."
+          },
+          "offline": {
+            "value": true,
+            "source_url": "https://docling-project.github.io/docling/usage/advanced_options/",
+            "reviewed_at": "2026-09-06"
+          },
+          "free_plan": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "open_source": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "evidence_status": "official_documentation",
+          "evidence": [
+            {
+              "property": "offline",
+              "status": "official_documentation",
+              "source_url": "https://docling-project.github.io/docling/usage/advanced_options/",
+              "summary": {
+                "en": "Offline model prefetch and local artifact configuration are documented.",
+                "ar": "توثق التعليمات تجهيز النماذج وضبط ملفاتها المحلية للتشغيل دون شبكة."
+              },
+              "version_scope": "Docling local PDF pipeline",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Remote services excluded; model licenses and chosen dependencies need separate review.",
+                "ar": "الخدمات البعيدة مستبعدة؛ تحتاج تراخيص النماذج والتبعيات المختارة إلى مراجعة منفصلة."
+              }
+            }
+          ],
+          "starter_guide": {
+            "prerequisites": [
+              {
+                "en": "Python environment, a local PDF and prepared model artifacts.",
+                "ar": "بيئة بايثون وملف PDF محلي وملفات نماذج مجهزة."
+              }
+            ],
+            "steps": [
+              {
+                "instruction": {
+                  "en": "Install Docling and prefetch models with docling-tools models download while online.",
+                  "ar": "ثبت Docling وجهز النماذج بالأمر docling-tools models download أثناء الاتصال."
+                },
+                "source_url": "https://docling-project.github.io/docling/usage/advanced_options/"
+              },
+              {
+                "instruction": {
+                  "en": "Point artifacts_path to the downloaded models; leave remote services disabled.",
+                  "ar": "وجّه artifacts_path إلى النماذج المنزلة واترك الخدمات البعيدة معطلة."
+                },
+                "source_url": "https://docling-project.github.io/docling/usage/advanced_options/"
+              },
+              {
+                "instruction": {
+                  "en": "Disconnect and convert a local PDF with DocumentConverter; export Markdown.",
+                  "ar": "اقطع الاتصال وحوّل ملف PDF محلياً باستخدام DocumentConverter ثم صدّر Markdown."
+                },
+                "source_url": "https://docling-project.github.io/docling/getting_started/quickstart/"
+              },
+              {
+                "instruction": {
+                  "en": "Compare the text, reading order and tables with the original before reuse.",
+                  "ar": "قارن النص وترتيب القراءة والجداول بالأصل قبل إعادة الاستخدام."
+                },
+                "source_url": "https://docling-project.github.io/docling/getting_started/quickstart/"
+              }
+            ],
+            "example": {
+              "en": "Convert a one-page local report containing a table.",
+              "ar": "حوّل تقريراً محلياً من صفحة واحدة يتضمن جدولاً."
+            },
+            "expected_outcome": {
+              "en": "Reviewable extracted content; accuracy needs inspection.",
+              "ar": "محتوى مستخرج قابل للمراجعة؛ تحتاج الدقة إلى فحص."
+            },
+            "reviewed_at": "2026-09-06"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tool_id": "opencti",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Self-managed CE; external connector requirements vary.",
+        "ar": "نسخة مجتمع تديرها ذاتياً؛ تختلف متطلبات الموصلات الخارجية."
+      },
+      "pricing_summary": {
+        "en": "Apache-2.0 CE code; infrastructure and feed costs are separate.",
+        "ar": "شيفرة نسخة المجتمع وفق Apache-2.0؛ تكاليف البنية والمصادر منفصلة."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: technical setup and review required.",
+        "ar": "تقدير تحريري: يتطلب إعداداً تقنياً ومراجعة."
+      },
+      "integrations": [],
+      "sources": [
+        "https://github.com/OpenCTI-Platform/opencti",
+        "https://docs.opencti.io/latest/deployment/installation/"
+      ],
+      "reviewed_at": "2026-09-06",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "A maintained Docker host and authorized threat-intelligence sample.",
+            "ar": "مضيف Docker تتم صيانته وعينة استخبارات تهديدات مصرح بها."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Clone the official OpenCTI Docker repository and review its dependencies.",
+              "ar": "استنسخ مستودع Docker الرسمي لـOpenCTI وراجع تبعياته."
+            },
+            "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+          },
+          {
+            "instruction": {
+              "en": "Configure .env with your own credentials and a valid administrator token.",
+              "ar": "اضبط .env ببيانات اعتمادك ورمز مسؤول صالح."
+            },
+            "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+          },
+          {
+            "instruction": {
+              "en": "Start docker compose up -d and sign in at localhost:8080.",
+              "ar": "شغّل docker compose up -d وسجل الدخول عبر localhost:8080."
+            },
+            "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+          },
+          {
+            "instruction": {
+              "en": "Import a permitted sample and inspect entity relationships; verify external feed access separately.",
+              "ar": "استورد عينة مسموحة وافحص علاقات الكيانات؛ تحقق من الوصول للمصادر الخارجية منفصلاً."
+            },
+            "source_url": "https://github.com/OpenCTI-Platform/opencti"
+          }
+        ],
+        "example": {
+          "en": "Review relationships in one approved threat-intelligence sample.",
+          "ar": "راجع العلاقات في عينة استخبارات تهديدات معتمدة."
+        },
+        "expected_outcome": {
+          "en": "A reviewed intelligence record; not automatic threat detection.",
+          "ar": "سجل استخبارات تمت مراجعته؛ وليس كشفاً تلقائياً للتهديدات."
+        },
+        "reviewed_at": "2026-09-06"
+      },
+      "operation_setups": [
+        {
+          "id": "opencti-ce-self-managed",
+          "name": {
+            "en": "Community Edition deployment",
+            "ar": "نشر نسخة المجتمع"
+          },
+          "task": {
+            "en": "Organize a supplied threat-intelligence sample in Community Edition.",
+            "ar": "تنظيم عينة استخبارات تهديدات مقدمة في نسخة المجتمع."
+          },
+          "stage": "analysis",
+          "domain": "cybersecurity",
+          "platform": {
+            "en": "Self-managed Docker deployment",
+            "ar": "نشر Docker تديره ذاتياً"
+          },
+          "version": null,
+          "local_components": [
+            {
+              "en": "OpenCTI CE and its dependency services",
+              "ar": "نسخة مجتمع OpenCTI وخدمات تبعياتها"
+            }
+          ],
+          "model": null,
+          "preparation_network": "required",
+          "runtime_network": "unknown",
+          "offline_features": [],
+          "online_only_features": [],
+          "hardware_requirements": {
+            "en": "Confirm resources for your chosen deployment; no measured minimum established here.",
+            "ar": "تحقق من الموارد اللازمة للنشر المختار؛ لم يحدد هنا حد أدنى مقاس."
+          },
+          "download_requirements": {
+            "en": "Docker images and deployment configuration.",
+            "ar": "صور Docker وإعدادات النشر."
+          },
+          "offline": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "free_plan": {
+            "value": true,
+            "source_url": "https://github.com/OpenCTI-Platform/opencti",
+            "reviewed_at": "2026-09-06"
+          },
+          "open_source": {
+            "value": true,
+            "source_url": "https://github.com/OpenCTI-Platform/opencti",
+            "reviewed_at": "2026-09-06"
+          },
+          "evidence_status": "official_documentation",
+          "evidence": [
+            {
+              "property": "open_source",
+              "status": "official_documentation",
+              "source_url": "https://github.com/OpenCTI-Platform/opencti",
+              "summary": {
+                "en": "Community Edition is Apache-2.0; Enterprise Edition has separate terms.",
+                "ar": "نسخة المجتمع بترخيص Apache-2.0؛ للنسخة المؤسسية شروط منفصلة."
+              },
+              "version_scope": "OpenCTI Community Edition",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Dependency and feed terms are separate; offline operation is not verified.",
+                "ar": "شروط التبعيات والمصادر منفصلة؛ لم يتحقق التشغيل دون شبكة."
+              }
+            },
+            {
+              "property": "free_plan",
+              "status": "official_documentation",
+              "source_url": "https://github.com/OpenCTI-Platform/opencti",
+              "summary": {
+                "en": "CE code can be used under Apache-2.0 without a software subscription.",
+                "ar": "يمكن استخدام شيفرة نسخة المجتمع وفق Apache-2.0 دون اشتراك برمجي."
+              },
+              "version_scope": "OpenCTI CE code only",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Hosting, operations, commercial feeds and Enterprise Edition are not included.",
+                "ar": "لا يشمل الاستضافة والتشغيل والمصادر التجارية والنسخة المؤسسية."
+              }
+            }
+          ],
+          "starter_guide": {
+            "prerequisites": [
+              {
+                "en": "A maintained Docker host and authorized threat-intelligence sample.",
+                "ar": "مضيف Docker تتم صيانته وعينة استخبارات تهديدات مصرح بها."
+              }
+            ],
+            "steps": [
+              {
+                "instruction": {
+                  "en": "Clone the official OpenCTI Docker repository and review its dependencies.",
+                  "ar": "استنسخ مستودع Docker الرسمي لـOpenCTI وراجع تبعياته."
+                },
+                "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+              },
+              {
+                "instruction": {
+                  "en": "Configure .env with your own credentials and a valid administrator token.",
+                  "ar": "اضبط .env ببيانات اعتمادك ورمز مسؤول صالح."
+                },
+                "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+              },
+              {
+                "instruction": {
+                  "en": "Start docker compose up -d and sign in at localhost:8080.",
+                  "ar": "شغّل docker compose up -d وسجل الدخول عبر localhost:8080."
+                },
+                "source_url": "https://docs.opencti.io/latest/deployment/installation/"
+              },
+              {
+                "instruction": {
+                  "en": "Import a permitted sample and inspect entity relationships; verify external feed access separately.",
+                  "ar": "استورد عينة مسموحة وافحص علاقات الكيانات؛ تحقق من الوصول للمصادر الخارجية منفصلاً."
+                },
+                "source_url": "https://github.com/OpenCTI-Platform/opencti"
+              }
+            ],
+            "example": {
+              "en": "Review relationships in one approved threat-intelligence sample.",
+              "ar": "راجع العلاقات في عينة استخبارات تهديدات معتمدة."
+            },
+            "expected_outcome": {
+              "en": "A reviewed intelligence record; not automatic threat detection.",
+              "ar": "سجل استخبارات تمت مراجعته؛ وليس كشفاً تلقائياً للتهديدات."
+            },
+            "reviewed_at": "2026-09-06"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "tool_id": "safe-one",
+    "profile": {
+      "offline": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "free_plan": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "open_source": {
+        "value": null,
+        "source_url": null,
+        "reviewed_at": null
+      },
+      "deployment": {
+        "en": "Vendor-managed product access; deployment details unverified.",
+        "ar": "وصول لمنتج يديره المورد؛ تفاصيل النشر غير متحقق منها."
+      },
+      "pricing_summary": {
+        "en": "Confirm pricing, license and module entitlement with SAFE.",
+        "ar": "أكد السعر والترخيص وصلاحيات الوحدات مع SAFE."
+      },
+      "learning_curve": {
+        "en": "Editorial estimate: technical setup and review required.",
+        "ar": "تقدير تحريري: يتطلب إعداداً تقنياً ومراجعة."
+      },
+      "integrations": [],
+      "sources": [
+        "https://safe.security/product-overview/",
+        "https://safe.security/resources/blog/safe-security-year-in-review-2024-cybersecurity-milestones/"
+      ],
+      "reviewed_at": "2026-09-06",
+      "starter_guide": {
+        "prerequisites": [
+          {
+            "en": "Authorized product/demo access and a defined cyber-risk scenario.",
+            "ar": "وصول مصرح للمنتج أو العرض وسيناريو مخاطر سيبرانية محدد."
+          }
+        ],
+        "steps": [
+          {
+            "instruction": {
+              "en": "Open the official SAFE One demo and confirm the modules available to you.",
+              "ar": "افتح العرض الرسمي لـSAFE One وتحقق من الوحدات المتاحة لك."
+            },
+            "source_url": "https://safe.security/product-overview/"
+          },
+          {
+            "instruction": {
+              "en": "Define one risk scenario and document its business assumptions with your team.",
+              "ar": "حدد سيناريو مخاطر واحداً ووثق افتراضاته التجارية مع فريقك."
+            },
+            "source_url": "https://safe.security/resources/blog/safe-security-year-in-review-2024-cybersecurity-milestones/"
+          },
+          {
+            "instruction": {
+              "en": "Review quantification and treatment options in the available demonstration.",
+              "ar": "راجع خيارات القياس الكمي والمعالجة في العرض المتاح."
+            },
+            "source_url": "https://safe.security/resources/blog/safe-security-year-in-review-2024-cybersecurity-milestones/"
+          },
+          {
+            "instruction": {
+              "en": "Validate the assumptions and licensed integrations before making a decision.",
+              "ar": "تحقق من الافتراضات والتكاملات المرخصة قبل اتخاذ القرار."
+            },
+            "source_url": "https://safe.security/product-overview/"
+          }
+        ],
+        "example": {
+          "en": "Compare the assumptions behind two treatments for one risk scenario.",
+          "ar": "قارن الافتراضات وراء معالجتين لسيناريو مخاطر واحد."
+        },
+        "expected_outcome": {
+          "en": "A reviewed evaluation brief; financial estimates require validation.",
+          "ar": "موجز تقييم مراجع؛ تحتاج التقديرات المالية إلى تحقق."
+        },
+        "reviewed_at": "2026-09-06"
+      },
+      "operation_setups": [
+        {
+          "id": "safe-one-risk-review",
+          "name": {
+            "en": "Cyber-risk scenario review",
+            "ar": "مراجعة سيناريو مخاطر سيبرانية"
+          },
+          "task": {
+            "en": "Review quantitative risk and treatment assumptions in SAFE One.",
+            "ar": "مراجعة افتراضات القياس الكمي للمخاطر ومعالجتها في SAFE One."
+          },
+          "stage": "design",
+          "domain": "cybersecurity",
+          "platform": {
+            "en": "Vendor product/demo access; exact deployment unverified",
+            "ar": "وصول إلى منتج المورد أو عرضه؛ النشر الدقيق غير متحقق منه"
+          },
+          "version": null,
+          "local_components": [
+            {
+              "en": "Client access requirements must be confirmed with the vendor",
+              "ar": "يجب تأكيد متطلبات وصول العميل مع المورد"
+            }
+          ],
+          "model": null,
+          "preparation_network": "unknown",
+          "runtime_network": "unknown",
+          "offline_features": [],
+          "online_only_features": [],
+          "hardware_requirements": {
+            "en": "Confirm resources for your chosen deployment; no measured minimum established here.",
+            "ar": "تحقق من الموارد اللازمة للنشر المختار؛ لم يحدد هنا حد أدنى مقاس."
+          },
+          "download_requirements": null,
+          "offline": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "free_plan": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "open_source": {
+            "value": null,
+            "source_url": null,
+            "reviewed_at": null
+          },
+          "evidence_status": "official_documentation",
+          "evidence": [
+            {
+              "property": "task_scope",
+              "status": "official_documentation",
+              "source_url": "https://safe.security/product-overview/",
+              "summary": {
+                "en": "SAFE One presents cyber-risk quantification and enterprise risk workflows.",
+                "ar": "يعرض SAFE One القياس الكمي للمخاطر وسير عمل المخاطر المؤسسية."
+              },
+              "version_scope": "SAFE One product overview",
+              "reviewed_at": "2026-09-06",
+              "limitations": {
+                "en": "Exact pricing, license and offline entitlement remain unverified; guide is an editorial review workflow.",
+                "ar": "السعر والترخيص وصلاحية التشغيل دون شبكة غير متحقق منها؛ الدليل سير مراجعة تحريري."
+              }
+            }
+          ],
+          "starter_guide": {
+            "prerequisites": [
+              {
+                "en": "Authorized product/demo access and a defined cyber-risk scenario.",
+                "ar": "وصول مصرح للمنتج أو العرض وسيناريو مخاطر سيبرانية محدد."
+              }
+            ],
+            "steps": [
+              {
+                "instruction": {
+                  "en": "Open the official SAFE One demo and confirm the modules available to you.",
+                  "ar": "افتح العرض الرسمي لـSAFE One وتحقق من الوحدات المتاحة لك."
+                },
+                "source_url": "https://safe.security/product-overview/"
+              },
+              {
+                "instruction": {
+                  "en": "Define one risk scenario and document its business assumptions with your team.",
+                  "ar": "حدد سيناريو مخاطر واحداً ووثق افتراضاته التجارية مع فريقك."
+                },
+                "source_url": "https://safe.security/resources/blog/safe-security-year-in-review-2024-cybersecurity-milestones/"
+              },
+              {
+                "instruction": {
+                  "en": "Review quantification and treatment options in the available demonstration.",
+                  "ar": "راجع خيارات القياس الكمي والمعالجة في العرض المتاح."
+                },
+                "source_url": "https://safe.security/resources/blog/safe-security-year-in-review-2024-cybersecurity-milestones/"
+              },
+              {
+                "instruction": {
+                  "en": "Validate the assumptions and licensed integrations before making a decision.",
+                  "ar": "تحقق من الافتراضات والتكاملات المرخصة قبل اتخاذ القرار."
+                },
+                "source_url": "https://safe.security/product-overview/"
+              }
+            ],
+            "example": {
+              "en": "Compare the assumptions behind two treatments for one risk scenario.",
+              "ar": "قارن الافتراضات وراء معالجتين لسيناريو مخاطر واحد."
+            },
+            "expected_outcome": {
+              "en": "A reviewed evaluation brief; financial estimates require validation.",
+              "ar": "موجز تقييم مراجع؛ تحتاج التقديرات المالية إلى تحقق."
+            },
+            "reviewed_at": "2026-09-06"
+          }
+        }
+      ]
+    }
+  }
+]

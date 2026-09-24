@@ -4,6 +4,11 @@ const state = {
   domains: [],
   currentQuestion: null,
   currentStatus: null,
+  outcome: null,
+  questionBank: {},
+  requestRevision: 0,
+  detailRevision: 0,
+  scenarioPanel: null,
   questionnaire: ToolGuideQuestionnaireState.createQuestionnaireState(),
 };
 
@@ -13,7 +18,7 @@ const apiBase = window.location.port === '8000'
 
 const dictionary = {
   ar: {
-    title: 'دليل الأدوات الذكية', eyebrow: 'مساعدك لاختيار الأداة المناسبة بالدليل', description: 'اختر مرحلة مشروعك ومجاله، ثم أجب عن أسئلة تتكيف مع إجاباتك. ستحصل على ثلاث توصيات واضحة ومفسرة.',
+    title: 'دليل الأدوات الذكية', eyebrow: 'مساعدك لاختيار الأداة المناسبة بالدليل', description: 'حدد شروطك وأجب عن أسئلة متكيّفة. قارن الأدوات المناسبة، واستكشف البدائل، وابدأ بخطوات واضحة.',
     progress: 'الخطوة {step} من 3', stage: 'الاختيار', questions: 'الأسئلة', results: 'النتائج',
     chooseStage: 'اختر مرحلة مشروعك', chooseDomain: 'اختر مجال المشروع', stageKicker: 'الخطوة الأولى', domainKicker: 'تخصيص المسار', questionsKicker: 'الخطوة الثانية', resultsKicker: 'الخطوة الثالثة', resultsHeading: 'التوصيات الأنسب',
     back: 'رجوع', next: 'السؤال التالي', restart: 'ابدأ من جديد',
@@ -27,7 +32,7 @@ const dictionary = {
     confidence: 'الثقة', confidenceLevels: { high: 'عالية', medium: 'متوسطة', low: 'منخفضة' }, why: 'لماذا اخترناها', notFit: 'قد لا تناسبك عندما', evidence: 'المصدر الرسمي', match: 'مطابقة', footer: 'نظام توصيات أدوات قائم على الأدلة', connected: 'متصل بالخادم',
   },
   en: {
-    title: 'Smart Tool Guide', eyebrow: 'Evidence-backed tool selection assistant', description: 'Choose your project stage and domain, then answer questions that adapt to your previous answers. You will get three clear, explainable recommendations.',
+    title: 'Smart Tool Guide', eyebrow: 'Evidence-backed tool selection assistant', description: 'Set your requirements and answer adaptive questions. Compare suitable tools, explore alternatives, and start with clear next steps.',
     progress: 'Step {step} of 3', stage: 'Selection', questions: 'Questions', results: 'Results',
     chooseStage: 'Choose your project stage', chooseDomain: 'Choose the project domain', stageKicker: 'STEP ONE', domainKicker: 'CUSTOMIZE THE PATH', questionsKicker: 'STEP TWO', resultsKicker: 'STEP THREE', resultsHeading: 'Best-fit recommendations',
     back: 'Back', next: 'Next question', restart: 'Start over',
@@ -76,6 +81,12 @@ function setLanguage(language) {
   $('#recommend-button').textContent = text('next');
   $('#restart-button').textContent = text('restart');
   $('#footer-text').textContent = text('footer');
+  const support = ToolGuideDecisionUI.labels(language);
+  $('#constraints-heading').textContent = support.requirements;
+  $('#constraints-start-button').textContent = support.continue;
+  $('#constraints-back-button').textContent = text('back');
+  $('#compare-button').textContent = support.compare;
+  $('#scenario-button').textContent = support.whatIf;
   renderProgress('stages');
 }
 
@@ -88,7 +99,7 @@ function showNotice(message, error = false) {
 function clearNotice() { $('#notice').className = 'notice hidden'; }
 
 function showScreen(name) {
-  ['stages', 'domains', 'questions', 'results'].forEach(screen => {
+  ['stages', 'domains', 'constraints', 'questions', 'results'].forEach(screen => {
     $(`#${screen}-screen`).classList.toggle('hidden', screen !== name);
   });
   renderProgress(name);
@@ -96,7 +107,7 @@ function showScreen(name) {
 }
 
 function renderProgress(screen) {
-  const step = ['stages', 'domains'].includes(screen) ? 1 : screen === 'questions' ? 2 : 3;
+  const step = ['stages', 'domains', 'constraints'].includes(screen) ? 1 : screen === 'questions' ? 2 : 3;
   const percentage = step === 1 ? 33 : step === 2 ? 66 : 100;
   $('#progress-text').textContent = text('progress', { step });
   $('#progress-value').textContent = `${percentage}%`;
@@ -114,7 +125,9 @@ async function request(path, options = {}) {
   if (!response.ok) {
     let payload = null;
     try { payload = await response.json(); } catch (_) { /* ignored */ }
-    throw new Error(ToolGuideApiErrors.responseErrorMessage(payload, text('serverError')));
+    const error = new Error(ToolGuideApiErrors.responseErrorMessage(payload, text('serverError')));
+    error.code = payload?.error?.code;
+    throw error;
   }
   return response.json();
 }
@@ -149,6 +162,7 @@ function renderStages() {
 }
 
 async function chooseStage(stageId) {
+  state.requestRevision++;
   clearNotice();
   state.questionnaire.selectStage(stageId);
   $('#domains-grid').innerHTML = `<p class="loading">${safe(text('loading'))}</p>`;
@@ -176,9 +190,19 @@ function renderDomains() {
 }
 
 async function startQuestionnaire(domainId) {
+  state.requestRevision++;
   state.questionnaire.selectDomain(domainId);
+  state.questionBank = {};
+  state.outcome = null;
+  $('#constraints-editor').replaceChildren(ToolGuideDecisionUI.constraintsEditor(state.questionnaire.constraints, state.language));
+  showScreen('constraints');
+}
+
+async function beginQuestions(event) {
+  event.preventDefault();
+  state.questionnaire.setConstraints(ToolGuideDecisionUI.readConstraints($('#constraints-editor')));
   const stage = state.stages.find(candidate => candidate.id === state.questionnaire.stage);
-  const domain = state.domains.find(candidate => candidate.id === domainId);
+  const domain = state.domains.find(candidate => candidate.id === state.questionnaire.domain);
   $('#questions-heading').textContent = `${itemText(stage?.name)} · ${itemText(domain?.name)}`;
   $('#questions-list').innerHTML = `<p class="loading">${safe(text('loading'))}</p>`;
   showScreen('questions');
@@ -186,23 +210,17 @@ async function startQuestionnaire(domainId) {
 }
 
 async function advanceQuestionnaire() {
+  const revision = ++state.requestRevision;
   clearNotice();
   try {
     const outcome = await request('/questionnaire/advance', {
       method: 'POST',
       body: JSON.stringify(state.questionnaire.toRequest(state.language)),
     });
-    state.currentStatus = outcome.status;
-    $('#question-count').textContent = text('questionProgress', { count: outcome.answered_count });
-    if (outcome.status === 'complete') {
-      state.currentQuestion = null;
-      renderResults(outcome.recommendations || []);
-      showScreen('results');
-      return;
-    }
-    state.currentQuestion = outcome.question;
-    renderQuestion(outcome.question, outcome.status === 'clarification' ? outcome.clarification_options : null);
+    if (revision !== state.requestRevision) return;
+    applyQuestionnaireOutcome(outcome);
   } catch (error) {
+    if (revision !== state.requestRevision) return;
     showNotice(error instanceof TypeError ? text('connectionError') : error.message, true);
   }
 }
@@ -274,12 +292,129 @@ function renderResults(recommendations) {
         <div class="result-detail"><h4>${safe(text('why'))}</h4><ul>${(recommendation.reasons || []).map(reason => `<li>${safe(reason)}</li>`).join('')}</ul></div>
         <div class="result-detail limitation"><h4>${safe(text('notFit'))}</h4><ul>${(recommendation.limitations || []).map(reason => `<li>${safe(reason)}</li>`).join('')}</ul></div>
         <a class="evidence-link" href="${safe(recommendation.source_url)}" target="_blank" rel="noreferrer">${safe(text('evidence'))} ↗</a>
+        <div data-guide-id="${safe(recommendation.tool_id)}"></div>
       </div>
     </article>
-  `).join('') || `<p class="loading">${safe(text('serverError'))}</p>`;
+  `).join('');
+}
+
+function applyQuestionnaireOutcome(outcome) {
+  state.outcome = outcome;
+  state.currentStatus = outcome.status;
+  $('#question-count').textContent = text('questionProgress', { count: outcome.answered_count });
+  if (outcome.status === 'complete' || outcome.status === 'no_match') {
+    state.currentQuestion = null;
+    renderResults(outcome.recommendations || []);
+    renderResultSupport(outcome);
+    showScreen('results');
+    return;
+  }
+  state.currentQuestion = outcome.question;
+  if (outcome.question) state.questionBank[outcome.question.id] = {
+    ...outcome.question,
+    options: outcome.status === 'clarification' ? outcome.clarification_options : outcome.question.options,
+  };
+  showScreen('questions');
+  renderQuestion(outcome.question, outcome.status === 'clarification' ? outcome.clarification_options : null);
+}
+
+function closeScenario() {
+  state.scenarioPanel?.dispose(); state.scenarioPanel = null;
+  $('#scenario-host').replaceChildren();
+  $('#scenario-button').setAttribute('aria-expanded', 'false');
+}
+
+function renderResultSupport(outcome) {
+  const { element: el, labels } = ToolGuideDecisionUI, t = labels(state.language);
+  closeScenario();
+  $('#comparison-host').replaceChildren(); $('#comparison-host').classList.add('hidden');
+  $('#compare-button').setAttribute('aria-expanded', 'false');
+  $('#compare-button').classList.toggle('hidden', !outcome.recommendations.length);
+  const host = $('#result-support'); host.replaceChildren();
+  if (outcome.status === 'no_match') {
+    host.append(el('h3', t.noMatch), el('p', t.noMatchHelp, 'support-copy'));
+    if (outcome.alternatives?.length) {
+      host.append(el('h4', t.closestAlternatives));
+      for (const alternative of outcome.alternatives) {
+        const card = el('article', null, 'exclusion-details');
+        card.append(el('h5', `${alternative.tool_name} — ${alternative.setup_name}`));
+        card.append(el('p', `${t.changeRequired}: ${alternative.changed_constraints.map(key => t[key] || key).join(' · ')}`));
+        const preview = el('button', t.whatIf, 'button button-secondary'); preview.type = 'button';
+        preview.addEventListener('click', () => openScenario(alternative.changed_constraints));
+        card.append(preview); host.append(card);
+      }
+    }
+  } else {
+    host.append(el('p', `${outcome.eligible_count} ${t.count}`, 'count-badge'), el('p', t.scoring, 'support-copy'));
+    if (outcome.eligible_count < 4) host.append(el('p', t.lowConfidence, 'support-copy'));
+  }
+  if (outcome.unknown_evidence_count) host.append(el('p', `${outcome.unknown_evidence_count} ${t.unknownCoverage}`, 'support-copy'));
+  if (outcome.excluded_tools?.length) {
+    const details = el('details', null, 'exclusion-details'); details.append(el('summary', t.excluded));
+    const list = el('ul');
+    outcome.excluded_tools.forEach(tool => {
+      const reasons = [...tool.failed_constraints.map(key => `${t.failed}: ${t[key]}`), ...tool.unknown_constraints.map(key => `${t.undocumented}: ${t[key]}`)];
+      list.append(el('li', `${tool.tool_name || tool.tool_id} — ${reasons.join(' · ')}`));
+    });
+    details.append(list); host.append(details);
+  }
+  if (outcome.recommendations.length) loadResultDetails(outcome);
+}
+
+async function loadResultDetails(outcome) {
+  const revision = state.requestRevision, language = state.language;
+  const detailRevision = ++state.detailRevision;
+  const current = () => revision === state.requestRevision && state.outcome === outcome && detailRevision === state.detailRevision;
+  const { element: el, labels } = ToolGuideDecisionUI, t = labels(language);
+  const slots = [...document.querySelectorAll('[data-guide-id]')];
+  $('#comparison-host').replaceChildren(el('p', t.loading, 'support-copy'));
+  slots.forEach(slot => slot.replaceChildren(el('p', t.loading, 'support-copy')));
+  try {
+    const tools = await Promise.all(outcome.recommendations.map(tool => request(`/tools/${encodeURIComponent(tool.tool_id)}?language=${language}`)));
+    if (!current()) return;
+    for (const tool of tools) {
+      tool.matching_setup_id = outcome.recommendations.find(item => item.tool_id === tool.id)?.matching_setup_id;
+      const slot = slots.find(item => item.dataset.guideId === tool.id);
+      slot?.replaceChildren(ToolGuideStarter.renderStarterGuide(tool, language));
+    }
+    $('#comparison-host').replaceChildren(ToolGuideComparison.renderToolComparison(tools, language));
+  } catch {
+    if (!current()) return;
+    const retry = el('button', t.retry, 'button button-secondary'); retry.type = 'button';
+    retry.addEventListener('click', () => loadResultDetails(outcome));
+    $('#comparison-host').replaceChildren(el('p', t.loadError), retry);
+    slots.forEach(slot => {
+      const button = el('button', t.retry, 'button button-secondary'); button.type = 'button';
+      button.addEventListener('click', () => loadResultDetails(outcome));
+      slot.replaceChildren(el('p', t.loadError), button);
+    });
+  }
+}
+
+function openScenario(changedConstraints = []) {
+  if (!state.outcome) return;
+  closeScenario();
+  state.scenarioPanel = ToolGuideScenarioPanel.createScenarioPanel({
+    changedConstraints: Array.isArray(changedConstraints) ? changedConstraints : [],
+    baseline: state.questionnaire.toRequest(state.language), version: state.outcome.knowledge_version,
+    questions: state.questionBank, language: state.language, request,
+    onCancel: () => { closeScenario(); $('#scenario-button').focus(); },
+    onAdopt: (variant, outcome) => {
+      state.requestRevision++;
+      state.questionnaire.adoptRequest(variant);
+      closeScenario(); clearNotice();
+      applyQuestionnaireOutcome(outcome);
+    },
+    onRefresh: async () => { closeScenario(); await advanceQuestionnaire(); },
+  });
+  $('#scenario-host').append(state.scenarioPanel.element);
+  $('#scenario-button').setAttribute('aria-expanded', 'true');
+  state.scenarioPanel.focus();
 }
 
 function restart() {
+  state.requestRevision++;
+  closeScenario(); state.outcome = null; state.questionBank = {};
   state.questionnaire.restart();
   state.currentQuestion = null;
   state.currentStatus = null;
@@ -292,15 +427,24 @@ $('#language-button').addEventListener('click', () => {
   restart();
 });
 $('#domains-back-button').addEventListener('click', () => {
+  state.requestRevision++;
   state.questionnaire.selectStage(state.questionnaire.stage);
   showScreen('stages');
 });
 $('#back-button').addEventListener('click', () => {
+  state.requestRevision++;
   state.questionnaire.selectStage(state.questionnaire.stage);
   showScreen('domains');
 });
 $('#restart-button').addEventListener('click', restart);
 $('#questions-form').addEventListener('submit', submitAnswer);
+$('#constraints-form').addEventListener('submit', beginQuestions);
+$('#constraints-back-button').addEventListener('click', () => { state.requestRevision++; showScreen('domains'); });
+$('#compare-button').addEventListener('click', () => {
+  const hidden = $('#comparison-host').classList.toggle('hidden');
+  $('#compare-button').setAttribute('aria-expanded', String(!hidden));
+});
+$('#scenario-button').addEventListener('click', openScenario);
 
 setLanguage(state.language);
 loadStages();

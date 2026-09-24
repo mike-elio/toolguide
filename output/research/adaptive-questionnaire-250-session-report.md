@@ -9,7 +9,7 @@
 
 - Stage/domain pools exercised: 12/12
 - Question range observed: 6-10
-- Distribution: 6 questions: 93 sessions, 7 questions: 41 sessions, 8 questions: 28 sessions, 9 questions: 18 sessions, 10 questions: 70 sessions
+- Distribution: 6 questions: 95 sessions, 7 questions: 38 sessions, 8 questions: 29 sessions, 9 questions: 20 sessions, 10 questions: 68 sessions
 - Catalog tools appearing in top-three results: 48/48 (100.0%)
 
 ## Top-recommendation diversity by pool
@@ -39,7 +39,7 @@
 - design/cybersecurity | 6 questions | IriusRisk (75%, medium)
 - implementation/software | 6 questions | Windsurf (85%, medium)
 - implementation/artificial_intelligence | 6 questions | LangGraph (90%, medium)
-- implementation/cybersecurity | 8 questions | Snyk Code / Agent Fix (95%, medium)
+- implementation/cybersecurity | 6 questions | Snyk Code / Agent Fix (100%, medium)
 - testing/software | 10 questions | mabl (73%, low)
 - testing/artificial_intelligence | 8 questions | DeepEval (70%, medium)
 - testing/cybersecurity | 10 questions | Invicti (78%, medium)

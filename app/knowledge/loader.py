@@ -1,5 +1,6 @@
 import gzip
 import json
+from datetime import date
 from collections import Counter
 from pathlib import Path
 
@@ -68,28 +69,42 @@ def audit_knowledge(snapshot: KnowledgeSnapshot) -> KnowledgeAudit:
     ) and all(question.domain is not None for question in snapshot.questions)
     stage_assignment_counts = {stage: 0 for stage in StageId}
     for tool in snapshot.tools:
+        if adaptive:
+            profile = tool.profile
+            if profile is None:
+                violations.append(f"production tool missing profile: {tool.id}")
+            else:
+                if profile.reviewed_at > date.today():
+                    violations.append(f"profile review is in the future: {tool.id}")
+                # Revalidate mutable model instances as well as loaded JSON.
+                try:
+                    type(profile).model_validate(profile.model_dump(mode="json"))
+                except ValidationError:
+                    violations.append(f"invalid profile evidence or bilingual content: {tool.id}")
         if len(tool.stages) > 3:
             violations.append(f"tool appears in four stages: {tool.id}")
         for stage in tool.stages:
             stage_assignment_counts[stage] += 1
-    expected_stage_tools = 12 if adaptive else 10
+    expected_stage_tools = 10
     for stage, count in stage_assignment_counts.items():
-        if count != expected_stage_tools:
+        if (not adaptive and count != expected_stage_tools) or (adaptive and count < 1):
             violations.append(
-                "stage assignment count must be "
-                f"{expected_stage_tools}: {stage.value} has {count}"
+                "stage assignment count is invalid: "
+                f"{stage.value} has {count}"
             )
 
     stage_question_counter = Counter(question.stage for question in snapshot.questions)
     stage_question_counts = {
         stage: stage_question_counter.get(stage, 0) for stage in StageId
     }
-    expected_stage_questions = 42 if adaptive else 5
+    expected_stage_questions = 5
     for stage, count in stage_question_counts.items():
-        if count != expected_stage_questions:
+        if (not adaptive and count != expected_stage_questions) or (
+            adaptive and count < 10
+        ):
             violations.append(
-                "stage question count must be "
-                f"{expected_stage_questions}: {stage.value} has {count}"
+                "stage question count is invalid: "
+                f"{stage.value} has {count}"
             )
 
     if not adaptive:
@@ -123,12 +138,8 @@ def audit_knowledge(snapshot: KnowledgeSnapshot) -> KnowledgeAudit:
             question_type_counts["boolean"] += 1
         else:
             question_type_counts["choice"] += 1
-    expected_types = (
-        {"choice": 156, "short_text": 12, "boolean": 0}
-        if adaptive
-        else {"choice": 12, "short_text": 4, "boolean": 4}
-    )
-    if question_type_counts != expected_types:
+    expected_types = {"choice": 12, "short_text": 4, "boolean": 4}
+    if not adaptive and question_type_counts != expected_types:
         violations.append(
             f"question type counts must be {expected_types}: got {question_type_counts}"
         )
@@ -157,8 +168,8 @@ def audit_knowledge(snapshot: KnowledgeSnapshot) -> KnowledgeAudit:
         }
         target_value = target_values.get(rule.answer_option_id)
         if adaptive:
-            if len(rule.impacts) != 4:
-                violations.append(f"adaptive rule requires four impacts: {rule.id}")
+            if len(rule.impacts) < 2:
+                violations.append(f"adaptive rule requires multiple impacts: {rule.id}")
             if not any(impact.weight > 0 for impact in rule.impacts) or not any(
                 impact.weight < 0 for impact in rule.impacts
             ):
@@ -220,13 +231,13 @@ def audit_knowledge(snapshot: KnowledgeSnapshot) -> KnowledgeAudit:
                 question_count = question_cells[(stage, domain)]
                 stage_domain_tool_counts[key] = tool_count
                 stage_domain_question_counts[key] = question_count
-                if tool_count != 4:
+                if tool_count < 1:
                     violations.append(
-                        f"stage/domain tool count must be 4: {key} has {tool_count}"
+                        f"stage/domain tool pool is empty: {key}"
                     )
-                if question_count != 14:
+                if question_count < 10:
                     violations.append(
-                        "stage/domain question count must be 14: "
+                        "stage/domain question count must support a full session: "
                         f"{key} has {question_count}"
                     )
         for tool in snapshot.tools:

@@ -2,6 +2,8 @@ from app.api.contracts import SubmittedAnswer
 from app.domain.models import DomainId, Language, QuestionType, StageId
 from app.knowledge import default_knowledge_path, load_knowledge
 from app.questionnaire import QuestionnaireService, QuestionnaireStatus
+from app.questionnaire.models import QuestionnaireOutcome
+from app.questionnaire.service import _pool
 from app.text_intent import AnswerResolutionService
 
 
@@ -78,9 +80,9 @@ def test_completed_service_result_is_explainable_and_pool_scoped() -> None:
     assert all(item.reasons for item in outcome.recommendations)
     assert all(item.limitations for item in outcome.recommendations)
     assert all(str(item.source_url).startswith("https://") for item in outcome.recommendations)
-    assert [item.match_percent for item in outcome.recommendations] == sorted(
-        (item.match_percent for item in outcome.recommendations), reverse=True
-    )
+    # Match percentages describe each tool separately; order follows weighted scores.
+    # Exhaustive 0–4 candidate ranking checks live in test_questionnaire_eligibility.
+    assert outcome.eligible_count == 16
 
 
 def test_unresolved_short_text_returns_fixed_clarification_choices() -> None:
@@ -111,3 +113,24 @@ def test_unresolved_short_text_returns_fixed_clarification_choices() -> None:
     assert [option.id for option in outcome.clarification_options] == [
         intent.id for intent in question.text_intents
     ]
+
+
+def test_pool_and_outcome_accept_variable_tool_counts() -> None:
+    snapshot = load_knowledge(default_knowledge_path()).model_copy(deep=True)
+    original = next(
+        tool for tool in snapshot.tools
+        if tool.stages == [StageId.ANALYSIS]
+        and tool.domain is DomainId.SOFTWARE
+    )
+    snapshot.tools.append(original.model_copy(update={"id": "fifth-real-tool"}))
+
+    tools, questions, rules = _pool(
+        snapshot, StageId.ANALYSIS, DomainId.SOFTWARE
+    )
+
+    assert len(tools) == 17
+    assert len(questions) >= 10
+    assert rules
+    assert QuestionnaireOutcome(
+        status="question", answered_count=0, eligible_count=16
+    ).eligible_count == 16

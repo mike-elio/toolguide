@@ -67,7 +67,7 @@ def test_advance_completes_with_three_explainable_recommendations() -> None:
     asked = []
     answers = []
 
-    for _ in range(10):
+    for _ in range(11):
         response = client.post(
             "/api/questionnaire/advance",
             json=request_payload(

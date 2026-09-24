@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import itertools
-from collections import Counter, defaultdict
+from collections import Counter
 from collections.abc import Mapping, Sequence, Set
 
 from app.domain.models import Question, Rule
@@ -30,7 +30,8 @@ def _question_discrimination(
     closest = _closest_pair(tool_scores)
     separations: list[float] = []
     for rule in question_rules:
-        weights = {impact.tool_id: impact.weight for impact in rule.impacts}
+        weights = {impact.tool_id: impact.weight for impact in rule.impacts
+                   if impact.tool_id in tool_scores}
         if all_equal:
             values = list(weights.values())
             if values:
@@ -74,7 +75,8 @@ def select_next_question(
     for question in eligible:
         discrimination = _question_discrimination(question, rules, tool_scores)
         balance = 1.0 / (1.0 + 0.4 * dimension_counts[question.dimension])
-        ranked.append((discrimination * balance, question.id, question))
+        ranked.append(((discrimination if len(tool_scores) > 1 else 1.0) * balance,
+                       question.id, question))
     ranked.sort(key=lambda item: (-item[0], item[1]))
     top = ranked[: min(3, len(ranked))]
     return top[_seed_index(seed, asked_question_ids, len(top))][2]

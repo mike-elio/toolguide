@@ -12,6 +12,15 @@
     return `session-${Date.now()}-${Math.random().toString(16).slice(2)}`;
   }
 
+  function defaultConstraints() {
+    return {
+      requires_offline: false,
+      requires_free_plan: false,
+      requires_open_source: false,
+      allows_online_preparation: false,
+    };
+  }
+
   function createQuestionnaireState(seedFactory = defaultSeed) {
     return {
       stage: null,
@@ -19,8 +28,23 @@
       sessionSeed: null,
       askedQuestionIds: [],
       answers: [],
+      constraints: defaultConstraints(),
+
+      setConstraints(constraints) {
+        this.constraints = { ...defaultConstraints(), ...clone(constraints) };
+      },
+
+      adoptRequest(request) {
+        if (request.stage !== this.stage || request.domain !== this.domain || request.session_seed !== this.sessionSeed) {
+          throw new Error('scenario must preserve the selected path');
+        }
+        this.askedQuestionIds = clone(request.asked_question_ids);
+        this.answers = clone(request.answers);
+        this.setConstraints(request.constraints || {});
+      },
 
       selectStage(stage) {
+        this.constraints = defaultConstraints();
         this.stage = stage;
         this.domain = null;
         this.sessionSeed = null;
@@ -29,6 +53,7 @@
       },
 
       selectDomain(domain) {
+        this.constraints = defaultConstraints();
         if (!this.stage) throw new Error('select a stage before a domain');
         this.domain = domain;
         this.sessionSeed = seedFactory();
@@ -60,12 +85,14 @@
           stage: this.stage,
           domain: this.domain,
           session_seed: this.sessionSeed,
+          constraints: this.constraints,
           asked_question_ids: this.askedQuestionIds,
           answers: this.answers,
         });
       },
 
       restart() {
+        this.constraints = defaultConstraints();
         this.stage = null;
         this.domain = null;
         this.sessionSeed = null;

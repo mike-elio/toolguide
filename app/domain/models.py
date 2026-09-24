@@ -5,8 +5,6 @@ from enum import StrEnum
 from typing import Annotated, Self
 
 from pydantic import (
-    BaseModel,
-    ConfigDict,
     Field,
     HttpUrl,
     StringConstraints,
@@ -14,34 +12,13 @@ from pydantic import (
     model_validator,
 )
 
+from app.domain.base import DomainModel, Language, LocalizedText, NonEmptyText
+from app.domain.tool_profiles import ToolProfile
 
 Identifier = Annotated[
     str,
     StringConstraints(strip_whitespace=True, min_length=1, max_length=100),
 ]
-NonEmptyText = Annotated[
-    str,
-    StringConstraints(strip_whitespace=True, min_length=1, max_length=2_000),
-]
-
-
-class DomainModel(BaseModel):
-    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
-
-
-class Language(StrEnum):
-    ARABIC = "ar"
-    ENGLISH = "en"
-
-
-class LocalizedText(DomainModel):
-    ar: NonEmptyText
-    en: NonEmptyText
-
-    def for_language(self, language: Language) -> str:
-        return self.ar if language is Language.ARABIC else self.en
-
-
 class StageId(StrEnum):
     ANALYSIS = "analysis"
     DESIGN = "design"
@@ -83,6 +60,7 @@ class Tool(DomainModel):
     description: LocalizedText
     stages: list[StageId] = Field(min_length=1, max_length=3)
     domain: DomainId | None = None
+    profile: ToolProfile | None = None
     best_for: LocalizedText | None = None
     limitations: list[LocalizedText] = Field(default_factory=list, max_length=4)
     source_url: HttpUrl | None = None

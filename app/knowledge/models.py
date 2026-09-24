@@ -1,6 +1,8 @@
 """Validated aggregate for an in-memory knowledge-base snapshot."""
 
 from typing import Self
+import hashlib
+import json
 
 from pydantic import Field, model_validator
 
@@ -15,6 +17,17 @@ class KnowledgeSnapshot(DomainModel):
     questions: list[Question] = Field(default_factory=list)
     rules: list[Rule] = Field(default_factory=list)
     benchmarks: list[Benchmark] = Field(default_factory=list)
+
+    @property
+    def version(self) -> str:
+        """Hash validated content in model field order, including setup evidence.
+
+        Serialize directly with Pydantic rather than materializing the large
+        nested rule/source graph as Python dictionaries on every request.
+        Reordered mapping keys may invalidate a preview conservatively.
+        """
+        canonical = self.model_dump_json().encode("utf-8")
+        return hashlib.sha256(canonical).hexdigest()
 
     @model_validator(mode="after")
     def validate_ids_and_references(self) -> Self:

@@ -56,6 +56,7 @@ test('initial language sets a visible results heading', async () => {
   );
 
   vm.runInNewContext(stateScript, context);
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '..', 'frontend', 'decision-ui.js'), 'utf8'), context);
   vm.runInNewContext(script, context);
   await new Promise(resolve => setImmediate(resolve));
 

@@ -23,11 +23,24 @@ from app.domain.models import (
     Tool,
 )
 from app.knowledge import KnowledgeSnapshot
+from app.knowledge.catalog_content import EXPANDED_TOOL_ROWS, EXPANSION_AXES, FOCUS, TOOL_LIMITATIONS
+from app.knowledge.profiles import merge_tool_profiles
+from app.domain.tool_profiles import (
+    CapabilityEvidence,
+    EvidenceStatus,
+    NetworkRequirement,
+    OperationSetup,
+    SetupEvidence,
+    StarterGuide,
+    StarterStep,
+    ToolProfile,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "data" / "knowledge" / "adaptive.json.gz"
-REVIEWED_AT = date(2026, 8, 28)
+DEFAULT_PROFILES = ROOT / "data" / "knowledge" / "tool_profiles.json"
+REVIEWED_AT = date(2026, 9, 6)
 
 
 def lt(en: str, ar: str) -> LocalizedText:
@@ -63,6 +76,7 @@ class QuestionSpec:
     ar: str
     options: tuple[OptionSpec, OptionSpec, OptionSpec]
     question_type: QuestionType = QuestionType.SINGLE_CHOICE
+    source_key: str | None = None
 
 
 def tool(
@@ -92,7 +106,7 @@ TOOL_SPECS = (
     tool(StageId.ANALYSIS, DomainId.ARTIFICIAL_INTELLIGENCE, "notebooklm", "NotebookLM", "Grounded analysis inside a user-supplied source collection.", "تحليل مؤسس على مجموعة مصادر يرفعها المستخدم.", "Weak fit for open-web discovery without a curated source set.", "أقل ملاءمة لاكتشاف الويب المفتوح بلا مجموعة مصادر منسقة.", "https://support.google.com/notebooklm/answer/16215270", "documents", "grounded", "workspace", "summary", "collaboration"),
     tool(StageId.ANALYSIS, DomainId.ARTIFICIAL_INTELLIGENCE, "scite", "Scite", "Checking whether research citations support, contrast, or mention a claim.", "فحص ما إذا كانت الاستشهادات تدعم الادعاء أو تعارضه أو تذكره.", "Not a complete systematic-review or product-analysis platform.", "ليس منصة كاملة للمراجعة المنهجية أو تحليل المنتجات.", "https://scite.ai/", "academic", "validation", "citations", "evidence", "deep"),
     tool(StageId.ANALYSIS, DomainId.CYBERSECURITY, "microsoft-security-copilot", "Microsoft Security Copilot", "Security investigation and summaries in the Microsoft ecosystem.", "تحقيقات وملخصات أمنية ضمن منظومة مايكروسوفت.", "A poor fit for environments centered on non-Microsoft security stacks.", "لا يناسب البيئات التي تتمحور حول حزم أمنية غير مايكروسوفت.", "https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot", "enterprise", "soc", "workspace", "automation", "governance"),
-    tool(StageId.ANALYSIS, DomainId.CYBERSECURITY, "google-threat-intelligence", "Google Threat Intelligence", "Threat intelligence and indicator context at global scale.", "استخبارات تهديدات وربط المؤشرات بسياق عالمي.", "Less useful when the SOC and telemetry are outside Google's ecosystem.", "أقل فائدة عندما يكون مركز العمليات والقياس خارج منظومة غوغل.", "https://cloud.google.com/security/products/threat-intelligence", "threat_intel", "current", "web", "scale", "soc"),
+    tool(StageId.ANALYSIS, DomainId.CYBERSECURITY, "google-threat-intelligence", "Google Threat Intelligence", "Threat intelligence and indicator context at global scale.", "استخبارات تهديدات وربط المؤشرات بسياق عالمي.", "Confirm plan entitlement and integrations with your existing security tools before adoption.", "تحقق من صلاحيات الخطة وتكاملها مع أدواتك الأمنية الحالية قبل الاعتماد.", "https://cloud.google.com/security/products/threat-intelligence", "threat_intel", "current", "web", "scale", "soc"),
     tool(StageId.ANALYSIS, DomainId.CYBERSECURITY, "crowdstrike-charlotte-ai", "CrowdStrike Charlotte AI", "Accelerating SOC investigations on the Falcon platform.", "تسريع تحقيقات مركز العمليات على منصة فالكون.", "Not appropriate when Falcon is not the operational center.", "لا يناسبك عندما لا تكون فالكون مركز العمليات.", "https://www.crowdstrike.com/en-us/platform/charlotte-ai/", "soc", "automation", "enterprise", "monitoring", "fast"),
     tool(StageId.ANALYSIS, DomainId.CYBERSECURITY, "sentinelone-purple-ai", "SentinelOne Purple AI", "Natural-language investigation in SentinelOne Singularity.", "تحقيق واستعلام باللغة الطبيعية داخل سينتينل ون.", "Not suitable without the SentinelOne platform or when emerging features are unacceptable.", "لا يناسبك من دون منصة سينتينل ون أو عند رفض الميزات الناشئة.", "https://www.sentinelone.com/platform/purple/", "soc", "natural_language", "automation", "monitoring", "fast"),
 
@@ -113,27 +127,49 @@ TOOL_SPECS = (
     tool(StageId.IMPLEMENTATION, DomainId.SOFTWARE, "cursor", "Cursor", "Repository-aware agentic editing in an integrated IDE.", "تحرير وكيل واع بالمستودع داخل بيئة متكاملة.", "Not suitable when another IDE is mandatory or context cannot leave the device.", "لا يناسب فرض محرر آخر أو منع خروج سياق المستودع.", "https://cursor.com/docs", "ide", "repository", "agent", "fast", "code"),
     tool(StageId.IMPLEMENTATION, DomainId.SOFTWARE, "windsurf", "Windsurf", "Agentic coding workflows through Cascade in the editor.", "سير برمجي وكيل عبر كاسكيد داخل المحرر.", "Less suitable for teams locked to other editors or missing required controls.", "أقل ملاءمة لفريق مرتبط بمحرر آخر أو ضوابط غير متاحة.", "https://docs.windsurf.com/", "ide", "agent", "automation", "code", "iteration"),
     tool(StageId.IMPLEMENTATION, DomainId.SOFTWARE, "claude-code", "Claude Code", "Terminal-based coding agent and scriptable workflows.", "وكيل برمجي في الطرفية وتدفقات قابلة للبرمجة.", "Not ideal for users wanting only a graphical IDE or refusing terminal permissions.", "لا يناسب من يريد واجهة رسومية فقط أو يرفض صلاحيات الطرفية.", "https://code.claude.com/docs/en/how-claude-code-works", "terminal", "agent", "automation", "deep", "repository"),
-    tool(StageId.IMPLEMENTATION, DomainId.ARTIFICIAL_INTELLIGENCE, "hugging-face", "Hugging Face", "Open models, datasets, applications, and libraries in one ecosystem.", "نماذج وبيانات وتطبيقات ومكتبات مفتوحة في منظومة واحدة.", "Not ideal when a fully managed closed service with no model operations is desired.", "لا يناسب من يريد خدمة مغلقة ومدارة بلا تشغيل نماذج.", "https://huggingface.co/docs/hub/index", "open_source", "models", "datasets", "local", "community"),
+    tool(StageId.IMPLEMENTATION, DomainId.ARTIFICIAL_INTELLIGENCE, "hugging-face", "Hugging Face", "Open models, datasets, applications, and libraries in one ecosystem.", "نماذج وبيانات وتطبيقات ومكتبات مفتوحة في منظومة واحدة.", "Not ideal when a fully managed closed service with no model operations is desired.", "لا يناسب من يريد خدمة مغلقة ومدارة بلا تشغيل نماذج.", "https://huggingface.co/docs/hub/index", "models", "datasets", "local", "community"),
     tool(StageId.IMPLEMENTATION, DomainId.ARTIFICIAL_INTELLIGENCE, "langgraph", "LangGraph", "Stateful agents, long-running flows, and explicit control.", "وكلاء ذوو حالة ومسارات طويلة وتحكم صريح.", "Overkill for a simple chatbot without memory or branching.", "زائد لمحادثة بسيطة بلا ذاكرة أو تفرعات.", "https://github.com/langchain-ai/langgraph", "agent", "state", "workflow", "control", "open_source"),
     tool(StageId.IMPLEMENTATION, DomainId.ARTIFICIAL_INTELLIGENCE, "llamaindex", "LlamaIndex", "Data-centric RAG and agent applications.", "تطبيقات استرجاع ووكلاء تتمحور حول البيانات.", "Less useful when no external knowledge is needed or a smaller framework is preferred.", "أقل فائدة بلا معرفة خارجية أو عند تفضيل إطار أصغر.", "https://docs.llamaindex.ai/en/latest/understanding/agent/structured_output/", "rag", "data", "documents", "agent", "integration"),
     tool(StageId.IMPLEMENTATION, DomainId.ARTIFICIAL_INTELLIGENCE, "crewai", "CrewAI", "Role-based multi-agent teams, tasks, and flows.", "فرق وكلاء مبنية على أدوار ومهام وتدفقات.", "Not ideal for deterministic simple processes or low-level graph control.", "لا يناسب عملية حتمية بسيطة أو تحكماً منخفض المستوى.", "https://github.com/crewaiinc/crewai", "agent", "multi_agent", "workflow", "automation", "roles"),
     tool(StageId.IMPLEMENTATION, DomainId.CYBERSECURITY, "snyk-code", "Snyk Code / Agent Fix", "SAST and suggested fixes inside developer workflows.", "تحليل ساكن وإصلاحات مقترحة داخل سير المطور.", "Not ideal when a fully open rule engine is required.", "لا يناسب عند اشتراط محرك قواعد مفتوح بالكامل.", "https://docs.snyk.io/scan-with-snyk/snyk-code", "sast", "fix", "ide", "integration", "enterprise"),
-    tool(StageId.IMPLEMENTATION, DomainId.CYBERSECURITY, "semgrep-assistant", "Semgrep Assistant", "Inspectable rules with AI-assisted triage and fixes.", "قواعد قابلة للفحص مع مساعدة للفرز والإصلاح.", "Not ideal when the team refuses rule management or needs one broad platform.", "لا يناسب فريقاً يرفض إدارة القواعد أو يريد منصة شاملة واحدة.", "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/", "sast", "rules", "open_source", "fix", "ci"),
+    tool(StageId.IMPLEMENTATION, DomainId.CYBERSECURITY, "semgrep-assistant", "Semgrep Assistant", "Inspectable rules with AI-assisted triage and fixes.", "قواعد قابلة للفحص مع مساعدة للفرز والإصلاح.", "Not ideal when the team refuses rule management or needs one broad platform.", "لا يناسب فريقاً يرفض إدارة القواعد أو يريد منصة شاملة واحدة.", "https://semgrep.dev/blog/2024/the-tech-behind-semgrep-assistant/", "sast", "rules", "fix", "ci"),
     tool(StageId.IMPLEMENTATION, DomainId.CYBERSECURITY, "aikido-autofix", "Aikido AutoFix", "Unified security fixes in a developer-focused AppSec platform.", "إصلاحات أمنية موحدة ضمن منصة موجهة للمطور.", "Large changes still require deep human review.", "التغييرات الكبيرة ما زالت تحتاج مراجعة بشرية عميقة.", "https://help.aikido.dev/aikido-autofix", "fix", "appsec", "automation", "integration", "developer"),
     tool(StageId.IMPLEMENTATION, DomainId.CYBERSECURITY, "gitlab-duo-vulnerability", "GitLab Duo Vulnerability Resolution", "Vulnerability analysis and resolution inside GitLab DevSecOps.", "تحليل وإصلاح ثغرات داخل غيت لاب وديف سيك أوبس.", "Not suitable for repositories and CI pipelines outside GitLab.", "لا يناسب المستودعات وخطوط البناء خارج غيت لاب.", "https://docs.gitlab.com/user/gitlab_duo/prompt_examples/analyze_vulnerabilities/", "repository", "ci", "fix", "integration", "devsecops"),
 
     tool(StageId.TESTING, DomainId.SOFTWARE, "qodo", "Qodo", "Test generation and code/PR review in developer workflows.", "توليد اختبارات ومراجعة كود وطلبات دمج ضمن سير المطور.", "Not intended as a visual end-to-end UI testing platform.", "غير مخصص كمنصة اختبار واجهة شاملة بصرياً.", "https://www.qodo.ai/solutions/testing/", "code", "unit", "repository", "ci", "automation"),
-    tool(StageId.TESTING, DomainId.SOFTWARE, "diffblue-cover", "Diffblue Cover", "Automated Java unit-test generation.", "توليد آلي لاختبارات وحدة جافا.", "Not suitable for non-Java projects or end-to-end behavior tests.", "لا يناسب المشاريع غير جافا أو اختبارات السلوك الشاملة.", "https://cover-docs.diffblue.com/get-started/what-is-diffblue-cover", "java", "unit", "automation", "code", "local"),
+    tool(StageId.TESTING, DomainId.SOFTWARE, "diffblue-cover", "Diffblue Cover", "Automated unit-test generation for Java and Kotlin projects.", "توليد آلي لاختبارات الوحدة لمشاريع جافا وكوتلن.", "Not suitable outside supported Java/Kotlin projects or for end-to-end behavior tests.", "لا يناسب خارج مشاريع جافا وكوتلن المدعومة أو اختبارات السلوك الشاملة.", "https://cover-docs.diffblue.com/get-started/what-is-diffblue-cover", "java", "unit", "automation", "code", "local"),
     tool(StageId.TESTING, DomainId.SOFTWARE, "testim", "Testim", "AI-assisted web interface test automation.", "أتمتة اختبارات واجهات الويب بمساعدة الذكاء الاصطناعي.", "Not suited to unit tests or backend-only systems.", "لا يناسب اختبارات الوحدة أو الأنظمة الخلفية فقط.", "https://help.testim.io/docs/testim-automate", "web", "e2e", "visual", "automation", "ui"),
     tool(StageId.TESTING, DomainId.SOFTWARE, "mabl", "mabl", "Managed end-to-end and API tests with generation and monitoring.", "اختبارات شاملة وواجهات برمجية مُدارة مع توليد ومراقبة.", "Not ideal for a lightweight local-only testing stack.", "لا يناسب حزمة اختبار خفيفة ومحلية فقط.", "https://help.mabl.com/hc/en-us/articles/31649455424660-Create-tests-with-generative-AI", "e2e", "api", "monitoring", "automation", "cloud"),
     tool(StageId.TESTING, DomainId.ARTIFICIAL_INTELLIGENCE, "langsmith", "LangSmith", "Evaluation and observability for LLM and agent applications.", "تقييم ومراقبة تطبيقات النماذج والوكلاء.", "Less suitable for simple apps without traces or teams requiring fully local open tooling.", "أقل ملاءمة لتطبيق بلا تتبع أو فريق يشترط أدوات محلية مفتوحة.", "https://docs.langchain.com/langsmith/evaluation", "evaluation", "tracing", "agent", "monitoring", "cloud"),
-    tool(StageId.TESTING, DomainId.ARTIFICIAL_INTELLIGENCE, "arize-phoenix", "Arize Phoenix", "Open-source LLM observability and evaluation.", "مراقبة وتقييم مفتوح المصدر لتطبيقات النماذج.", "Requires setup when the team wants a closed managed service only.", "يحتاج إعداداً عندما يريد الفريق خدمة مغلقة ومدارة فقط.", "https://github.com/arize-ai/phoenix", "open_source", "evaluation", "tracing", "local", "monitoring"),
+    tool(StageId.TESTING, DomainId.ARTIFICIAL_INTELLIGENCE, "arize-phoenix", "Arize Phoenix", "Source-available LLM observability and evaluation under ELv2.", "مراقبة وتقييم لتطبيقات النماذج بمصدر متاح تحت رخصة ELv2.", "Requires setup when the team wants a closed managed service only.", "يحتاج إعداداً عندما يريد الفريق خدمة مغلقة ومدارة فقط.", "https://github.com/arize-ai/phoenix", "source_available", "evaluation", "tracing", "local", "monitoring"),
     tool(StageId.TESTING, DomainId.ARTIFICIAL_INTELLIGENCE, "deepeval", "DeepEval", "Code-first LLM tests and CI evaluation.", "اختبارات نماذج برمجية وتقييم قابل للدمج في البناء.", "Not ideal for a non-technical team wanting only no-code controls.", "لا يناسب فريقاً غير تقني يريد أدوات بلا كود فقط.", "https://github.com/confident-ai/deepeval", "evaluation", "code", "ci", "open_source", "metrics"),
     tool(StageId.TESTING, DomainId.ARTIFICIAL_INTELLIGENCE, "giskard", "Giskard", "Risk scanning and evaluation for AI and LLM applications.", "مسح مخاطر وتقييم لتطبيقات الذكاء الاصطناعي والنماذج.", "Some scans can be heavy for a time- or resource-constrained environment.", "قد تكون بعض المسوح ثقيلة في بيئة محدودة الوقت أو الموارد.", "https://github.com/Giskard-AI/giskard-oss", "risk", "evaluation", "security", "open_source", "governance"),
     tool(StageId.TESTING, DomainId.CYBERSECURITY, "burp-suite", "Burp Suite AI / DAST", "Advanced manual web testing with automation.", "اختبار ويب يدوي متقدم مع أتمتة.", "Not ideal for teams wanting a fully managed DAST service without web-security expertise.", "لا يناسب فريقاً يريد خدمة مُدارة بلا خبرة أمن ويب.", "https://portswigger.net/burp/documentation/desktop/burp-ai", "manual", "web", "dast", "security", "deep"),
     tool(StageId.TESTING, DomainId.CYBERSECURITY, "invicti", "Invicti", "Enterprise DAST, asset discovery, and broad integrations.", "اختبار ديناميكي مؤسسي واكتشاف أصول وتكاملات واسعة.", "May be excessive for a small project needing low-cost manual testing.", "قد يكون زائداً لمشروع صغير يحتاج اختباراً يدوياً منخفض الكلفة.", "https://www.invicti.com/platform-overview", "enterprise", "dast", "scale", "automation", "report"),
     tool(StageId.TESTING, DomainId.CYBERSECURITY, "stackhawk", "StackHawk", "Developer-focused DAST for CI/CD and APIs.", "اختبار ديناميكي موجه للمطور وخطوط البناء وواجهات البرمجة.", "Not a replacement for deep manual penetration testing.", "ليس بديلاً عن اختبار اختراق يدوي عميق.", "https://docs.stackhawk.com/getting-started/", "developer", "dast", "ci", "api", "automation"),
     tool(StageId.TESTING, DomainId.CYBERSECURITY, "bright-security", "Bright Security", "Early-SDLC DAST and API security testing.", "اختبار ديناميكي مبكر واختبار أمن واجهات البرمجة.", "Less suitable when API definitions are unavailable or testing is manual-only.", "أقل ملاءمة بلا تعريفات واجهات أو عند اشتراط اختبار يدوي فقط.", "https://docs.brightsec.com/docs/introducing-to-bright", "dast", "api", "ci", "developer", "automation"),
+)
+
+TOOL_SPECS += tuple(
+    ToolSpec(
+        stage=StageId(stage),
+        domain=DomainId(domain),
+        id=tool_id,
+        name=name,
+        best_en=f"{name} supports {FOCUS[focus]['en']} workflows.",
+        best_ar=f"تدعم أداة {name} سير عمل {FOCUS[focus]['ar']}.",
+        limit_en=TOOL_LIMITATIONS.get(tool_id, (
+            "Verify the exact task, plan, license, hardware, and connectivity "
+            "against the linked official source before adoption.", ""
+        ))[0],
+        limit_ar=TOOL_LIMITATIONS.get(tool_id, ("",
+            "تحقق من المهمة والخطة والترخيص والعتاد والاتصال في المصدر الرسمي "
+            "المرتبط قبل الاعتماد."
+        ))[1],
+        url=url,
+        strengths=tuple(strengths),
+    )
+    for stage, domain, tool_id, name, focus, url, strengths in EXPANDED_TOOL_ROWS
 )
 
 
@@ -146,6 +182,78 @@ DOMAIN_LABELS = {
 
 def opt(id: str, en: str, ar: str, *signals: str) -> OptionSpec:
     return OptionSpec(id=id, en=en, ar=ar, signals=signals)
+
+
+STAGE_ACTIONS = {
+    StageId.ANALYSIS: ("analysis", "التحليل"),
+    StageId.DESIGN: ("design", "التصميم"),
+    StageId.IMPLEMENTATION: ("implementation", "التنفيذ"),
+    StageId.TESTING: ("testing", "الاختبار"),
+}
+
+
+AXIS_SOURCE_KEYS = {
+    "connectivity": "offline-workflow",
+    "preparation": "offline-workflow",
+    "data_sensitivity": "privacy",
+    "data_residency": "privacy",
+    "budget": "ai-risk",
+    "licensing": "licensing",
+    "operating_system": "product-quality",
+    "hardware": "product-quality",
+    "memory": "product-quality",
+    "storage": "product-quality",
+    "skill_level": "ai-risk",
+    "setup_effort": "secure-lifecycle",
+    "maintenance": "secure-lifecycle",
+    "deployment": "product-quality",
+    "collaboration": "ai-risk",
+    "governance": "cyber-risk",
+    "auditability": "cyber-risk",
+    "explainability": "ai-risk",
+    "reproducibility": "product-quality",
+    "integration": "product-quality",
+    "automation": "ai-risk",
+    "scale": "product-quality",
+    "latency": "product-quality",
+    "throughput": "product-quality",
+    "availability": "product-quality",
+    "portability": "product-quality",
+    "interoperability": "product-quality",
+    "customization": "product-quality",
+    "extensibility": "product-quality",
+    "vendor_lock_in": "supplier-due-diligence",
+    "support": "supplier-due-diligence",
+    "community": "supplier-due-diligence",
+    "maturity": "supplier-due-diligence",
+    "update_cadence": "supplier-due-diligence",
+    "compliance": "cyber-risk",
+    "access_control": "privacy",
+    "logging": "cyber-risk",
+    "versioning": "secure-lifecycle",
+    "export": "product-quality",
+    "recovery": "cyber-risk",
+    "lifecycle": "secure-lifecycle",
+    "human_review": "ai-risk",
+}
+
+
+def expansion_questions(stage: StageId) -> tuple[QuestionSpec, ...]:
+    action_en, action_ar = STAGE_ACTIONS[stage]
+    return tuple(
+        QuestionSpec(
+            f"context_{dimension}",
+            f"How strict is the {label_en} requirement for {action_en} in {{domain}}?",
+            f"ما مستوى متطلبات {label_ar} في {action_ar} ضمن {{domain}}؟",
+            (
+                opt("flexible", f"Flexible {label_en}", f"{label_ar}: مرن", *flexible),
+                opt("balanced", f"Balanced {label_en}", f"{label_ar}: متوازن", *balanced),
+                opt("strict", f"Strict {label_en}", f"{label_ar}: صارم", *strict),
+            ),
+            source_key=AXIS_SOURCE_KEYS[dimension],
+        )
+        for dimension, label_en, label_ar, flexible, balanced, strict in EXPANSION_AXES
+    )
 
 
 ANALYSIS_QUESTIONS = (
@@ -221,10 +329,10 @@ TESTING_QUESTIONS = (
 
 
 STAGE_QUESTIONS = {
-    StageId.ANALYSIS: ANALYSIS_QUESTIONS,
-    StageId.DESIGN: DESIGN_QUESTIONS,
-    StageId.IMPLEMENTATION: IMPLEMENTATION_QUESTIONS,
-    StageId.TESTING: TESTING_QUESTIONS,
+    StageId.ANALYSIS: ANALYSIS_QUESTIONS + expansion_questions(StageId.ANALYSIS),
+    StageId.DESIGN: DESIGN_QUESTIONS + expansion_questions(StageId.DESIGN),
+    StageId.IMPLEMENTATION: IMPLEMENTATION_QUESTIONS + expansion_questions(StageId.IMPLEMENTATION),
+    StageId.TESTING: TESTING_QUESTIONS + expansion_questions(StageId.TESTING),
 }
 
 
@@ -241,6 +349,73 @@ POOL_SOURCES = {
     (StageId.DESIGN, DomainId.CYBERSECURITY): ("owasp-threat-modeling", "Threat Modeling Cheat Sheet", "OWASP", "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html", SourceKind.OFFICIAL_DOCUMENTATION),
     (StageId.IMPLEMENTATION, DomainId.CYBERSECURITY): ("nist-ssdf-cyber", "Secure Software Development Framework", "NIST", "https://csrc.nist.gov/pubs/sp/800/218/final", SourceKind.OFFICIAL_DOCUMENTATION),
     (StageId.TESTING, DomainId.CYBERSECURITY): ("owasp-wstg", "Web Security Testing Guide", "OWASP", "https://owasp.org/www-project-web-security-testing-guide/latest/", SourceKind.OFFICIAL_DOCUMENTATION),
+}
+
+
+PRIMARY_SOURCE_SPECS = {
+    "offline-workflow": (
+        "hf-transformers-offline-mode",
+        "Transformers installation: Offline mode",
+        "Hugging Face",
+        "https://huggingface.co/docs/transformers/installation#offline-mode",
+        SourceKind.VENDOR_DOCUMENTATION,
+    ),
+    "product-quality": (
+        "iso-25010-product-quality",
+        "ISO/IEC 25010:2023 product quality model",
+        "ISO",
+        "https://www.iso.org/standard/78176.html",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "ai-risk": (
+        "nist-ai-rmf-core",
+        "NIST AI RMF Core",
+        "NIST",
+        "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "privacy": (
+        "nist-privacy-framework-1",
+        "NIST Privacy Framework 1.0",
+        "NIST",
+        "https://www.nist.gov/privacy-framework/privacy-framework",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "cyber-risk": (
+        "nist-csf-2-core",
+        "NIST Cybersecurity Framework 2.0",
+        "NIST",
+        "https://www.nist.gov/cyberframework",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "secure-lifecycle": (
+        "nist-ssdf-1-1",
+        "NIST Secure Software Development Framework 1.1",
+        "NIST",
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "supplier-due-diligence": (
+        "nist-sp-1326-supplier-due-diligence",
+        "NIST SP 1326 ICT supplier due diligence",
+        "NIST",
+        "https://csrc.nist.gov/pubs/sp/1326/final",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "accessibility": (
+        "w3c-wcag-2-2",
+        "Web Content Accessibility Guidelines 2.2",
+        "W3C",
+        "https://www.w3.org/TR/WCAG22/",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
+    "licensing": (
+        "osi-approved-licenses",
+        "OSI Approved Licenses",
+        "Open Source Initiative",
+        "https://opensource.org/licenses",
+        SourceKind.OFFICIAL_DOCUMENTATION,
+    ),
 }
 
 
@@ -300,12 +475,16 @@ def question_id(stage: StageId, domain: DomainId, dimension: str) -> str:
 def build_questions() -> list[Question]:
     questions: list[Question] = []
     for stage, specs in STAGE_QUESTIONS.items():
-        if len(specs) != 14:
-            raise ValueError(f"{stage.value} must define exactly 14 question specs")
+        if len(specs) != 56:
+            raise ValueError(f"{stage.value} must define exactly 56 question specs")
         for domain in DomainId:
             domain_label = DOMAIN_LABELS[domain]
-            evidence = source_from_tuple(POOL_SOURCES[(stage, domain)])
             for spec in specs:
+                evidence = source_from_tuple(
+                    PRIMARY_SOURCE_SPECS[spec.source_key]
+                    if spec.source_key is not None
+                    else POOL_SOURCES[(stage, domain)]
+                )
                 kwargs: dict[str, object] = {}
                 if spec.question_type is QuestionType.SHORT_TEXT:
                     kwargs["text_intents"] = [
@@ -368,13 +547,12 @@ def build_rules() -> list[Rule]:
         for stage in StageId
         for domain in DomainId
     }
-    weights = (1.0, 0.55, -0.35, -0.75)
     rules: list[Rule] = []
     for stage, question_specs in STAGE_QUESTIONS.items():
         for domain in DomainId:
             pool = pools[(stage, domain)]
-            if len(pool) != 4:
-                raise ValueError(f"{stage.value}/{domain.value} must contain four tools")
+            if len(pool) != 16:
+                raise ValueError(f"{stage.value}/{domain.value} must contain 16 tools")
             criterion_source = source_from_tuple(POOL_SOURCES[(stage, domain)])
             for question_index, question_spec in enumerate(question_specs):
                 qid = question_id(stage, domain, question_spec.dimension)
@@ -384,21 +562,24 @@ def build_rules() -> list[Rule]:
                     )
                     impacts = []
                     for rank, candidate in enumerate(ordered):
-                        positive = weights[rank] > 0
+                        weight = 1.0 - (2.0 * rank / (len(ordered) - 1))
+                        positive = weight > 0
                         rationale_en = (
-                            f"{candidate.name} matches the selected {option.en.lower()} requirement."
+                            f"Your preference for {option.en.lower()} raises {candidate.name}'s relative score in this catalog."
                             if positive
-                            else f"{candidate.name} is a weaker fit for the selected {option.en.lower()} requirement."
+                            else f"Your preference for {option.en.lower()} lowers {candidate.name}'s relative score in this catalog."
                         )
                         rationale_ar = (
-                            f"تلائم أداة {candidate.name} متطلب «{option.ar}» المحدد."
+                            f"يرفع تفضيلك «{option.ar}» الدرجة النسبية لأداة {candidate.name} في هذا الكتالوج."
                             if positive
-                            else f"تعد أداة {candidate.name} أقل ملاءمة لمتطلب «{option.ar}» المحدد."
+                            else f"يخفض تفضيلك «{option.ar}» الدرجة النسبية لأداة {candidate.name} في هذا الكتالوج."
                         )
+                        rationale_en += " This editorial comparison is not proof of a mandatory capability."
+                        rationale_ar += " هذه مقارنة تحريرية وليست إثباتاً لقدرة إلزامية."
                         impacts.append(
                             RuleImpact(
                                 tool_id=candidate.id,
-                                weight=weights[rank],
+                                weight=weight,
                                 rationale=lt(rationale_en, rationale_ar),
                                 sources=[criterion_source, tool_source(candidate)],
                             )
@@ -414,10 +595,80 @@ def build_rules() -> list[Rule]:
     return rules
 
 
-def build_snapshot() -> KnowledgeSnapshot:
+def _default_profile(tool: Tool) -> ToolProfile:
+    assert tool.source_url is not None
+    assert tool.best_for is not None
+    source_url = tool.source_url
+    name_en, name_ar = tool.name.en, tool.name.ar
+    guide = StarterGuide(
+        prerequisites=[lt(f"Review {name_en}'s requirements.", f"راجع متطلبات {name_ar}.")],
+        steps=[
+            StarterStep(instruction=lt(f"Open the official {name_en} documentation.", f"افتح الوثائق الرسمية لأداة {name_ar}."), source_url=source_url),
+            StarterStep(instruction=lt(f"Confirm the exact {name_en} plan and task scope.", f"تحقق من خطة {name_ar} ونطاق المهمة بدقة."), source_url=source_url),
+            StarterStep(instruction=lt(f"Run a small reviewed {name_en} trial before adoption.", f"نفذ تجربة صغيرة ومراجعة لأداة {name_ar} قبل اعتمادها."), source_url=source_url),
+        ],
+        example=lt(f"Evaluate {name_en} on one representative artifact.", f"قيّم {name_ar} على أصل واحد ممثل."),
+        expected_outcome=lt(f"A documented fit decision for {name_en}.", f"قرار ملاءمة موثق لأداة {name_ar}."),
+        reviewed_at=REVIEWED_AT,
+    )
+    return ToolProfile(
+        offline=CapabilityEvidence(),
+        free_plan=CapabilityEvidence(),
+        open_source=CapabilityEvidence(),
+        deployment=lt("Deployment is not yet verified for this catalog entry.", "لم يوثق نمط النشر لهذا السجل بعد."),
+        pricing_summary=lt("Pricing is not yet verified for this catalog entry.", "لم توثق الأسعار لهذا السجل بعد."),
+        learning_curve=lt("Validate learning effort with a representative trial.", "تحقق من جهد التعلم عبر تجربة ممثلة."),
+        integrations=[],
+        sources=[source_url],
+        reviewed_at=REVIEWED_AT,
+        starter_guide=guide,
+    )
+
+
+def _ensure_operation_setup(tool: Tool) -> Tool:
+    profile = tool.profile
+    assert profile is not None and tool.domain is not None and tool.best_for is not None
+    if profile.operation_setups:
+        return tool
+    offline = profile.offline
+    documented = offline.value is not None
+    status = EvidenceStatus.OFFICIAL_DOCUMENTATION if documented else EvidenceStatus.UNDOCUMENTED
+    source_url = offline.source_url or profile.sources[0]
+    setup = OperationSetup(
+        id=f"{tool.id}-reviewed-setup",
+        name=lt("Reviewed setup", "الإعداد المراجع"),
+        task=tool.best_for,
+        stage=tool.stages[0].value,
+        domain=tool.domain.value,
+        platform=profile.deployment,
+        local_components=[profile.deployment],
+        preparation_network=NetworkRequirement.UNKNOWN,
+        runtime_network=(NetworkRequirement.NOT_REQUIRED if offline.value is True else NetworkRequirement.REQUIRED if offline.value is False else NetworkRequirement.UNKNOWN),
+        offline_features=[tool.best_for] if offline.value is True else [],
+        online_only_features=tool.limitations if offline.value is False else [],
+        offline=profile.offline,
+        free_plan=profile.free_plan,
+        open_source=profile.open_source,
+        evidence_status=status,
+        evidence=[SetupEvidence(
+            property="offline_runtime",
+            status=status,
+            source_url=source_url,
+            summary=profile.deployment,
+            version_scope="reviewed product version or plan",
+            reviewed_at=offline.reviewed_at if documented else None,
+            limitations=tool.limitations[0],
+        )],
+        starter_guide=profile.starter_guide,
+    )
+    return tool.model_copy(update={"profile": profile.model_copy(update={"operation_setups": [setup]})})
+
+
+def build_snapshot(profiles_path: Path = DEFAULT_PROFILES) -> KnowledgeSnapshot:
+    tools = merge_tool_profiles(build_tools(), profiles_path, _default_profile)
     return KnowledgeSnapshot(
         stages=build_stages(),
-        tools=build_tools(),
+        tools=[_ensure_operation_setup(tool) for tool in tools],
         questions=build_questions(),
         rules=build_rules(),
     )

@@ -7,6 +7,7 @@ from typing import Annotated
 from pydantic import Field, StringConstraints, model_validator
 
 from app.domain.models import DomainId, DomainModel, Identifier, Language, StageId
+from app.domain.tool_profiles import HardConstraints
 
 
 ShortAnswerText = Annotated[
@@ -54,6 +55,7 @@ class QuestionnaireRequest(DomainModel):
     stage: StageId
     domain: DomainId
     session_seed: SessionSeed
+    constraints: HardConstraints = Field(default_factory=HardConstraints)
     asked_question_ids: list[Identifier] = Field(default_factory=list, max_length=10)
     answers: list[SubmittedAnswer] = Field(default_factory=list, max_length=10)
 
@@ -61,4 +63,17 @@ class QuestionnaireRequest(DomainModel):
     def validate_history_shape(self) -> Self:
         if len(self.asked_question_ids) != len(set(self.asked_question_ids)):
             raise ValueError("asked question ids must be unique")
+        return self
+
+
+class ScenarioRequest(DomainModel):
+    baseline: QuestionnaireRequest
+    variant: QuestionnaireRequest
+    knowledge_version: str = Field(pattern=r"^[a-f0-9]{64}$")
+
+    @model_validator(mode="after")
+    def validate_same_context(self) -> Self:
+        for field in ("language", "stage", "domain", "session_seed", "asked_question_ids"):
+            if getattr(self.baseline, field) != getattr(self.variant, field):
+                raise ValueError(f"scenario must preserve {field}")
         return self

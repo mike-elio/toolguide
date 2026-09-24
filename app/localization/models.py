@@ -9,6 +9,7 @@ from app.domain.models import (
     StageId,
 )
 from app.questionnaire import ConfidenceLevel, QuestionnaireStatus
+from app.localization.tool_profiles import ToolProfileResponse
 
 
 class StageResponse(DomainModel):
@@ -42,6 +43,8 @@ class ToolResponse(DomainModel):
     name: NonEmptyText
     description: NonEmptyText
     stages: list[StageId]
+    limitations: list[NonEmptyText] = Field(default_factory=list)
+    profile: ToolProfileResponse | None = None
 
 
 class RecommendationItemResponse(DomainModel):
@@ -64,11 +67,33 @@ class QuestionnaireRecommendationResponse(DomainModel):
     reasons: list[NonEmptyText]
     limitations: list[NonEmptyText]
     source_url: HttpUrl
+    matching_setup_id: str | None = None
+
+
+class ExcludedToolResponse(DomainModel):
+    tool_id: Identifier
+    tool_name: NonEmptyText
+    eligible: bool = False
+    failed_constraints: list[str]
+    unknown_constraints: list[str]
+
+
+class NoMatchAlternativeResponse(DomainModel):
+    tool_id: Identifier
+    tool_name: NonEmptyText
+    setup_id: str
+    setup_name: NonEmptyText
+    changed_constraints: list[str]
 
 
 class QuestionnaireResponse(DomainModel):
     status: QuestionnaireStatus
     answered_count: int
+    eligible_count: int = Field(default=0, ge=0)
+    unknown_evidence_count: int = Field(default=0, ge=0)
+    excluded_tools: list[ExcludedToolResponse] = Field(default_factory=list)
+    alternatives: list[NoMatchAlternativeResponse] = Field(default_factory=list)
+    knowledge_version: str = ""
     minimum_questions: int = 6
     maximum_questions: int = 10
     question: QuestionResponse | None = None

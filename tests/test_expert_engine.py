@@ -19,6 +19,7 @@ from app.domain.models import (
     Tool,
 )
 from app.expert_engine.clipspy_adapter import ClipspyAdapter, _run_to_completion
+from app.expert_engine.compiler import TEMPLATES, compile_rule
 from app.expert_engine.errors import InferenceLimitError, KnowledgeValidationError
 from app.expert_engine.models import AnswerSelection, InferenceResult, ScoreEffect
 from app.expert_engine.validation import validate_inference_input
@@ -410,3 +411,72 @@ def test_public_expert_engine_boundary_runs_real_inference() -> None:
     assert result.tool_scores == pytest.approx({"tool-a": 0.6})
     assert "compile_rule" not in expert_engine.__all__
     assert "clips" not in expert_engine.__all__
+
+
+@pytest.mark.parametrize(
+    "answers",
+    [
+        [],
+        [selection(option_ids=["yes"])],
+        [selection(option_ids=["no"])],
+        [selection(option_ids=["yes", "no"])],
+        [selection(option_ids=["no", "yes"]), selection("analysis-q2", ["no"])],
+        [selection("analysis-q2", ["yes", "no"])],
+    ],
+)
+def test_selected_rule_compilation_matches_full_real_clips_program(answers) -> None:
+    class FullProgramAdapter(ClipspyAdapter):
+        @staticmethod
+        def _build_environment(context):
+            environment = clips.Environment()
+            for construct in TEMPLATES.strip().split("\n\n"):
+                environment.build(construct)
+            for item in context.rules:
+                environment.build(compile_rule(item))
+            return environment
+
+    questions = [
+        question(question_id=qid, question_type=QuestionType.MULTIPLE_CHOICE)
+        for qid in ("analysis-q1", "analysis-q2")
+    ]
+    rules = [
+        rule(rule_id=f"{q.id}-{option}", question_id=q.id,
+             answer_option_id=option, tool_id="tool-a", weight=0.75)
+        for q in questions for option in ("yes", "no")
+    ]
+    # Multiple impacts, opposing signs, and multiple rules sharing one trigger
+    # ensure filtering cannot silently lose effects or alter firing counts.
+    rules[0].impacts.append(RuleImpact(
+        tool_id="tool-b", weight=-0.25,
+        rationale=localized("A competing tool has a different fit."), sources=[source()],
+    ))
+    rules.append(rule(rule_id="extra-yes", tool_id="tool-b", weight=0.5))
+    kwargs = dict(tools=[tool("tool-a"), tool("tool-b"), tool("untouched")],
+                  questions=questions, rules=rules, answers=answers)
+
+    expected = FullProgramAdapter().infer(**kwargs)
+    actual = ClipspyAdapter().infer(**kwargs)
+
+    assert actual == expected
+    assert actual.tool_scores["untouched"] == 0.0
+    if not answers:
+        assert actual == InferenceResult(tool_scores={
+            "tool-a": 0.0, "tool-b": 0.0, "untouched": 0.0,
+        })
+
+
+@pytest.mark.parametrize(
+    ("inactive_rule", "message"),
+    [
+        (rule(rule_id="inactive", question_id="missing-q"), "unknown question"),
+        (rule(rule_id="inactive", answer_option_id="missing-option"), "unknown answer option"),
+        (rule(rule_id="inactive", answer_option_id="no", tool_id="missing-tool"), "unknown tool"),
+    ],
+)
+@pytest.mark.parametrize("answers", [[], [selection()]])
+def test_inactive_rules_are_validated_before_selected_rule_compilation(
+    inactive_rule, message, answers,
+) -> None:
+    with pytest.raises(KnowledgeValidationError, match=message):
+        ClipspyAdapter().infer(tools=[tool()], questions=[question()],
+                              rules=[rule(), inactive_rule], answers=answers)

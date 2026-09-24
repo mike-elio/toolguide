@@ -37,11 +37,15 @@ def project_question(question: Question, language: Language) -> QuestionResponse
 
 
 def project_tool(tool: Tool, language: Language) -> ToolResponse:
+    from app.localization.tool_profiles import project_profile
+
     return ToolResponse(
         id=tool.id,
         name=tool.name.for_language(language),
         description=tool.description.for_language(language),
         stages=tool.stages,
+        limitations=[item.for_language(language) for item in tool.limitations],
+        profile=project_profile(tool.profile, language),
     )
 
 
@@ -83,6 +87,24 @@ def project_questionnaire_outcome(
     return QuestionnaireResponse(
         status=outcome.status,
         answered_count=outcome.answered_count,
+        eligible_count=outcome.eligible_count,
+        unknown_evidence_count=outcome.unknown_evidence_count,
+        excluded_tools=[dict(tool_id=item.tool_id,
+                             tool_name=item.tool_name.for_language(language),
+                             failed_constraints=item.failed_constraints,
+                             unknown_constraints=item.unknown_constraints)
+                        for item in outcome.excluded_tools],
+        alternatives=[
+            dict(
+                tool_id=item.tool_id,
+                tool_name=item.tool_name.for_language(language),
+                setup_id=item.setup_id,
+                setup_name=item.setup_name.for_language(language),
+                changed_constraints=item.changed_constraints,
+            )
+            for item in outcome.alternatives
+        ],
+        knowledge_version=outcome.knowledge_version,
         question=(
             project_question(outcome.question, language)
             if outcome.question is not None
@@ -105,6 +127,7 @@ def project_questionnaire_outcome(
                 reasons=item.reasons,
                 limitations=item.limitations,
                 source_url=item.source_url,
+                matching_setup_id=item.matching_setup_id,
             )
             for item in outcome.recommendations
         ],

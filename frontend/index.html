@@ -55,6 +55,17 @@
         <button id="domains-back-button" class="button button-secondary top-gap" type="button"></button>
       </section>
 
+      <section id="constraints-screen" class="screen hidden" aria-labelledby="constraints-heading">
+        <h2 id="constraints-heading" class="section-title"></h2>
+        <form id="constraints-form">
+          <div id="constraints-editor" class="top-gap"></div>
+          <div class="form-actions">
+            <button id="constraints-back-button" class="button button-secondary" type="button"></button>
+            <button id="constraints-start-button" class="button button-primary" type="submit"></button>
+          </div>
+        </form>
+      </section>
+
       <section id="questions-screen" class="screen hidden" aria-labelledby="questions-heading">
         <div class="section-heading"><div><p id="questions-kicker" class="kicker"></p><h2 id="questions-heading" class="section-title"></h2></div><span id="question-count" class="count-badge"></span></div>
         <form id="questions-form" novalidate>
@@ -69,6 +80,13 @@
       <section id="results-screen" class="screen hidden" aria-labelledby="results-heading">
         <div class="section-heading"><div><p id="results-kicker" class="kicker"></p><h2 id="results-heading" class="section-title"></h2></div></div>
         <div id="results-list" class="stack" aria-live="polite"></div>
+        <div id="result-support" class="top-gap"></div>
+        <div class="support-actions">
+          <button id="compare-button" class="button button-secondary" type="button" aria-expanded="false" aria-controls="comparison-host"></button>
+          <button id="scenario-button" class="button button-primary" type="button" aria-expanded="false" aria-controls="scenario-host"></button>
+        </div>
+        <div id="comparison-host" class="hidden"></div>
+        <div id="scenario-host"></div>
         <button id="restart-button" class="button button-secondary top-gap" type="button"></button>
       </section>
     </main>
@@ -76,6 +94,11 @@
     <footer class="site-footer"><span id="footer-text"></span></footer>
     <script src="/frontend/api-error.js"></script>
     <script src="/frontend/questionnaire-state.js"></script>
+    <script src="/frontend/decision-ui.js"></script>
+    <script src="/frontend/tool-comparison.js"></script>
+    <script src="/frontend/starter-guide.js"></script>
+    <script src="/frontend/scenario-state.js"></script>
+    <script src="/frontend/scenario-panel.js"></script>
     <script src="/frontend/app.js"></script>
   </body>
 </html>

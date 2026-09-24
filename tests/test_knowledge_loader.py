@@ -8,6 +8,7 @@ import pytest
 from app.domain.models import (
     AnswerOption,
     Benchmark,
+    DomainId,
     EvaluationSource,
     Language,
     LocalizedText,
@@ -237,9 +238,28 @@ def test_bundled_phase_six_knowledge_passes_the_structural_audit() -> None:
     audit = audit_knowledge(load_knowledge(default_knowledge_path()))
 
     assert audit.passed
-    assert len(load_knowledge(default_knowledge_path()).tools) == 48
-    assert set(audit.stage_domain_tool_counts.values()) == {4}
-    assert set(audit.stage_domain_question_counts.values()) == {14}
+    assert len(load_knowledge(default_knowledge_path()).tools) == 192
+    assert set(audit.stage_domain_tool_counts.values()) == {16}
+    assert set(audit.stage_domain_question_counts.values()) == {56}
+
+
+def test_adaptive_audit_accepts_variable_stage_domain_tool_counts() -> None:
+    snapshot = load_knowledge(default_knowledge_path()).model_copy(deep=True)
+    original_count = sum(
+        tool.stages == [StageId.ANALYSIS] and tool.domain is DomainId.SOFTWARE
+        for tool in snapshot.tools
+    )
+    original = next(
+        tool for tool in snapshot.tools
+        if tool.stages == [StageId.ANALYSIS]
+        and tool.domain is DomainId.SOFTWARE
+    )
+    snapshot.tools.append(original.model_copy(update={"id": "additional-real-tool"}))
+
+    audit = audit_knowledge(snapshot)
+
+    assert audit.passed
+    assert audit.stage_domain_tool_counts["analysis/software"] == original_count + 1
 
 
 def test_audit_knowledge_reports_independent_invariant_violations() -> None:

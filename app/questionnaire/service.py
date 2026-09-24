@@ -14,6 +14,9 @@ from app.domain.models import (
 )
 from app.expert_engine import AnswerSelection, ClipspyAdapter, InferenceResult
 from app.knowledge import KnowledgeSnapshot
+from app.domain.tool_profiles import HardConstraints
+from app.questionnaire.eligibility import evaluate_eligibility, find_minimal_alternatives
+from app.questionnaire.evaluation import evaluate_pool
 from app.questionnaire.models import (
     ConfidenceLevel,
     QuestionnaireHistoryError,
@@ -22,7 +25,7 @@ from app.questionnaire.models import (
     QuestionnaireStatus,
 )
 from app.questionnaire.selector import select_next_question
-from app.recommendations.ranking import RankedTool, rank_tools
+from app.recommendations.ranking import RankedTool
 from app.text_intent import (
     AnswerResolutionService,
     ModelUnavailableError,
@@ -51,9 +54,20 @@ class QuestionnaireService:
         session_seed: str,
         asked_question_ids: Sequence[str],
         submitted_answers: Sequence[object],
+        constraints: HardConstraints | None = None,
     ) -> QuestionnaireOutcome:
         tools, questions, rules = _pool(knowledge, stage, domain)
         _validate_history(questions, asked_question_ids, submitted_answers)
+        constraints = constraints or HardConstraints()
+        eligibility = [evaluate_eligibility(tool, constraints) for tool in tools]
+        metadata = dict(
+            eligible_count=sum(item.eligible for item in eligibility),
+            unknown_evidence_count=sum(
+                bool(item.unknown_constraints) for item in eligibility
+            ),
+            excluded_tools=[item for item in eligibility if not item.eligible],
+            knowledge_version=knowledge.version,
+        )
         resolved, clarification = _resolve_answers(
             resolver=resolver,
             language=language,
@@ -63,6 +77,7 @@ class QuestionnaireService:
         if clarification is not None:
             return QuestionnaireOutcome(
                 status=QuestionnaireStatus.CLARIFICATION,
+                **metadata,
                 answered_count=len(resolved),
                 question=clarification,
                 clarification_options=[
@@ -71,14 +86,26 @@ class QuestionnaireService:
                 ],
             )
 
-        inference = self._engine.infer(
+        evaluation = evaluate_pool(
             tools=tools,
             questions=questions,
             rules=rules,
             answers=resolved,
+            constraints=constraints,
+            engine=self._engine,
         )
-        ranked = rank_tools(tools=tools, inference_result=inference)
+        inference = evaluation.inference
+        ranked = evaluation.ranked_eligible
         answered_count = len(resolved)
+        if not ranked:
+            return QuestionnaireOutcome(
+                status=QuestionnaireStatus.NO_MATCH,
+                answered_count=answered_count,
+                alternatives=find_minimal_alternatives(
+                    [item.tool for item in evaluation.ranked_all], constraints
+                ),
+                **metadata,
+            )
         if answered_count >= MAXIMUM_QUESTIONS or (
             answered_count >= MINIMUM_QUESTIONS
             and _stable_and_separated(
@@ -88,6 +115,7 @@ class QuestionnaireService:
                 rules=rules,
                 answers=resolved,
                 ranked=ranked,
+                constraints=constraints,
             )
         ):
             margin = _normalized_margin(ranked)
@@ -100,9 +128,15 @@ class QuestionnaireService:
                 answers=resolved,
                 language=language,
                 confidence=confidence,
+                matching_setup_ids={
+                    item.tool_id: item.matching_setup_id
+                    for item in evaluation.eligibility
+                    if item.eligible
+                },
             )
             return QuestionnaireOutcome(
                 status=QuestionnaireStatus.COMPLETE,
+                **metadata,
                 answered_count=answered_count,
                 recommendations=recommendations,
             )
@@ -110,12 +144,13 @@ class QuestionnaireService:
         question = select_next_question(
             questions=questions,
             rules=rules,
-            tool_scores=inference.tool_scores,
+            tool_scores={item.tool.id: item.score for item in ranked},
             asked_question_ids=set(asked_question_ids),
             seed=session_seed,
         )
         return QuestionnaireOutcome(
             status=QuestionnaireStatus.QUESTION,
+            **metadata,
             answered_count=answered_count,
             question=question,
         )
@@ -136,7 +171,7 @@ def _pool(
     ]
     question_ids = {question.id for question in questions}
     rules = [rule for rule in knowledge.rules if rule.question_id in question_ids]
-    if len(tools) != 4 or len(questions) < MAXIMUM_QUESTIONS:
+    if not tools or len(questions) < MAXIMUM_QUESTIONS:
         raise QuestionnaireHistoryError(
             f"incomplete questionnaire pool: {stage.value}/{domain.value}"
         )
@@ -213,19 +248,24 @@ def _stable_and_separated(
     rules: Sequence[Rule],
     answers: Sequence[AnswerSelection],
     ranked: Sequence[RankedTool],
+    constraints: HardConstraints,
 ) -> bool:
     if len(answers) < MINIMUM_QUESTIONS:
         return False
-    previous_inference = engine.infer(
+    previous_evaluation = evaluate_pool(
         tools=tools,
         questions=questions,
         rules=rules,
         answers=answers[:-1],
+        constraints=constraints,
+        engine=engine,
     )
-    previous = rank_tools(tools=tools, inference_result=previous_inference)
+    previous = previous_evaluation.ranked_eligible
     current_ids = [item.tool.id for item in ranked[:3]]
     previous_ids = [item.tool.id for item in previous[:3]]
-    return current_ids == previous_ids and _normalized_margin(ranked) >= STOP_MARGIN
+    return current_ids == previous_ids and (
+        len(ranked) < 4 or _normalized_margin(ranked) >= STOP_MARGIN
+    )
 
 
 def _confidence(answered_count: int, margin: float) -> ConfidenceLevel:
@@ -281,6 +321,7 @@ def _build_recommendations(
     answers: Sequence[AnswerSelection],
     language: Language,
     confidence: ConfidenceLevel,
+    matching_setup_ids: dict[str, str | None],
 ) -> list[QuestionnaireRecommendation]:
     del inference
     selected = _selected_rules(rules, answers)
@@ -337,11 +378,9 @@ def _build_recommendations(
                 reasons=positives,
                 limitations=limitations,
                 source_url=ranked_tool.tool.source_url,
+                matching_setup_id=matching_setup_ids.get(ranked_tool.tool.id),
             )
         )
-    recommendations.sort(
-        key=lambda item: (-item.match_percent, item.tool_id)
-    )
     return recommendations
 
 

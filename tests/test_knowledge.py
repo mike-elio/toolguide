@@ -187,3 +187,41 @@ def test_snapshot_rejects_unknown_benchmark_tool_reference() -> None:
 
     with pytest.raises(ValidationError, match="benchmark references unknown tool"):
         KnowledgeSnapshot.model_validate(payload)
+
+
+def test_snapshot_version_is_deterministic_across_reconstruction() -> None:
+    snapshot = valid_snapshot()
+    reconstructed = KnowledgeSnapshot.model_validate_json(snapshot.model_dump_json())
+
+    assert snapshot.version == snapshot.version == valid_snapshot().version
+    assert reconstructed.version == snapshot.version
+    assert len(snapshot.version) == 64
+
+
+@pytest.mark.parametrize("change", ["weight", "source", "rationale"])
+def test_snapshot_version_tracks_nested_rule_and_evidence_changes(change: str) -> None:
+    snapshot = valid_snapshot()
+    before = snapshot.version
+    payload = snapshot.model_dump(mode="json")
+    impact = payload["rules"][0]["impacts"][0]
+    if change == "weight":
+        impact["weight"] = -0.25
+    elif change == "source":
+        impact["sources"][0]["url"] = "https://example.com/revised-evaluation"
+    else:
+        impact["rationale"]["ar"] = "دليل محدّث"
+    changed = KnowledgeSnapshot.model_validate(payload)
+
+    assert changed.version != before
+    assert changed.version == KnowledgeSnapshot.model_validate_json(changed.model_dump_json()).version
+    assert snapshot.version == before
+
+
+def test_snapshot_version_does_not_cache_over_mutable_nested_evidence() -> None:
+    snapshot = valid_snapshot()
+    before = snapshot.version
+    extra_source = evaluation_source().model_copy(update={"id": "additional-source"})
+    snapshot.rules[0].impacts[0].sources.append(extra_source)
+
+    assert snapshot.version != before
+    assert snapshot.version == snapshot.version

@@ -203,7 +203,7 @@ def test_default_app_loads_the_phase_six_knowledge_snapshot() -> None:
         "testing",
     ]
     assert questions.status_code == 200
-    assert len(questions.json()) == 42
+    assert len(questions.json()) == 168
 
 
 def test_create_app_uses_the_default_runtime_answer_resolver(monkeypatch) -> None:

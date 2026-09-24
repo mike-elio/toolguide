@@ -23,6 +23,15 @@ def run_audit(knowledge_path: Path) -> tuple[dict[str, object], int]:
 
     payload: dict[str, object] = audit.model_dump(mode="json")
     payload["passed"] = audit.passed
+    payload["knowledge_version"] = knowledge.version
+    payload["profile_count"] = sum(tool.profile is not None for tool in knowledge.tools)
+    payload["unknown_capabilities"] = {
+        capability: sum(
+            tool.profile is None or getattr(tool.profile, capability).value is None
+            for tool in knowledge.tools
+        )
+        for capability in ("offline", "free_plan", "open_source")
+    }
     if any(question.domain is not None for question in knowledge.questions):
         payload["datasets"] = {
             "passed": True,

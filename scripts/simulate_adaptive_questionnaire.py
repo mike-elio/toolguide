@@ -5,11 +5,15 @@ import hashlib
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from itertools import product
+from math import ceil
 from pathlib import Path
+from statistics import fmean
+from time import perf_counter
 
 from fastapi.testclient import TestClient
 
 from app.domain.models import DomainId, Language, QuestionType, StageId
+from app.expert_engine import AnswerSelection, ClipspyAdapter
 from app.knowledge import default_knowledge_path, load_knowledge
 from app.main import create_app
 from app.text_intent import AnswerResolutionService
@@ -31,6 +35,30 @@ class SimulationReport:
     session_recommendations: tuple[tuple[str, ...], ...]
     failures: tuple[str, ...]
     samples: tuple[str, ...]
+    catalog_tool_count: int = 0
+    catalog_question_count: int = 0
+    catalog_rule_count: int = 0
+    total_pool_count: int = 0
+    request_count: int = 0
+    request_latency_mean_ms: float = 0.0
+    request_latency_p95_ms: float = 0.0
+    request_latency_max_ms: float = 0.0
+    session_latency_mean_ms: float = 0.0
+    session_latency_p95_ms: float = 0.0
+    session_latency_max_ms: float = 0.0
+
+
+def _latency_metrics(durations_ms: list[float]) -> tuple[float, float, float]:
+    """Mean, nearest-rank p95, and maximum for all attempted operations."""
+    if not durations_ms:
+        return 0.0, 0.0, 0.0
+    ordered = sorted(durations_ms)
+    return fmean(ordered), ordered[ceil(0.95 * len(ordered)) - 1], ordered[-1]
+
+
+def _target_tool(pool_tools: list, pool_visit: int):
+    """Cycle through the actual pool, including tools added during expansion."""
+    return pool_tools[pool_visit % len(pool_tools)]
 
 
 def _stable_index(value: str, size: int) -> int:
@@ -120,6 +148,8 @@ def run_simulation(
     paths: list[tuple[str, ...]] = []
     recommendations: list[tuple[str, ...]] = []
     samples: list[str] = []
+    request_durations_ms: list[float] = []
+    session_durations_ms: list[float] = []
 
     for session_index in range(session_count):
         stage, domain = pools[session_index % len(pools)]
@@ -128,15 +158,17 @@ def run_simulation(
         language = Language.ARABIC if session_index % 2 else Language.ENGLISH
         strategy = session_index % 5
         session_seed = f"{seed_prefix}-{session_index}"
-        target_tool = pool_tools[(stage, domain)][
-            (session_index // len(pools)) % 4
-        ]
+        target_tool = _target_tool(
+            pool_tools[(stage, domain)], session_index // len(pools)
+        )
         asked: list[str] = []
         answers: list[dict[str, object]] = []
         final_body: dict[str, object] | None = None
         session_failures: list[str] = []
 
+        session_started = perf_counter()
         for _ in range(12):
+            request_started = perf_counter()
             response = client.post(
                 "/api/questionnaire/advance",
                 json={
@@ -148,6 +180,7 @@ def run_simulation(
                     "answers": answers,
                 },
             )
+            request_durations_ms.append((perf_counter() - request_started) * 1000)
             if response.status_code != 200:
                 session_failures.append(
                     f"HTTP {response.status_code}: {response.text[:200]}"
@@ -196,6 +229,7 @@ def run_simulation(
                 )
             )
 
+        session_durations_ms.append((perf_counter() - session_started) * 1000)
         if final_body is None:
             session_failures.append("session did not complete")
         else:
@@ -210,8 +244,25 @@ def run_simulation(
                 session_failures.append("answered count does not match question path")
             if len(items) != 3 or len(set(item_ids)) != 3:
                 session_failures.append("recommendations are not three unique tools")
-            if percentages != sorted(percentages, reverse=True):
-                session_failures.append("match percentages are not descending")
+            resolved = []
+            for answer in answers:
+                question = questions_by_id[answer["question_id"]]
+                option_ids = answer.get("option_ids")
+                if option_ids is None:
+                    # Simulation submits exact authored aliases, never arbitrary text.
+                    option_ids = [next(intent.id for intent in question.text_intents
+                                       if answer["text"] in intent.aliases[language])]
+                resolved.append(AnswerSelection(question_id=question.id, option_ids=option_ids))
+            selected_questions = [q for q in snapshot.questions if q.stage is stage and q.domain is domain]
+            selected_ids = {q.id for q in selected_questions}
+            scores = ClipspyAdapter().infer(tools=pool_tools[(stage, domain)],
+                questions=selected_questions, rules=[r for r in snapshot.rules if r.question_id in selected_ids],
+                answers=resolved).tool_scores
+            expected_ids = sorted(scores, key=lambda tool_id: (-scores[tool_id], tool_id))[:3]
+            if item_ids != expected_ids:
+                session_failures.append("recommendations do not follow weighted score order")
+            if any(not 0 <= percentage <= 100 for percentage in percentages):
+                session_failures.append("match percentage out of range")
             for item in items:
                 tool = tools_by_id.get(item["tool_id"])
                 if tool is None or tool.stages != [stage] or tool.domain is not domain:
@@ -247,6 +298,8 @@ def run_simulation(
             )
 
     distribution = dict(sorted(Counter(question_counts).items()))
+    request_mean, request_p95, request_max = _latency_metrics(request_durations_ms)
+    session_mean, session_p95, session_max = _latency_metrics(session_durations_ms)
     return SimulationReport(
         session_count=session_count,
         completed_sessions=completed,
@@ -256,7 +309,7 @@ def run_simulation(
         maximum_question_count=max(question_counts, default=0),
         question_count_distribution=distribution,
         result_tool_coverage=len(result_tools),
-        result_tool_coverage_percent=round(100 * len(result_tools) / 48, 1),
+        result_tool_coverage_percent=round(100 * len(result_tools) / len(snapshot.tools), 1),
         top_recommendation_diversity={
             key: len(values) for key, values in sorted(top_tools.items())
         },
@@ -264,6 +317,17 @@ def run_simulation(
         session_recommendations=tuple(recommendations),
         failures=tuple(failures),
         samples=tuple(samples),
+        catalog_tool_count=len(snapshot.tools),
+        catalog_question_count=len(snapshot.questions),
+        catalog_rule_count=len(snapshot.rules),
+        total_pool_count=len(pools),
+        request_count=len(request_durations_ms),
+        request_latency_mean_ms=request_mean,
+        request_latency_p95_ms=request_p95,
+        request_latency_max_ms=request_max,
+        session_latency_mean_ms=session_mean,
+        session_latency_p95_ms=session_p95,
+        session_latency_max_ms=session_max,
     )
 
 
@@ -273,7 +337,7 @@ def render_markdown(report: SimulationReport) -> str:
         for count, sessions in report.question_count_distribution.items()
     )
     lines = [
-        "# Adaptive Questionnaire - 250 Session Simulation",
+        f"# Adaptive Questionnaire - {report.session_count} Session Simulation",
         "",
         "**Run type:** real FastAPI boundary with deterministic stateless sessions",
         f"**Requested sessions:** {report.session_count}",
@@ -282,10 +346,22 @@ def render_markdown(report: SimulationReport) -> str:
         "",
         "## Acceptance metrics",
         "",
-        f"- Stage/domain pools exercised: {report.pool_count}/12",
+        f"- Loaded catalog: {report.catalog_tool_count or 'unknown'} tools, {report.catalog_question_count or 'unknown'} questions, {report.catalog_rule_count or 'unknown'} rules",
+        f"- Stage/domain pools exercised: {report.pool_count}/{report.total_pool_count or 'unknown'}",
         f"- Question range observed: {report.minimum_question_count}-{report.maximum_question_count}",
         f"- Distribution: {distribution or 'none'}",
-        f"- Catalog tools appearing in top-three results: {report.result_tool_coverage}/48 ({report.result_tool_coverage_percent}%)",
+        f"- Catalog tools appearing in top-three results: {report.result_tool_coverage}/{report.catalog_tool_count or 'unknown'} ({report.result_tool_coverage_percent}%)",
+        "",
+        "## Latency (local TestClient, sequential sessions)",
+        "",
+        "Includes every attempted request/session, including failures. Session timing includes answer selection and response parsing; excludes catalog loading and independent score verification. P95 uses nearest rank. These are local measurements, not production network latency or concurrent-load benchmarks.",
+        "",
+        f"- Requests measured: {report.request_count}",
+        "",
+        "| Operation | Mean (ms) | P95 (ms) | Maximum (ms) |",
+        "|---|---:|---:|---:|",
+        f"| Request | {report.request_latency_mean_ms:.2f} | {report.request_latency_p95_ms:.2f} | {report.request_latency_max_ms:.2f} |",
+        f"| Session | {report.session_latency_mean_ms:.2f} | {report.session_latency_p95_ms:.2f} | {report.session_latency_max_ms:.2f} |",
         "",
         "## Top-recommendation diversity by pool",
         "",
@@ -326,10 +402,12 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("output/research/adaptive-questionnaire-250-session-report.md"),
+        default=None,
     )
     parser.add_argument("--seed-prefix", default="simulation")
     args = parser.parse_args()
+    if args.output is None:
+        args.output = Path(f"output/research/adaptive-questionnaire-{args.sessions}-session-report.md")
     report = run_simulation(
         session_count=args.sessions, seed_prefix=args.seed_prefix
     )

@@ -44,11 +44,19 @@ class ClipspyAdapter:
     @staticmethod
     def _build_environment(context: InferenceContext) -> clips.Environment:
         environment = clips.Environment()
+        # Every compiled rule is gated solely by one selected-answer fact.
+        # Validate the whole knowledge input first, then omit unreachable rules
+        # from this request's isolated environment.
+        selected_targets = {
+            (answer.question.id, option.id)
+            for answer in context.answers for option in answer.options
+        }
         try:
             for construct in TEMPLATES.strip().split("\n\n"):
                 environment.build(construct)
             for rule in context.rules:
-                environment.build(compile_rule(rule))
+                if (rule.question_id, rule.answer_option_id) in selected_targets:
+                    environment.build(compile_rule(rule))
         except clips.CLIPSError as error:
             raise InferenceBuildError("CLIPS knowledge program build failed") from error
         return environment

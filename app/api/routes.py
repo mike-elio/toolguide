@@ -2,7 +2,9 @@
 
 from fastapi import APIRouter, HTTPException, status
 
-from app.api.contracts import QuestionnaireRequest, RecommendationRequest
+from app.api.contracts import QuestionnaireRequest, RecommendationRequest, ScenarioRequest
+from app.domain.models import DomainModel
+from app.questionnaire.scenarios import ScenarioChange, compare_outcomes
 from app.api.dependencies import (
     AnswerResolutionServiceDependency,
     KnowledgeDependency,
@@ -60,6 +62,7 @@ def advance_questionnaire(
             session_seed=request.session_seed,
             asked_question_ids=request.asked_question_ids,
             submitted_answers=request.answers,
+            constraints=request.constraints,
         )
         return project_questionnaire_outcome(outcome, request.language)
     except QuestionnaireHistoryError as error:
@@ -68,12 +71,48 @@ def advance_questionnaire(
             code="QUESTIONNAIRE_HISTORY_ERROR",
             detail=str(error),
         ) from error
-    except InvalidAnswerRepresentationError as error:
+    except (InvalidAnswerRepresentationError, TextIntentError, KnowledgeValidationError) as error:
         raise CodedHTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
             code="INVALID_ANSWER_REPRESENTATION",
             detail=str(error),
         ) from error
+
+
+class ScenarioResponse(DomainModel):
+    baseline: QuestionnaireResponse
+    variant: QuestionnaireResponse
+    changes: list[ScenarioChange]
+
+
+@router.post("/questionnaire/compare", response_model=ScenarioResponse)
+def compare_questionnaire(
+    request: ScenarioRequest,
+    knowledge: KnowledgeDependency,
+    questionnaire_service: QuestionnaireServiceDependency,
+    answer_resolution_service: AnswerResolutionServiceDependency,
+) -> ScenarioResponse:
+    if request.knowledge_version != knowledge.version:
+        raise CodedHTTPException(status_code=409, code="KNOWLEDGE_VERSION_MISMATCH",
+                                 detail="Knowledge changed. Re-evaluate the original session.")
+    outcomes = []
+    try:
+        for session in (request.baseline, request.variant):
+            outcomes.append(questionnaire_service.advance(
+                knowledge=knowledge, resolver=answer_resolution_service,
+                language=session.language, stage=session.stage, domain=session.domain,
+                session_seed=session.session_seed, asked_question_ids=session.asked_question_ids,
+                submitted_answers=session.answers, constraints=session.constraints,
+            ))
+    except (QuestionnaireHistoryError, TextIntentError, KnowledgeValidationError) as error:
+        raise CodedHTTPException(status_code=422, code="INVALID_SCENARIO",
+                                 detail=str(error)) from error
+    baseline, variant = outcomes
+    return ScenarioResponse(
+        baseline=project_questionnaire_outcome(baseline, request.baseline.language),
+        variant=project_questionnaire_outcome(variant, request.variant.language),
+        changes=compare_outcomes(baseline, variant),
+    )
 
 
 @router.get("/stages", response_model=list[StageResponse])

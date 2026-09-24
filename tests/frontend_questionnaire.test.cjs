@@ -3,6 +3,37 @@ const assert = require('node:assert/strict');
 
 const { createQuestionnaireState } = require('../frontend/questionnaire-state.js');
 
+test('hard constraints travel defensively and reset with the selected path', () => {
+  const state = createQuestionnaireState(() => 'seed');
+  state.selectStage('design');
+  state.selectDomain('software');
+  state.setConstraints({ requires_offline: true, allows_online_preparation: true });
+  const request = state.toRequest('en');
+  assert.equal(request.constraints.requires_offline, true);
+  assert.equal(request.constraints.allows_online_preparation, true);
+  request.constraints.requires_offline = false;
+  assert.equal(state.toRequest('en').constraints.requires_offline, true);
+  assert.equal(state.toRequest('en').constraints.allows_online_preparation, true);
+  state.selectDomain('cybersecurity');
+  assert.equal(state.toRequest('en').constraints.requires_offline, false);
+  assert.equal(state.toRequest('en').constraints.allows_online_preparation, false);
+});
+
+test('adopting a scenario copies its history and preserves session identity', () => {
+  const state = createQuestionnaireState(() => 'seed');
+  state.selectStage('design');
+  state.selectDomain('software');
+  state.recordAnswer({ question_id: 'q1', option_ids: ['a'] });
+  const scenario = state.toRequest('en');
+  scenario.answers[0].option_ids = ['b'];
+  scenario.constraints = { requires_offline: true };
+  state.adoptRequest(scenario);
+  scenario.answers[0].option_ids.push('c');
+  assert.deepEqual(state.answers[0].option_ids, ['b']);
+  assert.equal(state.sessionSeed, 'seed');
+  assert.equal(state.toRequest('en').constraints.requires_offline, true);
+});
+
 test('selecting a stage and domain starts a fresh deterministic session', () => {
   const state = createQuestionnaireState(() => 'fixed-seed');
 
